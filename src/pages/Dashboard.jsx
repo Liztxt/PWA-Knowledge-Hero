@@ -26,10 +26,6 @@ export default function Dashboard() {
             <span className="info-value">{user?.username}</span>
           </div>
           <div className="info-item">
-            <span className="info-label">Correo</span>
-            <span className="info-value">{user?.email}</span>
-          </div>
-          <div className="info-item">
             <span className="info-label">Rol</span>
             <span className="info-value">{user?.role}</span>
           </div>
