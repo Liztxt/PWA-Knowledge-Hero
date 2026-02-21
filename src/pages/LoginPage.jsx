@@ -16,7 +16,7 @@ export default function LoginPage({ onSwitch }) {
     setError("");
     setLoading(true);
     try {
-      await login(form.email, form.password);
+      await login(form.username, form.password);
     } catch (err) {
       setError(err.message);
     } finally {
@@ -42,10 +42,10 @@ export default function LoginPage({ onSwitch }) {
             <div className="field-input-wrap">
               <input
                 className="field-input"
-                type="email"
-                name="email"
+                type="text"
+                name="username"
                 placeholder="Ingresa tu nombre"
-                value={form.email}
+                value={form.username}
                 onChange={handleChange}
                 required
               />

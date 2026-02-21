@@ -16,12 +16,12 @@ export function AuthProvider({ children }) {
     setLoading(false);
   }, []);
 
-  const login = async (email, password) => {
+  const login = async (username, password) => {
     // TODO: reemplazar URL con tu backend real
     const res = await fetch("http://localhost:5000/api/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ username, password }),
     });
 
     const data = await res.json();
@@ -33,11 +33,11 @@ export function AuthProvider({ children }) {
     return data.user;
   };
 
-  const register = async (username, email, password, role = "user") => {
+  const register = async (username, password, role = "user") => {
     const res = await fetch("http://localhost:5000/api/auth/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ username, email, password, role }),
+      body: JSON.stringify({ username, password, role }),
     });
 
     const data = await res.json();
