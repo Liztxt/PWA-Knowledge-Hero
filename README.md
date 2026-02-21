@@ -1,20 +1,93 @@
-<<<<<<< HEAD
-# React + Vite
+# Auth App — React + Vite + JWT + Roles
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend de autenticación con roles `user` y `admin`, listo para conectar a un backend Node.js + Express + MongoDB.
 
-Currently, two official plugins are available:
+## Estructura
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+src/
+├── context/
+│   └── AuthContext.jsx      # Estado global de autenticación + JWT
+├── components/
+│   └── ProtectedRoute.jsx   # Wrapper para rutas con verificación de rol
+├── hooks/
+│   └── useAuthFetch.js      # Hook para llamadas autenticadas al backend
+├── pages/
+│   ├── LoginPage.jsx
+│   ├── RegisterPage.jsx
+│   ├── Dashboard.jsx        # Vista para rol "user"
+│   ├── AdminPanel.jsx       # Vista para rol "admin"
+│   └── Auth.css
+├── App.jsx
+├── main.jsx
+└── index.css
+```
 
-## React Compiler
+## Instalación
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+La app corre en `http://localhost:3000`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# PWA-Knowledge-Hero
->>>>>>> ffbeaf5195f5d81c8b85e2bf372b0746b143cb10
+## Conectar al backend
+
+El `AuthContext` ya apunta a `http://localhost:5000/api/auth/login` y `/register`.
+
+Tu backend debe responder con este formato:
+
+```json
+{
+  "token": "eyJhbGciOi...",
+  "user": {
+    "id": "...",
+    "username": "juan",
+    "email": "juan@correo.com",
+    "role": "user"
+  }
+}
+```
+
+## Hacer llamadas autenticadas
+
+```jsx
+import { useAuthFetch } from "../hooks/useAuthFetch";
+
+function MiComponente() {
+  const { authFetch } = useAuthFetch();
+
+  const getData = async () => {
+    const data = await authFetch("/api/protected");
+    console.log(data);
+  };
+}
+```
+
+El hook agrega el header `Authorization: Bearer <token>` automáticamente y
+cierra sesión si el token expira (401).
+
+## Agregar PWA (al final del proyecto)
+
+```bash
+npm install -D vite-plugin-pwa
+```
+
+En `vite.config.js`:
+```js
+import { VitePWA } from "vite-plugin-pwa";
+
+plugins: [
+  react(),
+  VitePWA({
+    registerType: "autoUpdate",
+    manifest: {
+      name: "Auth App",
+      short_name: "AuthApp",
+      theme_color: "#080b12",
+      icons: [/* tus iconos */]
+    }
+  })
+]
+```
