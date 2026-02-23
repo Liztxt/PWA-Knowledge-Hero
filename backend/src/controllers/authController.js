@@ -1,6 +1,10 @@
-import bcrypt from "bcryptjs";
+import crypto from "crypto";
 import jwt from "jsonwebtoken";
 import User from "../models/User.js";
+
+const hashPassword = (password) => {
+  return crypto.createHash("sha256").update(password).digest("hex");
+};
 
 const generateToken = (user) => {
   return jwt.sign(
@@ -24,8 +28,7 @@ export const register = async (req, res) => {
       return res.status(400).json({ message: "Este nombre de usuario ya está registrado" });
     }
 
-    const salt = await bcrypt.genSalt(10);
-    const hashedPassword = await bcrypt.hash(password, salt);
+    const hashedPassword = hashPassword(password);
 
     const user = await User.create({
       username,
@@ -58,13 +61,16 @@ export const login = async (req, res) => {
       return res.status(400).json({ message: "Usuario y contraseña son obligatorios" });
     }
 
-    const user = await User.findOne({ username }).select("+password");
+    const user = await User.findOne({ username });
     if (!user) {
       return res.status(401).json({ message: "Credenciales incorrectas" });
     }
 
-    const isMatch = await bcrypt.compare(password, user.password);
-    if (!isMatch) {
+    const hashedPassword = hashPassword(password);
+    console.log("Hash recibido:", hashedPassword);
+console.log("Hash en BD:", user.password);
+console.log("Son iguales:", hashedPassword === user.password);
+    if (hashedPassword !== user.password) {
       return res.status(401).json({ message: "Credenciales incorrectas" });
     }
 

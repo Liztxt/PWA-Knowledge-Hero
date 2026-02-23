@@ -39,7 +39,7 @@ export default function RegisterPage({ onSwitch }) {
     setLoading(true);
     try {
       // usamos el username como email temporalmente; ajusta según tu backend
-      await register(form.username, form.username, form.password, form.role);
+      await register(form.username, form.password, form.role);
     } catch (err) {
       setError(err.message);
     } finally {

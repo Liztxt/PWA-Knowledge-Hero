@@ -9,13 +9,7 @@ const userSchema = new mongoose.Schema(
       trim: true,
       minlength: [3, "El usuario debe tener al menos 3 caracteres"],
     },
-   email: {
-  type: String,
-  unique: true,
-  sparse: true, // permite múltiples documentos sin email
-  lowercase: true,
-  trim: true,
-},
+  
     password: {
       type: String,
       required: [true, "La contraseña es obligatoria"],
@@ -31,12 +25,5 @@ const userSchema = new mongoose.Schema(
     timestamps: true, // agrega createdAt y updatedAt automáticamente
   }
 );
-
-// Nunca devolver la contraseña en las respuestas JSON
-userSchema.methods.toJSON = function () {
-  const user = this.toObject();
-  delete user.password;
-  return user;
-};
 
 export default mongoose.model("User", userSchema);

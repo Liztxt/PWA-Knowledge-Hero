@@ -4,7 +4,7 @@ import "./Auth.css";
 
 export default function LoginPage({ onSwitch }) {
   const { login } = useAuth();
-  const [form, setForm] = useState({ email: "", password: "" });
+  const [form, setForm] = useState({ username: "", password: "" });
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -15,6 +15,9 @@ export default function LoginPage({ onSwitch }) {
     e.preventDefault();
     setError("");
     setLoading(true);
+    console.log("Form completo:", form);
+  console.log("Username:", form.username);
+  console.log("Password:", form.password);
     try {
       await login(form.username, form.password);
     } catch (err) {
