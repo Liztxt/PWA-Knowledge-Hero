@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap");
+
+.home-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(160deg, #3b2a6e 0%, #6d28d9 50%, #c026a0 100%);
+}
+
+.home-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.home-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.3;
+}
+
+.home-orb-1 {
+  width: 400px;
+  height: 400px;
+  background: #a855f7;
+  top: -100px;
+  left: -100px;
+}
+
+.home-orb-2 {
+  width: 350px;
+  height: 350px;
+  background: #ec4899;
+  bottom: -80px;
+  right: -80px;
+}
+
+.home-dots {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255,255,255,0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.home-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 900px;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+/* Banner de usuario */
+.user-banner {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  text-align: left;
+}
+
+.user-banner:hover {
+  background: rgba(255, 255, 255, 0.22);
+  transform: translateY(-2px);
+}
+
+.user-banner-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-avatar {
+  width: 44px;
+  height: 44px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.user-greeting {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.user-greeting strong {
+  font-weight: 800;
+}
+
+.user-points {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 20px;
+  padding: 6px 16px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Grid de mundos */
+.worlds-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .worlds-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.world-card {
+  background: white;
+  border-radius: 20px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s, box-shadow 0.25s;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.world-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.25);
+}
+
+.world-card-top {
+  padding: 24px 20px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 110px;
+}
+
+.world-icon {
+  font-size: 52px;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+}
+
+.world-card-bottom {
+  padding: 12px 20px 20px;
+}
+
+.world-name {
+  font-size: 18px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin: 0 0 4px;
+}
+
+.world-desc {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+  font-weight: 500;
+}
+
+.world-card-bar {
+  height: 5px;
+  background: var(--accent);
+  width: 100%;
+  margin-top: auto;
+  border-radius: 0 0 20px 20px;
+}
+
+/* CTA inferior */
+.home-cta {
+  text-align: center;
+  color: white;
+}
+
+.home-cta-title {
+  font-size: 48px;
+  font-weight: 900;
+  margin: 0 0 8px;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+
+.home-cta-sub {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  opacity: 0.85;
+}

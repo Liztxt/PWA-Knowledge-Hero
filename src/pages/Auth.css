@@ -209,3 +209,18 @@ body { font-family: var(--font); color: var(--text); }
 }
 .logout-btn:hover { background: rgba(255,255,255,0.25); }
 .admin-badge-row { display: flex; align-items: center; gap: 0.8rem; }
+.back-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}

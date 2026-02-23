@@ -6,7 +6,10 @@ const router = Router();
 
 // Rutas públicas
 router.post("/register", register);
-router.post("/login", login);
+router.post("/login", (req, res, next) => {
+  console.log("Ruta login alcanzada:", req.body);
+  next();
+}, login);
 
 // Ruta protegida — cualquier usuario autenticado
 router.get("/me", protect, getMe);
