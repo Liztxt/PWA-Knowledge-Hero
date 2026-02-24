@@ -7,25 +7,25 @@ const worlds = [
     name: "Matemáticas",
     description: "Números, álgebra y geometría",
     icon: "🧮",
-    accent: "#ff2d78",
+    accent: "#ff2d92",
   },
   {
     id: "spanish",
     name: "Español",
     description: "Gramática, literatura y vocabulario",
-    icon: "📚",
-    accent: "#7c5cfc",
+    icon: "📖",
+    accent: "#3a7bfe",
   },
   {
     id: "english",
     name: "Inglés",
     description: "English grammar and vocabulary",
     icon: "🌐",
-    accent: "#00d68f",
+    accent: "#00d652",
   },
 ];
 
-export default function HomePage({ onGoToPanel }) {
+export default function HomePage({ onGoToPanel,onSelectWorld }) {
   const { user } = useAuth();
 
   const handleWorldSelect = (worldId) => {

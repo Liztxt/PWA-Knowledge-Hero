@@ -38,7 +38,6 @@ export default function RegisterPage({ onSwitch }) {
 
     setLoading(true);
     try {
-      // usamos el username como email temporalmente; ajusta según tu backend
       await register(form.username, form.password, form.role);
     } catch (err) {
       setError(err.message);
@@ -100,7 +99,7 @@ export default function RegisterPage({ onSwitch }) {
             </div>
           </div>
 
-          {/* Selector de rol — puedes ocultarlo si no quieres que el usuario lo vea */}
+          {/* Selector de rol — ocultarlo proximamente */}
           <div className="field-group">
             <label className="field-label">Rol</label>
             <div className="role-selector">

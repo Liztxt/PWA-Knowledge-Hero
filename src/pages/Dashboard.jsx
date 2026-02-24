@@ -1,13 +1,18 @@
 import { useAuth } from "../context/AuthContext";
 import "./Auth.css";
 
-export default function Dashboard() {
+export default function Dashboard({ onBack }) {
   const { user, logout } = useAuth();
 
   return (
     <div className="dash-wrapper">
       <div className="dash-header">
-        <div>
+        <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+          {onBack && (
+            <button className="back-btn" onClick={onBack}>
+              ← Volver
+            </button>
+          )}
           <div className="dash-title">Panel de usuario</div>
         </div>
         <div className="admin-badge-row">
@@ -28,6 +33,10 @@ export default function Dashboard() {
           <div className="info-item">
             <span className="info-label">Rol</span>
             <span className="info-value">{user?.role}</span>
+          </div>
+          <div className="info-item">
+            <span className="info-label">Puntos</span>
+            <span className="info-value" style={{ color: "var(--accent)" }}>0 pts</span>
           </div>
           <div className="info-item">
             <span className="info-label">Estado</span>
