@@ -5,13 +5,15 @@ import RegisterPage from "./pages/RegisterPage";
 import Dashboard from "./pages/Dashboard";
 import AdminPanel from "./pages/AdminPanel";
 import HomePage from "./pages/HomePage";
-import LevelSelectPage from "./pages/LevelSelectPage";
+import DifficultySelectPage from "./pages/DifficultySelectPage";
+import NivelSelectPage from "./pages/LevelSelectPage";
 
 function AppRouter() {
   const { user } = useAuth();
   const [page, setPage] = useState("login");
   const [appPage, setAppPage] = useState("home");
   const [selectedWorld, setSelectedWorld] = useState(null);
+  const [selectedDifficulty, setSelectedDifficulty] = useState(null);
 
   if (user) {
     if (user.role === "admin") return <AdminPanel />;
@@ -20,14 +22,28 @@ function AppRouter() {
       return <Dashboard onBack={() => setAppPage("home")} />;
     }
 
-    if (appPage === "levels") {
+    if (appPage === "difficulty") {
       return (
-        <LevelSelectPage
+        <DifficultySelectPage
           world={selectedWorld}
           onBack={() => setAppPage("home")}
-          onSelectLevel={(level) => {
-            // TODO: navegar a preguntas
-            console.log("Nivel seleccionado:", level);
+          onSelectLevel={(difficulty) => {
+            setSelectedDifficulty(difficulty);
+            setAppPage("levels");
+          }}
+        />
+      );
+    }
+
+    if (appPage === "levels") {
+      return (
+        <NivelSelectPage
+          world={selectedWorld}
+          difficulty={selectedDifficulty}
+          onBack={() => setAppPage("difficulty")}
+          onSelectLevel={(nivelId) => {
+            console.log("Nivel seleccionado:", nivelId);
+            // setAppPage("results"); // descomentar cuando tengas ResultsPage
           }}
         />
       );
@@ -38,7 +54,7 @@ function AppRouter() {
         onGoToPanel={() => setAppPage("dashboard")}
         onSelectWorld={(worldId) => {
           setSelectedWorld(worldId);
-          setAppPage("levels");
+          setAppPage("difficulty");
         }}
       />
     );

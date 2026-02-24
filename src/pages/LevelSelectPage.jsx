@@ -1,28 +1,10 @@
 import "./LevelSelect.css";
 
-const levels = [
-  {
-    id: "primaria",
-    name: "Primaria",
-    description: "Nivel básico - Conceptos fundamentales",
-    icon: "🌟",
-    bg: "#fbbf24",
-  },
-  {
-    id: "secundaria",
-    name: "Secundaria",
-    description: "Nivel intermedio - Retos moderados",
-    icon: "💡",
-    bg: "#f3f4f6",
-  },
-  {
-    id: "avanzado",
-    name: "Avanzado",
-    description: "Nivel experto - Máxima dificultad",
-    icon: "🐻",
-    bg: "#fb923c",
-  },
-];
+const difficultyNames = {
+  primaria: "Primaria",
+  secundaria: "Secundaria",
+  avanzado: "Avanzado",
+};
 
 const worldNames = {
   math: "Matemáticas",
@@ -30,41 +12,58 @@ const worldNames = {
   english: "Inglés",
 };
 
-export default function LevelSelectPage({ world, onBack, onSelectLevel }) {
+// 20 niveles, cada uno agrupa 3-5 preguntas
+const levels = Array.from({ length: 20 }, (_, i) => ({
+  id: i + 1,
+  name: `Nivel ${i + 1}`,
+  questions: Math.floor(Math.random() * 3) + 3, // 3, 4 o 5 preguntas
+  completed: false, // puedes manejar esto desde contexto/props después
+  stars: 0, // 0-3 estrellas según desempeño
+}));
+
+function StarRating({ stars }) {
   return (
-    <div className="level-wrapper">
-      <div className="level-bg">
-        <div className="level-orb level-orb-1" />
-        <div className="level-orb level-orb-2" />
-        <div className="level-dots" />
+    <div className="ns-stars">
+      {[1, 2, 3].map((s) => (
+        <span key={s} className={s <= stars ? "ns-star filled" : "ns-star"}>
+          ★
+        </span>
+      ))}
+    </div>
+  );
+}
+
+export default function NivelSelectPage({ world, difficulty, onBack, onSelectLevel }) {
+  return (
+    <div className="ns-wrapper">
+      <div className="ns-bg">
+        <div className="ns-orb ns-orb-1" />
+        <div className="ns-orb ns-orb-2" />
+        <div className="ns-dots" />
       </div>
 
-      <div className="level-content">
-        <button className="level-back-btn" onClick={onBack}>
+      <div className="ns-content">
+        <button className="ns-back-btn" onClick={onBack}>
           ← Regresar
         </button>
 
-        <h1 className="level-title">{worldNames[world] || world}</h1>
-        <p className="level-subtitle">Selecciona tu nivel de dificultad</p>
+        <div className="ns-header">
+          <h1 className="ns-title">{worldNames[world] || world}</h1>
+          <span className="ns-badge">{difficultyNames[difficulty] || difficulty}</span>
+        </div>
+        <p className="ns-subtitle">Selecciona un nivel para comenzar</p>
 
-        <div className="level-list">
+        <div className="ns-grid">
           {levels.map((level) => (
             <button
               key={level.id}
-              className="level-card"
+              className={`ns-card ${level.completed ? "ns-card--done" : ""}`}
               onClick={() => onSelectLevel(level.id)}
             >
-              <div
-                className="level-card-icon"
-                style={{ background: level.bg }}
-              >
-                {level.icon}
-              </div>
-              <div className="level-card-text">
-                <h3 className="level-card-name">{level.name}</h3>
-                <p className="level-card-desc">{level.description}</p>
-              </div>
-              <span className="level-card-arrow">›</span>
+              <span className="ns-card-num">{level.id}</span>
+              <span className="ns-card-label">{level.name}</span>
+              <span className="ns-card-questions">{level.questions} preguntas</span>
+              <StarRating stars={level.stars} />
             </button>
           ))}
         </div>
