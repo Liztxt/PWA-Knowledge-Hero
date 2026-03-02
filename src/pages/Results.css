@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap");
+
+.results-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(160deg, #3b2a6e 0%, #6d28d9 50%, #c026a0 100%);
+}
+
+/* Fondo decorativo igual al resto del proyecto */
+.results-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.results-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.3;
+}
+
+.results-orb-1 {
+  width: 400px;
+  height: 400px;
+  background: #a855f7;
+  top: -100px;
+  left: -100px;
+}
+
+.results-orb-2 {
+  width: 350px;
+  height: 350px;
+  background: #ec4899;
+  bottom: -80px;
+  right: -80px;
+}
+
+.results-dots {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Tarjeta central blanca */
+.results-card {
+  position: relative;
+  z-index: 1;
+  background: white;
+  border-radius: 24px;
+  padding: 36px 32px;
+  width: 100%;
+  max-width: 560px;
+  margin: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  animation: results-appear 0.4s ease;
+}
+
+@keyframes results-appear {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Top: avatar + título */
+.results-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.results-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e0d4ff, #fce4f5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(109, 40, 217, 0.2);
+}
+
+.results-title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.results-title {
+  font-size: 28px;
+  font-weight: 900;
+  color: #1a1a2e;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.results-sub {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Stats: incorrectas / correctas / precisión */
+.results-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.results-stat {
+  border-radius: 14px;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.results-stat--blue   { background: #dbeafe; }
+.results-stat--green  { background: #dcfce7; }
+.results-stat--yellow { background: #fef9c3; }
+
+.results-stat-num {
+  font-size: 28px;
+  font-weight: 900;
+  color: #1a1a2e;
+  line-height: 1;
+}
+
+.results-stat-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #555;
+}
+
+/* Banner de puntuación */
+.results-score-banner {
+  background: linear-gradient(135deg, #f3e8ff, #fce4f5);
+  border-radius: 14px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.results-score-context {
+  font-size: 13px;
+  color: #888;
+  font-weight: 600;
+}
+
+.results-score-total {
+  font-size: 22px;
+  font-weight: 900;
+  color: #1a1a2e;
+}
+
+/* Botones */
+.results-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.results-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 22px;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.results-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.results-btn--primary {
+  background: linear-gradient(135deg, #6d28d9, #c026a0);
+  color: white;
+  box-shadow: 0 4px 14px rgba(109, 40, 217, 0.35);
+}
+
+.results-btn--secondary {
+  background: #f3e8ff;
+  color: #6d28d9;
+}
+
+@media (max-width: 480px) {
+  .results-card { padding: 24px 18px; }
+  .results-title { font-size: 22px; }
+  .results-stat-num { font-size: 22px; }
+  .results-actions { flex-direction: column; }
+  .results-btn { width: 100%; text-align: center; }
+}
