@@ -12,13 +12,12 @@ const worldNames = {
   english: "Inglés",
 };
 
-// 20 niveles, cada uno agrupa 3-5 preguntas
 const levels = Array.from({ length: 20 }, (_, i) => ({
   id: i + 1,
   name: `Nivel ${i + 1}`,
-  questions: Math.floor(Math.random() * 3) + 3, // 3, 4 o 5 preguntas
-  completed: false, // puedes manejar esto desde contexto/props después
-  stars: 0, // 0-3 estrellas según desempeño
+  questions: Math.floor(Math.random() * 3) + 3, 
+  completed: false, 
+  stars: 0, 
 }));
 
 function StarRating({ stars }) {

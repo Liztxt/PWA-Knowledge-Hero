@@ -7,7 +7,6 @@ export function AuthProvider({ children }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Al cargar, verifica si hay token guardado
     const token = localStorage.getItem("token");
     const savedUser = localStorage.getItem("user");
     if (token && savedUser) {
@@ -17,7 +16,6 @@ export function AuthProvider({ children }) {
   }, []);
 
   const login = async (username, password) => {
-    // TODO: reemplazar URL con tu backend real
     const res = await fetch("http://localhost:5000/api/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
