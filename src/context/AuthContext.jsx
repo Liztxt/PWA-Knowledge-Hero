@@ -5,6 +5,43 @@ const AuthContext = createContext(null);
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const updateProfile = async (username, avatar) => {
+  const token = localStorage.getItem("token");
+  const res = await fetch("http://localhost:5000/api/auth/me", {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify({ username, avatar }),
+  });
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.message || "Error al actualizar");
+
+  localStorage.setItem("user", JSON.stringify(data.user));
+  setUser(data.user);
+  return data.user;
+};
+const scheduleDelete = async () => {
+  const token = localStorage.getItem("token");
+  const res = await fetch("http://localhost:5000/api/auth/me", {
+    method: "DELETE",
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.message);
+  return data;
+};
+const cancelDelete = async () => {
+  const token = localStorage.getItem("token");
+  const res = await fetch("http://localhost:5000/api/auth/cancel-delete", {
+    method: "POST",
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.message);
+  return data;
+};
 
   useEffect(() => {
     const token = localStorage.getItem("token");
@@ -54,7 +91,7 @@ export function AuthProvider({ children }) {
   };
 
   return (
-    <AuthContext.Provider value={{ user, login, register, logout, loading }}>
+    <AuthContext.Provider value={{ user, login, register, logout, loading, updateProfile, scheduleDelete, cancelDelete }}>
       {!loading && children}
     </AuthContext.Provider>
   );

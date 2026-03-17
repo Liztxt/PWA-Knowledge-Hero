@@ -3,6 +3,7 @@ import { useAuth } from "./AuthContext";
 
 const ProgressContext = createContext(null);
 
+
 const API = "http://localhost:5000";
 
 export function ProgressProvider({ children }) {
@@ -10,8 +11,8 @@ export function ProgressProvider({ children }) {
   const [progress, setProgress] = useState({ math: [], spanish: [], english: [] });
   const [totalPoints, setTotalPoints] = useState(0);
   const [loading, setLoading] = useState(false);
+  const [streak, setStreak] = useState(0);
 
-  // Cargar progreso cuando el usuario inicia sesión
   useEffect(() => {
     if (user) fetchProgress();
     else {
@@ -31,6 +32,7 @@ export function ProgressProvider({ children }) {
       if (res.ok) {
         setProgress(data.progress);
         setTotalPoints(data.totalPoints);
+        setStreak(data.streak ?? 0);
       }
     } catch (error) {
       console.error("Error cargando progreso:", error);
@@ -53,6 +55,7 @@ export function ProgressProvider({ children }) {
       const data = await res.json();
       if (res.ok) {
         setTotalPoints(data.totalPoints);
+        setStreak(data.streak ?? 0);
         setProgress(prev => ({ ...prev, [world]: data.progress }));
       }
       return data;
@@ -61,7 +64,6 @@ export function ProgressProvider({ children }) {
     }
   };
 
-  // Obtener estrellas de un nivel específico
   const getLevelStars = (world, difficulty, level) => {
     const worldProgress = progress[world]?.find(w => w.difficulty === difficulty);
     if (!worldProgress) return 0;
@@ -69,8 +71,6 @@ export function ProgressProvider({ children }) {
     return levelData?.stars || 0;
   };
 
-  // Saber si un nivel está desbloqueado
-  // Nivel 1 siempre desbloqueado, el resto requiere completar el anterior
   const isLevelUnlocked = (world, difficulty, level) => {
     if (level === 1) return true;
     const worldProgress = progress[world]?.find(w => w.difficulty === difficulty);
@@ -88,6 +88,7 @@ export function ProgressProvider({ children }) {
       getLevelStars,
       isLevelUnlocked,
       fetchProgress,
+      streak,
     }}>
       {children}
     </ProgressContext.Provider>

@@ -5,36 +5,27 @@ import "./Dashboard.css";
 
 const AVATARS = ["🤖", "🦊", "🐉", "🦁", "🐼", "🦅", "🐺", "🦋", "🐸", "🌟", "🎯", "🔥"];
 
-// Cuenta niveles completados de un mundo
 function countCompleted(worldArr) {
   return worldArr?.reduce((acc, d) => acc + d.levels.filter(l => l.completed).length, 0) ?? 0;
 }
 
-// Calcula precisión global (correctas / total respondidas)
-function calcPrecision(worldArr) {
-  // Por ahora basado en estrellas: 3★=100%, 2★=75%, 1★=50%
-  const levels = worldArr?.flatMap(d => d.levels) ?? [];
-  if (levels.length === 0) return 0;
-  const avg = levels.reduce((acc, l) => acc + (l.stars / 3) * 100, 0) / levels.length;
-  return Math.round(avg);
-}
-
 export default function Dashboard({ onBack }) {
-  const { user, logout } = useAuth();
-  const { totalPoints, progress } = useProgress();
+  const { user, logout, updateProfile, scheduleDelete, cancelDelete } = useAuth();
+  const { totalPoints, progress, streak } = useProgress();
 
-  const [activeTab, setActiveTab]           = useState("perfil");
-  const [selectedAvatar, setSelectedAvatar] = useState("🤖");
-  const [newUsername, setNewUsername]       = useState(user?.username || "");
-  const [saveMsg, setSaveMsg]               = useState("");
+  const [activeTab, setActiveTab] = useState("perfil");
+  const [selectedAvatar, setSelectedAvatar] = useState(user?.avatar || "🤖");
+  const [newUsername, setNewUsername] = useState(user?.username || "");
+  const [saveMsg, setSaveMsg] = useState("");
+  const [saveError, setSaveError] = useState("");
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
+  const [deleteScheduled, setDeleteScheduled] = useState(false);
 
-  // Stats calculados
   const totalCompleted = countCompleted(progress.math) + countCompleted(progress.spanish) + countCompleted(progress.english);
   const allLevels = [
-    ...( progress.math?.flatMap(d => d.levels) ?? []),
-    ...( progress.spanish?.flatMap(d => d.levels) ?? []),
-    ...( progress.english?.flatMap(d => d.levels) ?? []),
+    ...(progress.math?.flatMap(d => d.levels) ?? []),
+    ...(progress.spanish?.flatMap(d => d.levels) ?? []),
+    ...(progress.english?.flatMap(d => d.levels) ?? []),
   ];
   const precision = allLevels.length > 0
     ? Math.round(allLevels.reduce((acc, l) => acc + (l.stars / 3) * 100, 0) / allLevels.length)
@@ -46,13 +37,34 @@ export default function Dashboard({ onBack }) {
     { name: "Inglés",      icon: "🌐", color: "#00d652", key: "english" },
   ];
 
-  const handleSave = () => {
-    setSaveMsg("¡Cambios guardados!");
-    setTimeout(() => setSaveMsg(""), 2500);
+  const handleSave = async () => {
+    try {
+      setSaveError("");
+      await updateProfile(newUsername, selectedAvatar);
+      setSaveMsg("¡Cambios guardados!");
+      setTimeout(() => setSaveMsg(""), 2500);
+    } catch (err) {
+      setSaveError(err.message);
+    }
   };
 
-  const handleDelete = () => {
-    logout();
+  const handleDelete = async () => {
+    try {
+      await scheduleDelete();
+      setDeleteScheduled(true);
+      setShowDeleteConfirm(false);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  const handleCancelDelete = async () => {
+    try {
+      await cancelDelete();
+      setDeleteScheduled(false);
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   return (
@@ -84,13 +96,12 @@ export default function Dashboard({ onBack }) {
           </div>
         </div>
 
-        {/* Stats reales */}
         <div className="dp-stats">
           {[
-            { num: totalPoints,              label: "Puntos"              },
-            { num: totalCompleted,           label: "Niveles completados" },
-            { num: `${precision}%`,          label: "Precisión global"    },
-            { num: "0",                      label: "Racha de días"       },
+            { num: totalPoints,     label: "Puntos"              },
+            { num: totalCompleted,  label: "Niveles completados" },
+            { num: `${precision}%`, label: "Precisión global"    },
+            { num: streak,          label: "Racha de días"       },
           ].map((s, i) => (
             <div key={i} className="dp-stat">
               <span className="dp-stat-num">{s.num}</span>
@@ -114,10 +125,10 @@ export default function Dashboard({ onBack }) {
               <h2 className="dp-section-title">Información de la cuenta</h2>
               <div className="dp-info-grid">
                 {[
-                  { label: "👤 Usuario",        value: user?.username         },
-                  { label: "🎭 Rol",            value: user?.role             },
+                  { label: "👤 Usuario",        value: user?.username },
+                  { label: "🎭 Rol",            value: user?.role },
                   { label: "⭐ Puntos totales", value: `${totalPoints} pts`, accent: true },
-                  { label: "🔐 Autenticación",  value: "JWT activo"           },
+                  { label: "🔐 Autenticación",  value: "JWT activo" },
                 ].map((item) => (
                   <div key={item.label} className="dp-info-item">
                     <span className="dp-info-label">{item.label}</span>
@@ -129,7 +140,6 @@ export default function Dashboard({ onBack }) {
               </div>
             </div>
 
-            {/* Progreso por mundo real */}
             <div className="dp-section">
               <h2 className="dp-section-title">Progreso por mundo</h2>
               <div className="dp-progress-list">
@@ -158,6 +168,7 @@ export default function Dashboard({ onBack }) {
 
         {activeTab === "config" && (
           <div className="dp-panel">
+
             <div className="dp-section">
               <h2 className="dp-section-title">Elige tu avatar</h2>
               <div className="dp-avatar-grid">
@@ -181,28 +192,48 @@ export default function Dashboard({ onBack }) {
                   onChange={(e) => setNewUsername(e.target.value)}
                   placeholder="Nuevo nombre de usuario"
                 />
-                <button className="dp-btn dp-btn--primary" onClick={handleSave}>Guardar</button>
+                <button className="dp-btn dp-btn--primary" onClick={handleSave}>
+                  Guardar
+                </button>
               </div>
               {saveMsg && <p className="dp-save-msg">✅ {saveMsg}</p>}
+              {saveError && <p style={{ color: "red", fontSize: "0.85rem" }}>❌ {saveError}</p>}
             </div>
 
             <div className="dp-section dp-section--danger">
               <h2 className="dp-section-title dp-section-title--danger">⚠️ Zona de peligro</h2>
               <p className="dp-danger-desc">Estas acciones son permanentes e irreversibles.</p>
-              {!showDeleteConfirm ? (
+
+              {deleteScheduled ? (
+                <div className="dp-confirm-box">
+                  <p className="dp-confirm-text">
+                    ⏳ Tu cuenta será eliminada en 20 días. Puedes cancelarlo iniciando sesión antes de que se cumpla el plazo.
+                  </p>
+                  <button className="dp-btn dp-btn--ghost" onClick={handleCancelDelete}>
+                    Cancelar eliminación
+                  </button>
+                </div>
+              ) : !showDeleteConfirm ? (
                 <button className="dp-btn dp-btn--danger" onClick={() => setShowDeleteConfirm(true)}>
                   🗑️ Eliminar mi cuenta
                 </button>
               ) : (
                 <div className="dp-confirm-box">
-                  <p className="dp-confirm-text">¿Estás seguro? Esta acción no se puede deshacer.</p>
+                  <p className="dp-confirm-text">
+                    Tu cuenta se eliminará en 20 días. Puedes cancelarlo iniciando sesión antes de que se cumpla el plazo.
+                  </p>
                   <div className="dp-confirm-row">
-                    <button className="dp-btn dp-btn--danger" onClick={handleDelete}>Sí, eliminar</button>
-                    <button className="dp-btn dp-btn--ghost" onClick={() => setShowDeleteConfirm(false)}>Cancelar</button>
+                    <button className="dp-btn dp-btn--danger" onClick={handleDelete}>
+                      Sí, programar eliminación
+                    </button>
+                    <button className="dp-btn dp-btn--ghost" onClick={() => setShowDeleteConfirm(false)}>
+                      Cancelar
+                    </button>
                   </div>
                 </div>
               )}
             </div>
+
           </div>
         )}
       </div>

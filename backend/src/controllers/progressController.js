@@ -1,19 +1,57 @@
 import User from "../models/User.js";
 
-// GET /api/progress — obtener progreso completo del usuario
+function updateStreak(user) {
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+  if (!user.lastActivityDate) {
+    user.streak = 1;
+    user.lastActivityDate = today;
+    return;
+  }
+
+  const last = new Date(user.lastActivityDate);
+  const lastDay = new Date(last.getFullYear(), last.getMonth(), last.getDate());
+  const diffDays = Math.round((today - lastDay) / (1000 * 60 * 60 * 24));
+
+  if (diffDays === 0) return;          
+  if (diffDays === 1) user.streak += 1; 
+  else if (diffDays > 4) user.streak = 0; 
+
+  user.lastActivityDate = today;
+}
+
+// GET /api/progress
 export const getProgress = async (req, res) => {
   try {
-    const user = await User.findById(req.user._id).select("totalPoints progress username");
+    const user = await User.findById(req.user._id)
+      .select("totalPoints progress username streak lastActivityDate");
     if (!user) return res.status(404).json({ message: "Usuario no encontrado" });
 
-    res.json(user);
+    if (user.lastActivityDate) {
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const last = new Date(user.lastActivityDate);
+      last.setHours(0, 0, 0, 0);
+      const diffDays = Math.round((today - last) / (1000 * 60 * 60 * 24));
+      if (diffDays > 4 && user.streak > 0) {
+        user.streak = 0;
+        await user.save();
+      }
+    }
+
+    res.json({
+      totalPoints: user.totalPoints,
+      progress: user.progress,
+      username: user.username,
+      streak: user.streak,
+    });
   } catch (error) {
     res.status(500).json({ message: "Error al obtener progreso", error: error.message });
   }
 };
 
-// POST /api/progress/save — guardar resultado de un nivel
-// Body: { world, difficulty, level, stars, pointsEarned }
+// POST /api/progress/save
 export const saveProgress = async (req, res) => {
   try {
     const { world, difficulty, level, stars, pointsEarned } = req.body;
@@ -35,14 +73,12 @@ export const saveProgress = async (req, res) => {
     if (!user) return res.status(404).json({ message: "Usuario no encontrado" });
 
     let worldProgress = user.progress[world].find(w => w.difficulty === difficulty);
-
     if (!worldProgress) {
       user.progress[world].push({ difficulty, levels: [] });
       worldProgress = user.progress[world].find(w => w.difficulty === difficulty);
     }
 
     const existingLevel = worldProgress.levels.find(l => l.level === level);
-
     if (existingLevel) {
       if (stars > existingLevel.stars) {
         const extraPoints = (stars - existingLevel.stars) * 10;
@@ -55,12 +91,14 @@ export const saveProgress = async (req, res) => {
       user.totalPoints += (pointsEarned || stars * 10);
     }
 
-    user.markModified("progress"); 
+    updateStreak(user);
+    user.markModified("progress");
     await user.save();
 
     res.json({
       message: "Progreso guardado",
       totalPoints: user.totalPoints,
+      streak: user.streak,
       progress: user.progress[world],
     });
   } catch (error) {

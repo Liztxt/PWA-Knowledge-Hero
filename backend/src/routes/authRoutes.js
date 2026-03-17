@@ -1,20 +1,20 @@
 import { Router } from "express";
-import { register, login, getMe } from "../controllers/authController.js";
+import { register, login, getMe, updateMe, scheduleDelete, cancelDelete } from "../controllers/authController.js";
 import { protect, authorizeRoles } from "../middleware/auth.js";
 
 const router = Router();
 
-// Rutas públicas
 router.post("/register", register);
 router.post("/login", (req, res, next) => {
   console.log("Ruta login alcanzada:", req.body);
   next();
 }, login);
 
-// Ruta protegida — cualquier usuario autenticado
 router.get("/me", protect, getMe);
+router.put("/me", protect, updateMe);               
+router.delete("/me", protect, scheduleDelete);       
+router.post("/cancel-delete", protect, cancelDelete); 
 
-// Ruta protegida — solo admin
 router.get("/admin-only", protect, authorizeRoles("admin"), (req, res) => {
   res.json({ message: `Hola admin ${req.user.username}, acceso concedido ✓` });
 });

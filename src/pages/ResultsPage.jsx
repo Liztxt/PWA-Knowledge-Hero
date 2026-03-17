@@ -12,15 +12,6 @@ const difficultyNames = {
   avanzado: "Avanzado",
 };
 
-// Mensaje y avatar según desempeño
-function getPerformance(correct, total) {
-  const pct = correct / total;
-  if (pct === 1)   return { msg: "¡Perfecto!", sub: "¡Respondiste todo correcto!", avatar: "🏆" };
-  if (pct >= 0.75) return { msg: "¡Muy bien!", sub: "Casi lo tienes perfectamente", avatar: "⭐" };
-  if (pct >= 0.5)  return { msg: "¡Buen intento!", sub: "Sigue practicando y lo lograrás", avatar: "💪" };
-  return           { msg: "¡Sigue practicando!", sub: "La práctica hace al maestro", avatar: "📚" };
-}
-
 export default function ResultsPage({
   world,
   difficulty,
@@ -30,14 +21,24 @@ export default function ResultsPage({
   incorrect,
   total,
   username,
+  stars = 0,
+  passed = true,
   onRepeat,
   onNextLevel,
   onHome,
-  stars = 0, 
 }) {
   const precision = total > 0 ? Math.round((correct / total) * 100) : 0;
-  const { msg, sub, avatar } = getPerformance(correct, total);
   const isLastLevel = level >= 20;
+
+  function getPerformance() {
+    if (!passed) return { msg: "¡Inténtalo de nuevo!", sub: "Máximo 1 error para pasar el nivel", avatar: "😅" };
+    const pct = correct / total;
+    if (pct === 1)   return { msg: "¡Perfecto!",  sub: "¡Respondiste todo correcto!", avatar: "🏆" };
+    if (pct >= 0.75) return { msg: "¡Muy bien!", sub: "Casi lo tienes perfectamente", avatar: "⭐" };
+    return             { msg: "¡Pasaste!", sub: "Sigue practicando para mejorar", avatar: "💪" };
+  }
+
+  const { msg, sub, avatar } = getPerformance();
 
   return (
     <div className="results-wrapper">
@@ -48,7 +49,7 @@ export default function ResultsPage({
       </div>
 
       <div className="results-card">
-        {/* Avatar y título */}
+
         <div className="results-top">
           <div className="results-avatar">{avatar}</div>
           <div className="results-title-block">
@@ -59,7 +60,6 @@ export default function ResultsPage({
           </div>
         </div>
 
-        {/* Stats */}
         <div className="results-stats">
           <div className="results-stat results-stat--blue">
             <span className="results-stat-num">{incorrect}</span>
@@ -75,25 +75,22 @@ export default function ResultsPage({
           </div>
         </div>
 
-        {/* Puntuación */}
         <div className="results-score-banner">
           <span className="results-score-context">
             {worldNames[world]} - {difficultyNames[difficulty]} · Nivel {level}
           </span>
-          {/* Estrellas ganadas */}
           <div className="results-stars">
             {[1, 2, 3].map((s) => (
               <span key={s} style={{ fontSize: "2rem", color: s <= stars ? "#f5c518" : "#ccc" }}>★</span>
-              ))}
-              </div>
+            ))}
+          </div>
         </div>
 
-        {/* Botones */}
         <div className="results-actions">
           <button className="results-btn results-btn--secondary" onClick={onRepeat}>
             🔄 Repetir nivel
           </button>
-          {!isLastLevel && (
+          {passed && !isLastLevel && (
             <button className="results-btn results-btn--primary" onClick={onNextLevel}>
               Siguiente nivel →
             </button>
@@ -102,6 +99,7 @@ export default function ResultsPage({
             🏠 Ir al inicio
           </button>
         </div>
+
       </div>
     </div>
   );

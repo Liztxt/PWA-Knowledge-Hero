@@ -74,6 +74,11 @@ console.log("Son iguales:", hashedPassword === user.password);
       return res.status(401).json({ message: "Credenciales incorrectas" });
     }
 
+    if (user.deleteScheduledAt && new Date() >= user.deleteScheduledAt) {
+      await User.findByIdAndDelete(user._id);
+      return res.status(401).json({ message: "Tu cuenta fue eliminada por inactividad" });
+    }
+    
     const token = generateToken(user);
 
     return res.status(200).json({
@@ -93,4 +98,68 @@ console.log("Son iguales:", hashedPassword === user.password);
 // GET /api/auth/me
 export const getMe = async (req, res) => {
   return res.status(200).json({ user: req.user });
+};
+// PUT /api/auth/me — actualizar username y avatar
+export const updateMe = async (req, res) => {
+  try {
+    const { username, avatar } = req.body;
+    const user = await User.findById(req.user._id);
+    if (!user) return res.status(404).json({ message: "Usuario no encontrado" });
+
+    if (username && username !== user.username) {
+      const exists = await User.findOne({ username });
+      if (exists) return res.status(400).json({ message: "Ese nombre de usuario ya está en uso" });
+      user.username = username;
+    }
+
+    if (avatar) user.avatar = avatar;
+
+    await user.save();
+
+    return res.json({
+      user: {
+        id: user._id,
+        username: user.username,
+        role: user.role,
+        avatar: user.avatar,
+      }
+    });
+  } catch (error) {
+    return res.status(500).json({ message: "Error al actualizar perfil", error: error.message });
+  }
+};
+
+// DELETE /api/auth/me — programar eliminación en 20 días
+export const scheduleDelete = async (req, res) => {
+  try {
+    const user = await User.findById(req.user._id);
+    if (!user) return res.status(404).json({ message: "Usuario no encontrado" });
+
+    const deleteDate = new Date();
+    deleteDate.setDate(deleteDate.getDate() + 20);
+    user.deleteScheduledAt = deleteDate;
+    await user.save();
+
+    return res.json({
+      message: "Cuenta programada para eliminación",
+      deleteScheduledAt: user.deleteScheduledAt,
+    });
+  } catch (error) {
+    return res.status(500).json({ message: "Error al programar eliminación", error: error.message });
+  }
+};
+
+// POST /api/auth/cancel-delete — cancelar eliminación
+export const cancelDelete = async (req, res) => {
+  try {
+    const user = await User.findById(req.user._id);
+    if (!user) return res.status(404).json({ message: "Usuario no encontrado" });
+
+    user.deleteScheduledAt = null;
+    await user.save();
+
+    return res.json({ message: "Eliminación cancelada correctamente" });
+  } catch (error) {
+    return res.status(500).json({ message: "Error al cancelar eliminación", error: error.message });
+  }
 };
