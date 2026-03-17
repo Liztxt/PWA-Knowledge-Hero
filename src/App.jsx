@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { AuthProvider, useAuth } from "./context/AuthContext";
+import { useAuth } from "./context/AuthContext";
+import { useProgress } from "./context/ProgressContext";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import Dashboard from "./pages/Dashboard";
@@ -12,6 +13,7 @@ import ResultsPage from "./pages/ResultsPage";
 
 function AppRouter() {
   const { user } = useAuth();
+  const { saveProgress } = useProgress();
 
   const [page, setPage] = useState("login");
   const [appPage, setAppPage] = useState("home");
@@ -19,9 +21,7 @@ function AppRouter() {
   const [selectedWorld, setSelectedWorld] = useState(null);
   const [selectedDifficulty, setSelectedDifficulty] = useState(null);
   const [selectedLevel, setSelectedLevel] = useState(null);
-
   const [quizResult, setQuizResult] = useState(null);
-  
 
   if (user) {
     if (user.role === "admin") return <AdminPanel />;
@@ -56,6 +56,7 @@ function AppRouter() {
         />
       );
     }
+
     if (appPage === "quiz") {
       return (
         <QuizPage
@@ -63,9 +64,21 @@ function AppRouter() {
           difficulty={selectedDifficulty}
           level={selectedLevel}
           onBack={() => setAppPage("levels")}
-          onFinish={(result) => {
-            console.log("onFinish llamado", result); 
-            setQuizResult(result);
+          onFinish={async (result) => {
+            // Calcular estrellas según desempeño
+            const pct = result.correct / result.total;
+            const stars = pct === 1 ? 3 : pct >= 0.75 ? 2 : pct >= 0.5 ? 1 : 0;
+
+            // Guardar en MongoDB
+            await saveProgress({
+              world: selectedWorld,
+              difficulty: selectedDifficulty,
+              level: selectedLevel,
+              stars,
+              pointsEarned: result.points,
+            });
+
+            setQuizResult({ ...result, stars });
             setAppPage("results");
           }}
         />
@@ -73,32 +86,32 @@ function AppRouter() {
     }
 
     if (appPage === "results") {
-          return (
-            <ResultsPage
-              world={selectedWorld}
-              difficulty={selectedDifficulty}
-              level={selectedLevel}
-              username={user.username}
-              points={quizResult?.points ?? 0}
-              correct={quizResult?.correct ?? 0}
-              incorrect={quizResult?.incorrect ?? 0}
-              total={quizResult?.total ?? 0}
-              onRepeat={() => setAppPage("quiz")}
-              onNextLevel={() => {
-                setSelectedLevel((prev) => prev + 1);
-                setAppPage("quiz");
-              }}
-              onHome={() => {
-                setSelectedWorld(null);
-                setSelectedDifficulty(null);
-                setSelectedLevel(null);
-                setQuizResult(null);
-                setAppPage("home");
-              }}
-            />
-          );
-        }
-    
+      return (
+        <ResultsPage
+          world={selectedWorld}
+          difficulty={selectedDifficulty}
+          level={selectedLevel}
+          username={user.username}
+          points={quizResult?.points ?? 0}
+          correct={quizResult?.correct ?? 0}
+          incorrect={quizResult?.incorrect ?? 0}
+          total={quizResult?.total ?? 0}
+          stars={quizResult?.stars ?? 0}
+          onRepeat={() => setAppPage("quiz")}
+          onNextLevel={() => {
+            setSelectedLevel((prev) => prev + 1);
+            setAppPage("quiz");
+          }}
+          onHome={() => {
+            setSelectedWorld(null);
+            setSelectedDifficulty(null);
+            setSelectedLevel(null);
+            setQuizResult(null);
+            setAppPage("home");
+          }}
+        />
+      );
+    }
 
     return (
       <HomePage
@@ -119,9 +132,5 @@ function AppRouter() {
 }
 
 export default function App() {
-  return (
-    <AuthProvider>
-      <AppRouter />
-    </AuthProvider>
-  );
+  return <AppRouter />;
 }

@@ -1,0 +1,3122 @@
+[
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 1,
+    "question": "¿Cuál de estas palabras está bien escrita?",
+    "options": [
+      "Ombre",
+      "Hombre",
+      "Omre",
+      "Ombré"
+    ],
+    "answer": "Hombre"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 1,
+    "question": "¿Cuál es el sinónimo de 'feliz'?",
+    "options": [
+      "Triste",
+      "Enojado",
+      "Contento",
+      "Cansado"
+    ],
+    "answer": "Contento"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 1,
+    "question": "¿Cuántas letras tiene el abecedario español?",
+    "options": [
+      "26",
+      "27",
+      "28",
+      "29"
+    ],
+    "answer": "27"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 1,
+    "question": "¿Cuál de estas es una vocal?",
+    "options": [
+      "B",
+      "C",
+      "E",
+      "F"
+    ],
+    "answer": "E"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 2,
+    "question": "¿Cuál es el sinónimo de 'grande'?",
+    "options": [
+      "Pequeño",
+      "Enorme",
+      "Delgado",
+      "Corto"
+    ],
+    "answer": "Enorme"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 2,
+    "question": "¿Cómo se escribe correctamente?",
+    "options": [
+      "Habia",
+      "Había",
+      "Haví a",
+      "Avía"
+    ],
+    "answer": "Había"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 2,
+    "question": "¿Cuál es el antónimo de 'rápido'?",
+    "options": [
+      "Veloz",
+      "Ágil",
+      "Lento",
+      "Fuerte"
+    ],
+    "answer": "Lento"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 2,
+    "question": "¿Cuál de estas palabras es un sustantivo?",
+    "options": [
+      "Correr",
+      "Bonito",
+      "Casa",
+      "Rápido"
+    ],
+    "answer": "Casa"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 3,
+    "question": "¿Cuál es el sinónimo de 'comenzar'?",
+    "options": [
+      "Terminar",
+      "Iniciar",
+      "Pausar",
+      "Detener"
+    ],
+    "answer": "Iniciar"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 3,
+    "question": "¿Cuál palabra lleva tilde?",
+    "options": [
+      "Zapato",
+      "Camino",
+      "Árbol",
+      "Papel"
+    ],
+    "answer": "Árbol"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 3,
+    "question": "¿Cuál es el plural de 'lápiz'?",
+    "options": [
+      "Lápizes",
+      "Lápizs",
+      "Lápices",
+      "Lapizes"
+    ],
+    "answer": "Lápices"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 3,
+    "question": "¿Cuál de estas es una consonante?",
+    "options": [
+      "A",
+      "E",
+      "I",
+      "M"
+    ],
+    "answer": "M"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 4,
+    "question": "¿Cuál es el sinónimo de 'bonito'?",
+    "options": [
+      "Feo",
+      "Oscuro",
+      "Hermoso",
+      "Viejo"
+    ],
+    "answer": "Hermoso"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 4,
+    "question": "¿Cómo se escribe correctamente?",
+    "options": [
+      "Vever",
+      "Beber",
+      "Bever",
+      "Veber"
+    ],
+    "answer": "Beber"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 4,
+    "question": "¿Cuál es el femenino de 'niño'?",
+    "options": [
+      "Niñe",
+      "Niña",
+      "Niños",
+      "Niñas"
+    ],
+    "answer": "Niña"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 4,
+    "question": "¿Cuál de estas palabras es un verbo?",
+    "options": [
+      "Mesa",
+      "Azul",
+      "Correr",
+      "Alto"
+    ],
+    "answer": "Correr"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 5,
+    "question": "¿Cuál es el sinónimo de 'hablar'?",
+    "options": [
+      "Callar",
+      "Escuchar",
+      "Conversar",
+      "Dormir"
+    ],
+    "answer": "Conversar"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 5,
+    "question": "¿Cuál palabra está mal escrita?",
+    "options": [
+      "Caballo",
+      "Havlar",
+      "Bonito",
+      "Camino"
+    ],
+    "answer": "Havlar"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 5,
+    "question": "¿Cuál es el plural de 'vez'?",
+    "options": [
+      "Veces",
+      "Vezs",
+      "Vezes",
+      "Veze"
+    ],
+    "answer": "Veces"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 5,
+    "question": "¿Cuál de estas palabras es un adjetivo?",
+    "options": [
+      "Saltar",
+      "Rojo",
+      "Libro",
+      "Correr"
+    ],
+    "answer": "Rojo"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 6,
+    "question": "¿Cuál es el sinónimo de 'mirar'?",
+    "options": [
+      "Cerrar",
+      "Observar",
+      "Tocar",
+      "Oír"
+    ],
+    "answer": "Observar"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 6,
+    "question": "¿Cómo se escribe correctamente?",
+    "options": [
+      "Hiba",
+      "Iba",
+      "Yba",
+      "Yva"
+    ],
+    "answer": "Iba"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 6,
+    "question": "¿Qué signo va al inicio de una pregunta en español?",
+    "options": [
+      "!",
+      "¿",
+      "¡",
+      "?"
+    ],
+    "answer": "¿"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 6,
+    "question": "¿Cuál es el antónimo de 'día'?",
+    "options": [
+      "Sol",
+      "Tarde",
+      "Noche",
+      "Mañana"
+    ],
+    "answer": "Noche"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 7,
+    "question": "¿Cuál es el sinónimo de 'enojado'?",
+    "options": [
+      "Alegre",
+      "Furioso",
+      "Tranquilo",
+      "Feliz"
+    ],
+    "answer": "Furioso"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 7,
+    "question": "¿Cuál palabra lleva tilde?",
+    "options": [
+      "Bicicleta",
+      "Camion",
+      "Canción",
+      "Zapato"
+    ],
+    "answer": "Canción"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 7,
+    "question": "¿Cuál es el plural de 'ciudad'?",
+    "options": [
+      "Ciudads",
+      "Ciudades",
+      "Ciudadez",
+      "Ciudád"
+    ],
+    "answer": "Ciudades"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 7,
+    "question": "¿Cuál de estas oraciones está bien puntuada?",
+    "options": [
+      "Hola como estas",
+      "¡Hola, cómo estás?",
+      "hola, Como estás",
+      "Hola como, estás"
+    ],
+    "answer": "¡Hola, cómo estás?"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 8,
+    "question": "¿Cuál es el sinónimo de 'rápido'?",
+    "options": [
+      "Lento",
+      "Veloz",
+      "Pesado",
+      "Suave"
+    ],
+    "answer": "Veloz"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 8,
+    "question": "¿Cómo se escribe correctamente?",
+    "options": [
+      "Allaver",
+      "Hallar",
+      "Ayar",
+      "Hallar"
+    ],
+    "answer": "Hallar"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 8,
+    "question": "¿Cuál es el diminutivo de 'perro'?",
+    "options": [
+      "Perrón",
+      "Perrazo",
+      "Perrito",
+      "Perrote"
+    ],
+    "answer": "Perrito"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 8,
+    "question": "¿Cuántas sílabas tiene la palabra 'mariposa'?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": "4"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 9,
+    "question": "¿Cuál es el sinónimo de 'triste'?",
+    "options": [
+      "Alegre",
+      "Melancólico",
+      "Enojado",
+      "Cansado"
+    ],
+    "answer": "Melancólico"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 9,
+    "question": "¿Cuál palabra lleva tilde?",
+    "options": [
+      "Examen",
+      "Jardín",
+      "Camino",
+      "Libro"
+    ],
+    "answer": "Jardín"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 9,
+    "question": "¿Cuál es el aumentativo de 'casa'?",
+    "options": [
+      "Casita",
+      "Casona",
+      "Casilla",
+      "Casuca"
+    ],
+    "answer": "Casona"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 9,
+    "question": "¿Cuál oración usa correctamente la coma?",
+    "options": [
+      "Juan come, y bebe",
+      "Juan, come y bebe",
+      "Juan come y, bebe",
+      "Juan, come, y, bebe"
+    ],
+    "answer": "Juan, come y bebe"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 10,
+    "question": "¿Cuál es el sinónimo de 'caminar'?",
+    "options": [
+      "Correr",
+      "Andar",
+      "Saltar",
+      "Nadar"
+    ],
+    "answer": "Andar"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 10,
+    "question": "¿Cómo se escribe correctamente?",
+    "options": [
+      "Huevo",
+      "Uevo",
+      "Guevo",
+      "Wevo"
+    ],
+    "answer": "Huevo"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 10,
+    "question": "¿Cuál es el antónimo de 'frío'?",
+    "options": [
+      "Tibio",
+      "Fresco",
+      "Caliente",
+      "Helado"
+    ],
+    "answer": "Caliente"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 10,
+    "question": "¿Cuál palabra es esdrújula?",
+    "options": [
+      "Camino",
+      "Canción",
+      "Médico",
+      "Papel"
+    ],
+    "answer": "Médico"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 11,
+    "question": "¿Cuál es el sinónimo de 'auxilio'?",
+    "options": [
+      "Problema",
+      "Ayuda",
+      "Daño",
+      "Error"
+    ],
+    "answer": "Ayuda"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 11,
+    "question": "¿Cuál palabra está bien escrita?",
+    "options": [
+      "Excepción",
+      "Exsepción",
+      "Exceción",
+      "Exepción"
+    ],
+    "answer": "Excepción"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 11,
+    "question": "¿Cuál es el plural de 'menú'?",
+    "options": [
+      "Menus",
+      "Menús",
+      "Menúes",
+      "Menúse"
+    ],
+    "answer": "Menús"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 11,
+    "question": "¿Cuál oración tiene sujeto y predicado correctos?",
+    "options": [
+      "Corre el niño rápido",
+      "El niño corre rápido",
+      "Rápido el niño corre",
+      "Niño el corre rápido"
+    ],
+    "answer": "El niño corre rápido"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 12,
+    "question": "¿Cuál es el sinónimo de 'valiente'?",
+    "options": [
+      "Cobarde",
+      "Miedoso",
+      "Audaz",
+      "Tímido"
+    ],
+    "answer": "Audaz"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 12,
+    "question": "¿Cuál palabra lleva tilde?",
+    "options": [
+      "Reloj",
+      "Pared",
+      "Difícil",
+      "Camion"
+    ],
+    "answer": "Difícil"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 12,
+    "question": "¿Cuál es la sílaba tónica de 'teléfono'?",
+    "options": [
+      "te",
+      "lé",
+      "fo",
+      "no"
+    ],
+    "answer": "lé"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 12,
+    "question": "¿Cuál de estas palabras es un adverbio?",
+    "options": [
+      "Rápido (adj)",
+      "Casa",
+      "Rápidamente",
+      "Correr"
+    ],
+    "answer": "Rápidamente"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 13,
+    "question": "¿Cuál es el sinónimo de 'inteligente'?",
+    "options": [
+      "Tonto",
+      "Astuto",
+      "Lento",
+      "Distraído"
+    ],
+    "answer": "Astuto"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 13,
+    "question": "¿Cómo se escribe correctamente?",
+    "options": [
+      "Satisfacción",
+      "Satisfación",
+      "Satifacción",
+      "Satisfacsión"
+    ],
+    "answer": "Satisfacción"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 13,
+    "question": "¿Cuál es el antónimo de 'abrir'?",
+    "options": [
+      "Girar",
+      "Empujar",
+      "Cerrar",
+      "Jalar"
+    ],
+    "answer": "Cerrar"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 13,
+    "question": "¿Cuál oración está en tiempo pasado?",
+    "options": [
+      "Comeré mañana",
+      "Como ahora",
+      "Comí ayer",
+      "Estoy comiendo"
+    ],
+    "answer": "Comí ayer"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 14,
+    "question": "¿Cuál es el sinónimo de 'construir'?",
+    "options": [
+      "Destruir",
+      "Edificar",
+      "Pintar",
+      "Romper"
+    ],
+    "answer": "Edificar"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 14,
+    "question": "¿Cuál palabra lleva tilde?",
+    "options": [
+      "Imagen",
+      "Volumen",
+      "Resumen",
+      "Jóven"
+    ],
+    "answer": "Jóven"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 14,
+    "question": "¿Cuál es el gerundio de 'correr'?",
+    "options": [
+      "Corrido",
+      "Corre",
+      "Corriendo",
+      "Correrá"
+    ],
+    "answer": "Corriendo"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 14,
+    "question": "¿Qué tipo de palabra es 'pero'?",
+    "options": [
+      "Sustantivo",
+      "Verbo",
+      "Conjunción",
+      "Adjetivo"
+    ],
+    "answer": "Conjunción"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 15,
+    "question": "¿Cuál es el sinónimo de 'oscuro'?",
+    "options": [
+      "Claro",
+      "Tenebroso",
+      "Brillante",
+      "Luminoso"
+    ],
+    "answer": "Tenebroso"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 15,
+    "question": "¿Cómo se escribe correctamente?",
+    "options": [
+      "Hierba",
+      "Yerba",
+      "Hierva",
+      "Herba"
+    ],
+    "answer": "Hierba"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 15,
+    "question": "¿Cuál es el participio de 'escribir'?",
+    "options": [
+      "Escribiendo",
+      "Escribirá",
+      "Escrito",
+      "Escribe"
+    ],
+    "answer": "Escrito"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 15,
+    "question": "¿Cuál oración está en futuro?",
+    "options": [
+      "Corrí ayer",
+      "Corro ahora",
+      "Correré mañana",
+      "Estoy corriendo"
+    ],
+    "answer": "Correré mañana"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 16,
+    "question": "¿Cuál es el sinónimo de 'antiguo'?",
+    "options": [
+      "Nuevo",
+      "Moderno",
+      "Viejo",
+      "Reciente"
+    ],
+    "answer": "Viejo"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 16,
+    "question": "¿Cuál palabra está bien escrita?",
+    "options": [
+      "Abertura",
+      "Havertura",
+      "AVertura",
+      "Habertura"
+    ],
+    "answer": "Abertura"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 16,
+    "question": "¿Cuál es el pronombre personal de primera persona plural?",
+    "options": [
+      "Yo",
+      "Tú",
+      "Nosotros",
+      "Ellos"
+    ],
+    "answer": "Nosotros"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 16,
+    "question": "¿Cuál de estas palabras es aguda?",
+    "options": [
+      "Árbol",
+      "Médico",
+      "Camino",
+      "Café"
+    ],
+    "answer": "Café"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 17,
+    "question": "¿Cuál es el sinónimo de 'delgado'?",
+    "options": [
+      "Gordo",
+      "Flaco",
+      "Alto",
+      "Fuerte"
+    ],
+    "answer": "Flaco"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 17,
+    "question": "¿Cuál palabra lleva tilde?",
+    "options": [
+      "Examen",
+      "Carácter",
+      "Camino",
+      "Papel"
+    ],
+    "answer": "Carácter"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 17,
+    "question": "¿Cuál es el infinitivo de 'comiendo'?",
+    "options": [
+      "Comido",
+      "Comer",
+      "Come",
+      "Comerá"
+    ],
+    "answer": "Comer"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 17,
+    "question": "¿Cuál oración usa correctamente el punto?",
+    "options": [
+      "El sol brilla. mañana lloverá",
+      "El sol brilla. Mañana lloverá.",
+      "El sol brilla mañana. lloverá",
+      "El sol brilla, Mañana lloverá"
+    ],
+    "answer": "El sol brilla. Mañana lloverá."
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 18,
+    "question": "¿Cuál es el sinónimo de 'preguntar'?",
+    "options": [
+      "Responder",
+      "Callar",
+      "Interrogar",
+      "Escuchar"
+    ],
+    "answer": "Interrogar"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 18,
+    "question": "¿Cómo se escribe correctamente?",
+    "options": [
+      "Exuberante",
+      "Exhuberante",
+      "Esuberante",
+      "Eshuberante"
+    ],
+    "answer": "Exuberante"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 18,
+    "question": "¿Cuál es el antónimo de 'recordar'?",
+    "options": [
+      "Pensar",
+      "Olvidar",
+      "Imaginar",
+      "Soñar"
+    ],
+    "answer": "Olvidar"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 18,
+    "question": "¿Cuál de estas es una oración compuesta?",
+    "options": [
+      "El gato duerme",
+      "María come",
+      "Juan canta y María baila",
+      "Llueve"
+    ],
+    "answer": "Juan canta y María baila"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 19,
+    "question": "¿Cuál es el sinónimo de 'terminar'?",
+    "options": [
+      "Empezar",
+      "Continuar",
+      "Concluir",
+      "Pausar"
+    ],
+    "answer": "Concluir"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 19,
+    "question": "¿Cuál palabra está bien escrita?",
+    "options": [
+      "Transcurrir",
+      "Trancurrir",
+      "Transcurrír",
+      "Tranzcurrir"
+    ],
+    "answer": "Transcurrir"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 19,
+    "question": "¿Cuál es la forma correcta del subjuntivo de 'ser'?",
+    "options": [
+      "Soy",
+      "Fui",
+      "Sea",
+      "Seré"
+    ],
+    "answer": "Sea"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 19,
+    "question": "¿Cuál de estas palabras es sobreesdrújula?",
+    "options": [
+      "Médico",
+      "Canción",
+      "Dígamelo",
+      "Camino"
+    ],
+    "answer": "Dígamelo"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 20,
+    "question": "¿Cuál es el sinónimo de 'efímero'?",
+    "options": [
+      "Eterno",
+      "Pasajero",
+      "Largo",
+      "Profundo"
+    ],
+    "answer": "Pasajero"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 20,
+    "question": "¿Cuál palabra lleva tilde diacrítica?",
+    "options": [
+      "El (artículo)",
+      "Sí (afirmación)",
+      "Tu (posesivo)",
+      "De (preposición)"
+    ],
+    "answer": "Sí (afirmación)"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 20,
+    "question": "¿Cuál es el antónimo de 'incluir'?",
+    "options": [
+      "Agregar",
+      "Sumar",
+      "Excluir",
+      "Mezclar"
+    ],
+    "answer": "Excluir"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "primaria",
+    "level": 20,
+    "question": "¿Qué figura retórica es 'el sol sonríe'?",
+    "options": [
+      "Metáfora",
+      "Personificación",
+      "Hipérbole",
+      "Comparación"
+    ],
+    "answer": "Personificación"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 1,
+    "question": "¿Cuál es el sinónimo de 'perspicaz'?",
+    "options": [
+      "Torpe",
+      "Agudo",
+      "Lento",
+      "Confuso"
+    ],
+    "answer": "Agudo"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 1,
+    "question": "¿Cuál palabra está bien escrita?",
+    "options": [
+      "Circumscribir",
+      "Circunscribir",
+      "Circunscrivir",
+      "Circumscrivir"
+    ],
+    "answer": "Circunscribir"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 1,
+    "question": "¿Qué tipo de oración es 'Cierra la puerta'?",
+    "options": [
+      "Declarativa",
+      "Imperativa",
+      "Interrogativa",
+      "Exclamativa"
+    ],
+    "answer": "Imperativa"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 1,
+    "question": "¿Cuál es el antónimo de 'opulento'?",
+    "options": [
+      "Rico",
+      "Lujoso",
+      "Pobre",
+      "Abundante"
+    ],
+    "answer": "Pobre"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 2,
+    "question": "¿Cuál es el sinónimo de 'vociferar'?",
+    "options": [
+      "Susurrar",
+      "Gritar",
+      "Callar",
+      "Murmurar"
+    ],
+    "answer": "Gritar"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 2,
+    "question": "¿Cuál oración usa el punto y coma correctamente?",
+    "options": [
+      "Estudié mucho; sin embargo, reprobé",
+      "Estudié mucho, sin embargo; reprobé",
+      "Estudié mucho; Sin embargo reprobé",
+      "Estudié mucho sin embargo; reprobé"
+    ],
+    "answer": "Estudié mucho; sin embargo, reprobé"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 2,
+    "question": "¿Cuál es el modo verbal de 'habría comido'?",
+    "options": [
+      "Indicativo",
+      "Subjuntivo",
+      "Condicional",
+      "Imperativo"
+    ],
+    "answer": "Condicional"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 2,
+    "question": "¿Cuál es el sinónimo de 'efímero'?",
+    "options": [
+      "Eterno",
+      "Permanente",
+      "Fugaz",
+      "Sólido"
+    ],
+    "answer": "Fugaz"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 3,
+    "question": "¿Cuál es el sinónimo de 'lóbrego'?",
+    "options": [
+      "Brillante",
+      "Alegre",
+      "Tenebroso",
+      "Colorido"
+    ],
+    "answer": "Tenebroso"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 3,
+    "question": "¿Cuál palabra está bien escrita?",
+    "options": [
+      "Incongruente",
+      "Incongurente",
+      "Incongruiente",
+      "Inconguriente"
+    ],
+    "answer": "Incongruente"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 3,
+    "question": "¿Cuál es la función del complemento directo?",
+    "options": [
+      "Modifica al verbo indicando lugar",
+      "Recibe directamente la acción del verbo",
+      "Indica a quién beneficia la acción",
+      "Expresa la causa de la acción"
+    ],
+    "answer": "Recibe directamente la acción del verbo"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 3,
+    "question": "¿Qué figura literaria es 'tan alto como una montaña'?",
+    "options": [
+      "Metáfora",
+      "Hipérbole",
+      "Símil",
+      "Personificación"
+    ],
+    "answer": "Símil"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 4,
+    "question": "¿Cuál es el sinónimo de 'acérrimo'?",
+    "options": [
+      "Tibio",
+      "Moderado",
+      "Férreo",
+      "Suave"
+    ],
+    "answer": "Férreo"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 4,
+    "question": "¿Cuál oración usa el gerundio correctamente?",
+    "options": [
+      "Llegando mañana, te aviso",
+      "Comiendo, se atragantó",
+      "Naciendo ayer, ya camina",
+      "Vendiendo la casa, mañana la compras"
+    ],
+    "answer": "Comiendo, se atragantó"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 4,
+    "question": "¿Cuál es el antónimo de 'prolijo'?",
+    "options": [
+      "Detallado",
+      "Extenso",
+      "Escueto",
+      "Cuidadoso"
+    ],
+    "answer": "Escueto"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 4,
+    "question": "¿Cuál es el tiempo verbal de 'hubiera cantado'?",
+    "options": [
+      "Pretérito perfecto",
+      "Pretérito pluscuamperfecto de subjuntivo",
+      "Futuro compuesto",
+      "Condicional compuesto"
+    ],
+    "answer": "Pretérito pluscuamperfecto de subjuntivo"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 5,
+    "question": "¿Cuál es el sinónimo de 'parsimonia'?",
+    "options": [
+      "Prisa",
+      "Calma",
+      "Nerviosismo",
+      "Energía"
+    ],
+    "answer": "Calma"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 5,
+    "question": "¿Cuál palabra está bien escrita?",
+    "options": [
+      "Adyacente",
+      "Adyaciente",
+      "Adiacente",
+      "Adjacente"
+    ],
+    "answer": "Adyacente"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 5,
+    "question": "¿Qué es un oxímoron?",
+    "options": [
+      "Repetición de sonidos",
+      "Unión de ideas contradictorias",
+      "Exageración retórica",
+      "Comparación directa"
+    ],
+    "answer": "Unión de ideas contradictorias"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 5,
+    "question": "¿Cuál es el complemento indirecto en 'Le di el libro a María'?",
+    "options": [
+      "el libro",
+      "di",
+      "a María",
+      "Le"
+    ],
+    "answer": "a María"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 6,
+    "question": "¿Cuál es el sinónimo de 'ubicuo'?",
+    "options": [
+      "Raro",
+      "Omnipresente",
+      "Invisible",
+      "Escaso"
+    ],
+    "answer": "Omnipresente"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 6,
+    "question": "¿Cuál oración usa las comillas correctamente?",
+    "options": [
+      "El llamado \"héroe\" huyó.",
+      "El llamado 'héroe huyó'.",
+      "El llamado héroe \"huyó\"",
+      "El \"llamado héroe huyó\""
+    ],
+    "answer": "El llamado \"héroe\" huyó."
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 6,
+    "question": "¿Cuál es el antónimo de 'magnánimo'?",
+    "options": [
+      "Generoso",
+      "Noble",
+      "Mezquino",
+      "Bondadoso"
+    ],
+    "answer": "Mezquino"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 6,
+    "question": "¿Qué tipo de complemento es 'en Madrid' en 'Vivo en Madrid'?",
+    "options": [
+      "Complemento directo",
+      "Complemento indirecto",
+      "Complemento circunstancial de lugar",
+      "Atributo"
+    ],
+    "answer": "Complemento circunstancial de lugar"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 7,
+    "question": "¿Cuál es el sinónimo de 'contumaz'?",
+    "options": [
+      "Dócil",
+      "Obediente",
+      "Tenaz",
+      "Amable"
+    ],
+    "answer": "Tenaz"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 7,
+    "question": "¿Cuál palabra está bien escrita?",
+    "options": [
+      "Bienvenido",
+      "Bien venido",
+      "Bienvienido",
+      "Bienbenido"
+    ],
+    "answer": "Bienvenido"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 7,
+    "question": "¿Qué es la anáfora?",
+    "options": [
+      "Figura que exagera la realidad",
+      "Repetición de palabras al inicio de versos o frases",
+      "Unión de palabras contradictorias",
+      "Comparación sin 'como'"
+    ],
+    "answer": "Repetición de palabras al inicio de versos o frases"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 7,
+    "question": "¿Cuál es el tiempo verbal de 'habrá llegado'?",
+    "options": [
+      "Futuro simple",
+      "Futuro compuesto",
+      "Condicional simple",
+      "Pretérito perfecto"
+    ],
+    "answer": "Futuro compuesto"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 8,
+    "question": "¿Cuál es el sinónimo de 'pueril'?",
+    "options": [
+      "Maduro",
+      "Infantil",
+      "Serio",
+      "Adulto"
+    ],
+    "answer": "Infantil"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 8,
+    "question": "¿Cuál oración usa el punto y coma incorrectamente?",
+    "options": [
+      "Llegó tarde; sin embargo, terminó primero",
+      "Compré pan; leche; y huevos",
+      "Ella estudia; él trabaja",
+      "Hace frío; cierra la ventana"
+    ],
+    "answer": "Compré pan; leche; y huevos"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 8,
+    "question": "¿Cuál es el antónimo de 'tácito'?",
+    "options": [
+      "Silencioso",
+      "Implícito",
+      "Explícito",
+      "Oculto"
+    ],
+    "answer": "Explícito"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 8,
+    "question": "¿Cuál es la voz pasiva de 'El niño rompió el vaso'?",
+    "options": [
+      "El vaso fue roto por el niño",
+      "El niño fue roto por el vaso",
+      "El vaso rompió al niño",
+      "Fue roto el niño por el vaso"
+    ],
+    "answer": "El vaso fue roto por el niño"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 9,
+    "question": "¿Cuál es el sinónimo de 'escrutar'?",
+    "options": [
+      "Ignorar",
+      "Examinar",
+      "Esconder",
+      "Olvidar"
+    ],
+    "answer": "Examinar"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 9,
+    "question": "¿Cuál palabra está bien escrita?",
+    "options": [
+      "Subyacer",
+      "Subiacer",
+      "Subiyacer",
+      "Subyaser"
+    ],
+    "answer": "Subyacer"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 9,
+    "question": "¿Qué es la sinécdoque?",
+    "options": [
+      "Nombrar la parte por el todo o viceversa",
+      "Comparar dos elementos",
+      "Exagerar la realidad",
+      "Repetir palabras al final"
+    ],
+    "answer": "Nombrar la parte por el todo o viceversa"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 9,
+    "question": "¿Cuál es el sujeto tácito en 'Comemos en casa'?",
+    "options": [
+      "casa",
+      "en casa",
+      "Comemos",
+      "Nosotros"
+    ],
+    "answer": "Nosotros"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 10,
+    "question": "¿Cuál es el sinónimo de 'lacónico'?",
+    "options": [
+      "Extenso",
+      "Verboso",
+      "Conciso",
+      "Detallado"
+    ],
+    "answer": "Conciso"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 10,
+    "question": "¿Cuál oración usa la tilde diacrítica correctamente?",
+    "options": [
+      "Él libro es mío",
+      "El llegó tarde",
+      "Él llegó tarde",
+      "El y ella llegaron"
+    ],
+    "answer": "Él llegó tarde"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 10,
+    "question": "¿Cuál es el antónimo de 'diáfano'?",
+    "options": [
+      "Claro",
+      "Transparente",
+      "Opaco",
+      "Luminoso"
+    ],
+    "answer": "Opaco"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 10,
+    "question": "¿Qué tipo de oración subordinada es 'que llegues tarde' en 'No quiero que llegues tarde'?",
+    "options": [
+      "Sustantiva",
+      "Adjetiva",
+      "Adverbial",
+      "Coordinada"
+    ],
+    "answer": "Sustantiva"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 11,
+    "question": "¿Cuál es el sinónimo de 'mendaz'?",
+    "options": [
+      "Honesto",
+      "Veraz",
+      "Mentiroso",
+      "Sincero"
+    ],
+    "answer": "Mentiroso"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 11,
+    "question": "¿Cuál palabra está bien escrita?",
+    "options": [
+      "Prerrogativa",
+      "Prerogativa",
+      "Prerrogàtiva",
+      "Prerogàtiva"
+    ],
+    "answer": "Prerrogativa"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 11,
+    "question": "¿Qué es el hipérbaton?",
+    "options": [
+      "Exageración de la realidad",
+      "Alteración del orden lógico de las palabras",
+      "Repetición de ideas",
+      "Comparación directa"
+    ],
+    "answer": "Alteración del orden lógico de las palabras"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 11,
+    "question": "¿Cuál es el modo de 'Si tuviera dinero, viajaría'?",
+    "options": [
+      "Indicativo en ambas",
+      "Subjuntivo y condicional",
+      "Imperativo y subjuntivo",
+      "Indicativo y condicional"
+    ],
+    "answer": "Subjuntivo y condicional"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 12,
+    "question": "¿Cuál es el sinónimo de 'infausto'?",
+    "options": [
+      "Afortunado",
+      "Dichoso",
+      "Desgraciado",
+      "Feliz"
+    ],
+    "answer": "Desgraciado"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 12,
+    "question": "¿Cuál oración usa el guion correctamente?",
+    "options": [
+      "El siglo XX-I fue convulso",
+      "El siglo XXI fue convulso",
+      "Fue un año - muy difícil",
+      "Fue un año—muy difícil"
+    ],
+    "answer": "El siglo XXI fue convulso"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 12,
+    "question": "¿Cuál es el antónimo de 'prolífico'?",
+    "options": [
+      "Productivo",
+      "Fértil",
+      "Abundante",
+      "Estéril"
+    ],
+    "answer": "Estéril"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 12,
+    "question": "¿Cuál es la diferencia entre 'haber' y 'a ver'?",
+    "options": [
+      "Son lo mismo",
+      "'Haber' es verbo auxiliar; 'a ver' es preposición + infinitivo",
+      "'A ver' es verbo; 'haber' es preposición",
+      "Solo difieren en pronunciación"
+    ],
+    "answer": "'Haber' es verbo auxiliar; 'a ver' es preposición + infinitivo"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 13,
+    "question": "¿Cuál es el sinónimo de 'obnubilar'?",
+    "options": [
+      "Aclarar",
+      "Iluminar",
+      "Ofuscar",
+      "Mostrar"
+    ],
+    "answer": "Ofuscar"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 13,
+    "question": "¿Cuál palabra está bien escrita?",
+    "options": [
+      "Idiosincrasia",
+      "Ideosincrasia",
+      "Idiocincrasia",
+      "Ideosincrásia"
+    ],
+    "answer": "Idiosincrasia"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 13,
+    "question": "¿Qué es la elipsis gramatical?",
+    "options": [
+      "Repetición de palabras",
+      "Omisión de elementos sobreentendidos",
+      "Exageración de ideas",
+      "Orden invertido"
+    ],
+    "answer": "Omisión de elementos sobreentendidos"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 13,
+    "question": "¿Cuál es el gerundio compuesto de 'leer'?",
+    "options": [
+      "Leyendo",
+      "Leído",
+      "Habiendo leído",
+      "Haber leído"
+    ],
+    "answer": "Habiendo leído"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 14,
+    "question": "¿Cuál es el sinónimo de 'sempiterno'?",
+    "options": [
+      "Temporal",
+      "Pasajero",
+      "Eterno",
+      "Fugaz"
+    ],
+    "answer": "Eterno"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 14,
+    "question": "¿Cuál oración usa el subjuntivo correctamente?",
+    "options": [
+      "Espero que vengas",
+      "Espero que vienes",
+      "Espero que vendrás",
+      "Espero que has venido"
+    ],
+    "answer": "Espero que vengas"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 14,
+    "question": "¿Cuál es el antónimo de 'exiguo'?",
+    "options": [
+      "Escaso",
+      "Mínimo",
+      "Abundante",
+      "Pequeño"
+    ],
+    "answer": "Abundante"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 14,
+    "question": "¿Qué tipo de complemento es 'con alegría' en 'Bailó con alegría'?",
+    "options": [
+      "Complemento directo",
+      "Complemento indirecto",
+      "Complemento circunstancial de modo",
+      "Atributo"
+    ],
+    "answer": "Complemento circunstancial de modo"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 15,
+    "question": "¿Cuál es el sinónimo de 'pérfido'?",
+    "options": [
+      "Leal",
+      "Noble",
+      "Traicionero",
+      "Honrado"
+    ],
+    "answer": "Traicionero"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 15,
+    "question": "¿Cuál palabra está bien escrita?",
+    "options": [
+      "Omnisciente",
+      "Omnisiente",
+      "Omnisente",
+      "Omniscente"
+    ],
+    "answer": "Omnisciente"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 15,
+    "question": "¿Qué es la catáfora?",
+    "options": [
+      "Referencia a algo mencionado antes",
+      "Referencia anticipada a algo que se dirá después",
+      "Repetición al inicio de frases",
+      "Cambio de orden sintáctico"
+    ],
+    "answer": "Referencia anticipada a algo que se dirá después"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 15,
+    "question": "¿Cuál es el tiempo de 'habría cantado'?",
+    "options": [
+      "Condicional simple",
+      "Condicional compuesto",
+      "Futuro compuesto",
+      "Pretérito pluscuamperfecto"
+    ],
+    "answer": "Condicional compuesto"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 16,
+    "question": "¿Cuál es el sinónimo de 'exacerbar'?",
+    "options": [
+      "Calmar",
+      "Aliviar",
+      "Irritar",
+      "Suavizar"
+    ],
+    "answer": "Irritar"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 16,
+    "question": "¿Cuál oración usa el condicional correctamente?",
+    "options": [
+      "Si estudias, aprobarías",
+      "Si estudiaras, aprobarías",
+      "Si estudiarás, aprobarías",
+      "Si estudias, habrías aprobado"
+    ],
+    "answer": "Si estudiaras, aprobarías"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 16,
+    "question": "¿Cuál es el antónimo de 'vetusto'?",
+    "options": [
+      "Antiguo",
+      "Arcaico",
+      "Moderno",
+      "Deteriorado"
+    ],
+    "answer": "Moderno"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 16,
+    "question": "¿Qué es un dequeísmo?",
+    "options": [
+      "Uso correcto de 'que'",
+      "Uso incorrecto de 'de que' donde solo va 'que'",
+      "Omisión de 'que'",
+      "Uso de 'que' relativo"
+    ],
+    "answer": "Uso incorrecto de 'de que' donde solo va 'que'"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 17,
+    "question": "¿Cuál es el sinónimo de 'nimio'?",
+    "options": [
+      "Importante",
+      "Enorme",
+      "Insignificante",
+      "Relevante"
+    ],
+    "answer": "Insignificante"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 17,
+    "question": "¿Cuál palabra está bien escrita?",
+    "options": [
+      "Parafernalia",
+      "Parafrenalia",
+      "Parafenalia",
+      "Paraphernalia"
+    ],
+    "answer": "Parafernalia"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 17,
+    "question": "¿Qué es la metonimia?",
+    "options": [
+      "Comparar elementos similares",
+      "Nombrar algo por una relación de contigüidad",
+      "Personificar objetos",
+      "Exagerar una cualidad"
+    ],
+    "answer": "Nombrar algo por una relación de contigüidad"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 17,
+    "question": "¿Cuál es la diferencia entre 'sino' y 'si no'?",
+    "options": [
+      "Son equivalentes",
+      "'Sino' es conjunción adversativa; 'si no' es condicional + negación",
+      "'Si no' es conjunción; 'sino' es condicional",
+      "Solo difieren en escritura"
+    ],
+    "answer": "'Sino' es conjunción adversativa; 'si no' es condicional + negación"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 18,
+    "question": "¿Cuál es el sinónimo de 'pugnar'?",
+    "options": [
+      "Ceder",
+      "Rendirse",
+      "Luchar",
+      "Evitar"
+    ],
+    "answer": "Luchar"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 18,
+    "question": "¿Cuál oración usa el pluscuamperfecto correctamente?",
+    "options": [
+      "Cuando llegué, ya había comido",
+      "Cuando llegué, ya comió",
+      "Cuando llegué, ya comería",
+      "Cuando llegué, ya ha comido"
+    ],
+    "answer": "Cuando llegué, ya había comido"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 18,
+    "question": "¿Cuál es el antónimo de 'prolijo'?",
+    "options": [
+      "Minucioso",
+      "Cuidadoso",
+      "Extenso",
+      "Descuidado"
+    ],
+    "answer": "Descuidado"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 18,
+    "question": "¿Qué es el asíndeton?",
+    "options": [
+      "Uso excesivo de conjunciones",
+      "Supresión de conjunciones para dar ritmo",
+      "Repetición al final de versos",
+      "Figura de amplificación"
+    ],
+    "answer": "Supresión de conjunciones para dar ritmo"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 19,
+    "question": "¿Cuál es el sinónimo de 'heurístico'?",
+    "options": [
+      "Definitivo",
+      "Exploratorio",
+      "Cerrado",
+      "Rígido"
+    ],
+    "answer": "Exploratorio"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 19,
+    "question": "¿Cuál palabra está bien escrita?",
+    "options": [
+      "Escisión",
+      "Excisión",
+      "Escición",
+      "Excición"
+    ],
+    "answer": "Escisión"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 19,
+    "question": "¿Qué es la perífrasis verbal?",
+    "options": [
+      "Un verbo simple",
+      "Combinación de verbo auxiliar + infinitivo/gerundio/participio",
+      "Un adverbio de modo",
+      "Una oración subordinada"
+    ],
+    "answer": "Combinación de verbo auxiliar + infinitivo/gerundio/participio"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 19,
+    "question": "¿Cuál es la diferencia entre 'porqué', 'porque', 'por qué' y 'por que'?",
+    "options": [
+      "Son intercambiables",
+      "Cada uno tiene uso distinto según función gramatical",
+      "Solo difieren en acento",
+      "Son errores ortográficos distintos"
+    ],
+    "answer": "Cada uno tiene uso distinto según función gramatical"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 20,
+    "question": "¿Cuál es el sinónimo de 'serendipia'?",
+    "options": [
+      "Planificación",
+      "Hallazgo afortunado e inesperado",
+      "Error grave",
+      "Búsqueda exhaustiva"
+    ],
+    "answer": "Hallazgo afortunado e inesperado"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 20,
+    "question": "¿Cuál oración usa el subjuntivo en pasado correctamente?",
+    "options": [
+      "Dudé que viniera",
+      "Dudé que vendrá",
+      "Dudé que viene",
+      "Dudé que ha venido"
+    ],
+    "answer": "Dudé que viniera"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 20,
+    "question": "¿Cuál es el antónimo de 'escrupuloso'?",
+    "options": [
+      "Cuidadoso",
+      "Minucioso",
+      "Negligente",
+      "Preciso"
+    ],
+    "answer": "Negligente"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "secundaria",
+    "level": 20,
+    "question": "¿Qué es el polisíndeton?",
+    "options": [
+      "Supresión de conjunciones",
+      "Uso repetido de conjunciones para enfatizar",
+      "Repetición al inicio de versos",
+      "Inversión del orden sintáctico"
+    ],
+    "answer": "Uso repetido de conjunciones para enfatizar"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 1,
+    "question": "¿Cuál es el sinónimo de 'paroxismo'?",
+    "options": [
+      "Calma",
+      "Clímax",
+      "Inicio",
+      "Descenso"
+    ],
+    "answer": "Clímax"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 1,
+    "question": "¿Cuál es la diferencia entre 'lexema' y 'morfema'?",
+    "options": [
+      "Son sinónimos",
+      "El lexema porta significado léxico; el morfema aporta significado gramatical",
+      "El morfema es la raíz; el lexema es el afijo",
+      "Solo difieren en tamaño"
+    ],
+    "answer": "El lexema porta significado léxico; el morfema aporta significado gramatical"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 1,
+    "question": "¿Qué es la deixis?",
+    "options": [
+      "Repetición de palabras",
+      "Referencia al contexto mediante pronombres, adverbios y otros elementos",
+      "Figura de amplificación",
+      "Orden sintáctico alterado"
+    ],
+    "answer": "Referencia al contexto mediante pronombres, adverbios y otros elementos"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 1,
+    "question": "¿Cuál es el antónimo de 'ubérrimo'?",
+    "options": [
+      "Fértil",
+      "Abundante",
+      "Rico",
+      "Estéril"
+    ],
+    "answer": "Estéril"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 2,
+    "question": "¿Cuál es el sinónimo de 'eufonía'?",
+    "options": [
+      "Cacofonía",
+      "Disonancia",
+      "Sonoridad agradable",
+      "Ruido"
+    ],
+    "answer": "Sonoridad agradable"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 2,
+    "question": "¿Qué es la prosodia?",
+    "options": [
+      "Estudio de la semántica",
+      "Estudio de la pronunciación y acentuación de las palabras",
+      "Análisis de la sintaxis",
+      "Clasificación de morfemas"
+    ],
+    "answer": "Estudio de la pronunciación y acentuación de las palabras"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 2,
+    "question": "¿Cuál es el antónimo de 'ignominioso'?",
+    "options": [
+      "Vergonzoso",
+      "Deshonroso",
+      "Honorable",
+      "Infame"
+    ],
+    "answer": "Honorable"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 2,
+    "question": "¿Qué es la presuposición pragmática?",
+    "options": [
+      "Lo que se afirma explícitamente",
+      "Información dada por supuesta en un enunciado",
+      "La intención del hablante",
+      "El contexto cultural"
+    ],
+    "answer": "Información dada por supuesta en un enunciado"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 3,
+    "question": "¿Cuál es el sinónimo de 'execrable'?",
+    "options": [
+      "Admirable",
+      "Loable",
+      "Detestable",
+      "Elogiable"
+    ],
+    "answer": "Detestable"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 3,
+    "question": "¿Qué es la aktionsart o modo de acción verbal?",
+    "options": [
+      "El tiempo gramatical del verbo",
+      "La cualidad inherente del evento expresado por el verbo",
+      "El modo indicativo o subjuntivo",
+      "La voz activa o pasiva"
+    ],
+    "answer": "La cualidad inherente del evento expresado por el verbo"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 3,
+    "question": "¿Cuál es la diferencia entre 'polisemia' y 'homonimia'?",
+    "options": [
+      "Son lo mismo",
+      "La polisemia es una palabra con varios sentidos relacionados; la homonimia son palabras iguales sin relación semántica",
+      "La homonimia implica significados relacionados",
+      "Solo difieren en escritura"
+    ],
+    "answer": "La polisemia es una palabra con varios sentidos relacionados; la homonimia son palabras iguales sin relación semántica"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 3,
+    "question": "¿Qué es el zeugma?",
+    "options": [
+      "Repetición enfática",
+      "Figura en que un elemento gramatical sirve a varios miembros de la oración",
+      "Inversión del orden lógico",
+      "Omisión de conjunciones"
+    ],
+    "answer": "Figura en que un elemento gramatical sirve a varios miembros de la oración"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 4,
+    "question": "¿Cuál es el sinónimo de 'perspicuo'?",
+    "options": [
+      "Confuso",
+      "Ambiguo",
+      "Claro",
+      "Opaco"
+    ],
+    "answer": "Claro"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 4,
+    "question": "¿Qué es la implicatura conversacional de Grice?",
+    "options": [
+      "Lo que se dice literalmente",
+      "Lo que se comunica sin decirse explícitamente, según máximas conversacionales",
+      "La entonación del hablante",
+      "El registro formal o informal"
+    ],
+    "answer": "Lo que se comunica sin decirse explícitamente, según máximas conversacionales"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 4,
+    "question": "¿Cuál es el antónimo de 'prístino'?",
+    "options": [
+      "Original",
+      "Puro",
+      "Primitivo",
+      "Corrompido"
+    ],
+    "answer": "Corrompido"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 4,
+    "question": "¿Qué es la ergatividad en lingüística?",
+    "options": [
+      "Uso de verbos reflexivos",
+      "Sistema en que el sujeto de verbo intransitivo se marca igual que el objeto de transitivo",
+      "Concordancia de género",
+      "Orden SOV de la oración"
+    ],
+    "answer": "Sistema en que el sujeto de verbo intransitivo se marca igual que el objeto de transitivo"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 5,
+    "question": "¿Cuál es el sinónimo de 'anfibología'?",
+    "options": [
+      "Claridad expresiva",
+      "Ambigüedad sintáctica o semántica",
+      "Repetición de ideas",
+      "Orden lógico"
+    ],
+    "answer": "Ambigüedad sintáctica o semántica"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 5,
+    "question": "¿Qué es la teoría de los actos de habla de Austin?",
+    "options": [
+      "Estudio de la fonología",
+      "Clasificación de enunciados en locucionarios, ilocucionarios y perlocucionarios",
+      "Análisis de la morfología verbal",
+      "Estudio del discurso escrito"
+    ],
+    "answer": "Clasificación de enunciados en locucionarios, ilocucionarios y perlocucionarios"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 5,
+    "question": "¿Cuál es el antónimo de 'capcioso'?",
+    "options": [
+      "Engañoso",
+      "Tramposo",
+      "Directo",
+      "Confuso"
+    ],
+    "answer": "Directo"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 5,
+    "question": "¿Qué es la modalidad epistémica?",
+    "options": [
+      "Expresión de obligación",
+      "Expresión del grado de certeza del hablante sobre lo que dice",
+      "Expresión de deseo",
+      "Expresión de capacidad"
+    ],
+    "answer": "Expresión del grado de certeza del hablante sobre lo que dice"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 6,
+    "question": "¿Cuál es el sinónimo de 'quimera'?",
+    "options": [
+      "Realidad",
+      "Hecho concreto",
+      "Ilusión irrealizable",
+      "Certeza"
+    ],
+    "answer": "Ilusión irrealizable"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 6,
+    "question": "¿Qué es el análisis de componentes semánticos?",
+    "options": [
+      "Dividir palabras en sílabas",
+      "Descomponer el significado en rasgos semánticos mínimos",
+      "Analizar la sintaxis de una oración",
+      "Clasificar palabras por categoría gramatical"
+    ],
+    "answer": "Descomponer el significado en rasgos semánticos mínimos"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 6,
+    "question": "¿Cuál es la diferencia entre 'isotopía' y 'heterotopía' semántica?",
+    "options": [
+      "No hay diferencia",
+      "La isotopía es coherencia semántica; la heterotopía es ruptura deliberada",
+      "La heterotopía es coherencia; la isotopía es ruptura",
+      "Son términos de sintaxis"
+    ],
+    "answer": "La isotopía es coherencia semántica; la heterotopía es ruptura deliberada"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 6,
+    "question": "¿Qué es la prolepsis en retórica?",
+    "options": [
+      "Figura de repetición",
+      "Anticipación y refutación de objeciones",
+      "Amplificación de ideas",
+      "Cambio de orden sintáctico"
+    ],
+    "answer": "Anticipación y refutación de objeciones"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 7,
+    "question": "¿Cuál es el sinónimo de 'feble'?",
+    "options": [
+      "Fuerte",
+      "Robusto",
+      "Débil",
+      "Sólido"
+    ],
+    "answer": "Débil"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 7,
+    "question": "¿Qué es la coherencia textual?",
+    "options": [
+      "Uso correcto de signos de puntuación",
+      "Unidad temática y lógica del texto",
+      "Concordancia gramatical",
+      "Rima entre versos"
+    ],
+    "answer": "Unidad temática y lógica del texto"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 7,
+    "question": "¿Cuál es el antónimo de 'disonante'?",
+    "options": [
+      "Ruidoso",
+      "Estrepitoso",
+      "Armónico",
+      "Estridente"
+    ],
+    "answer": "Armónico"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 7,
+    "question": "¿Qué es la pragma-semántica?",
+    "options": [
+      "Estudio del sonido",
+      "Estudio de cómo el contexto influye en el significado",
+      "Análisis morfológico",
+      "Clasificación de textos"
+    ],
+    "answer": "Estudio de cómo el contexto influye en el significado"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 8,
+    "question": "¿Cuál es el sinónimo de 'lucubrar'?",
+    "options": [
+      "Descansar",
+      "Meditar profundamente",
+      "Ignorar",
+      "Actuar impulsivamente"
+    ],
+    "answer": "Meditar profundamente"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 8,
+    "question": "¿Qué es la gramaticalización?",
+    "options": [
+      "Proceso por el que una palabra léxica adquiere función gramatical",
+      "Estudio de la gramática normativa",
+      "Clasificación de errores ortográficos",
+      "Análisis de textos literarios"
+    ],
+    "answer": "Proceso por el que una palabra léxica adquiere función gramatical"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 8,
+    "question": "¿Cuál es la diferencia entre 'diacronía' y 'sincronía' lingüística?",
+    "options": [
+      "Son sinónimos",
+      "La diacronía estudia la lengua a través del tiempo; la sincronía en un momento dado",
+      "La sincronía estudia cambios históricos",
+      "Solo difieren en el idioma estudiado"
+    ],
+    "answer": "La diacronía estudia la lengua a través del tiempo; la sincronía en un momento dado"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 8,
+    "question": "¿Qué es el cronotopo en la teoría literaria de Bajtín?",
+    "options": [
+      "El personaje principal",
+      "La relación entre tiempo y espacio en una narrativa",
+      "El narrador omnisciente",
+      "El conflicto central"
+    ],
+    "answer": "La relación entre tiempo y espacio en una narrativa"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 9,
+    "question": "¿Cuál es el sinónimo de 'protervo'?",
+    "options": [
+      "Bondadoso",
+      "Noble",
+      "Perverso",
+      "Generoso"
+    ],
+    "answer": "Perverso"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 9,
+    "question": "¿Qué es la teoría de la relevancia de Sperber y Wilson?",
+    "options": [
+      "Estudio de la fonología",
+      "La comunicación busca el máximo efecto con el mínimo esfuerzo cognitivo",
+      "Clasificación de actos de habla",
+      "Análisis morfológico"
+    ],
+    "answer": "La comunicación busca el máximo efecto con el mínimo esfuerzo cognitivo"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 9,
+    "question": "¿Cuál es el antónimo de 'exotérico'?",
+    "options": [
+      "Público",
+      "Accesible",
+      "Esotérico",
+      "Popular"
+    ],
+    "answer": "Esotérico"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 9,
+    "question": "¿Qué es la nominalización en gramática?",
+    "options": [
+      "Convertir verbos o adjetivos en sustantivos",
+      "Agregar adjetivos a sustantivos",
+      "Conjugar verbos en modo nominal",
+      "Usar pronombres en lugar de sustantivos"
+    ],
+    "answer": "Convertir verbos o adjetivos en sustantivos"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 10,
+    "question": "¿Cuál es el sinónimo de 'perentorio'?",
+    "options": [
+      "Opcional",
+      "Flexible",
+      "Urgente",
+      "Pausado"
+    ],
+    "answer": "Urgente"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 10,
+    "question": "¿Qué es la intertextualidad?",
+    "options": [
+      "Coherencia interna de un texto",
+      "Relación de un texto con otros textos previos",
+      "Uso de figuras retóricas",
+      "Estructura narrativa"
+    ],
+    "answer": "Relación de un texto con otros textos previos"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 10,
+    "question": "¿Cuál es la diferencia entre 'langue' y 'parole' en Saussure?",
+    "options": [
+      "Son lo mismo",
+      "'Langue' es el sistema abstracto de la lengua; 'parole' es el uso concreto",
+      "'Parole' es el sistema; 'langue' es el uso",
+      "Solo difieren en el idioma"
+    ],
+    "answer": "'Langue' es el sistema abstracto de la lengua; 'parole' es el uso concreto"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 10,
+    "question": "¿Qué es la ambigüedad estructural?",
+    "options": [
+      "Palabra con múltiples significados",
+      "Oración que admite dos o más interpretaciones sintácticas",
+      "Error ortográfico",
+      "Uso incorrecto de signos"
+    ],
+    "answer": "Oración que admite dos o más interpretaciones sintácticas"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 11,
+    "question": "¿Cuál es el sinónimo de 'atávico'?",
+    "options": [
+      "Moderno",
+      "Innovador",
+      "Ancestral",
+      "Reciente"
+    ],
+    "answer": "Ancestral"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 11,
+    "question": "¿Qué es la función conativa del lenguaje según Jakobson?",
+    "options": [
+      "Centrada en el emisor",
+      "Centrada en el receptor",
+      "Centrada en el mensaje",
+      "Centrada en el código"
+    ],
+    "answer": "Centrada en el receptor"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 11,
+    "question": "¿Cuál es el antónimo de 'gregario'?",
+    "options": [
+      "Social",
+      "Colectivo",
+      "Solitario",
+      "Comunitario"
+    ],
+    "answer": "Solitario"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 11,
+    "question": "¿Qué es el discurso indirecto libre?",
+    "options": [
+      "Cita textual entre comillas",
+      "Narración que funde la voz del narrador y el personaje sin marca formal",
+      "Paráfrasis del discurso original",
+      "Monólogo interior explícito"
+    ],
+    "answer": "Narración que funde la voz del narrador y el personaje sin marca formal"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 12,
+    "question": "¿Cuál es el sinónimo de 'recóndito'?",
+    "options": [
+      "Evidente",
+      "Superficial",
+      "Oculto",
+      "Visible"
+    ],
+    "answer": "Oculto"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 12,
+    "question": "¿Qué es la teoría de los campos semánticos de Trier?",
+    "options": [
+      "Análisis de la fonología histórica",
+      "Organización del vocabulario en zonas semánticas interrelacionadas",
+      "Clasificación de morfemas",
+      "Estudio de la sintaxis"
+    ],
+    "answer": "Organización del vocabulario en zonas semánticas interrelacionadas"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 12,
+    "question": "¿Cuál es la diferencia entre 'texto' y 'discurso' en lingüística textual?",
+    "options": [
+      "Son sinónimos",
+      "El texto es la estructura abstracta; el discurso es el texto en su contexto de uso",
+      "El discurso es más formal que el texto",
+      "Solo difieren en extensión"
+    ],
+    "answer": "El texto es la estructura abstracta; el discurso es el texto en su contexto de uso"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 12,
+    "question": "¿Qué es la diátesis verbal?",
+    "options": [
+      "El tiempo del verbo",
+      "La relación entre el verbo y los participantes del evento (voz activa/pasiva/media)",
+      "El modo del verbo",
+      "El aspecto verbal"
+    ],
+    "answer": "La relación entre el verbo y los participantes del evento (voz activa/pasiva/media)"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 13,
+    "question": "¿Cuál es el sinónimo de 'epígono'?",
+    "options": [
+      "Precursor",
+      "Innovador",
+      "Seguidor tardío",
+      "Fundador"
+    ],
+    "answer": "Seguidor tardío"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 13,
+    "question": "¿Qué es la topicalización?",
+    "options": [
+      "Clasificación de temas",
+      "Movimiento sintáctico que coloca al tema al inicio de la oración",
+      "Análisis del vocabulario",
+      "Uso de conectores"
+    ],
+    "answer": "Movimiento sintáctico que coloca al tema al inicio de la oración"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 13,
+    "question": "¿Cuál es el antónimo de 'tendencioso'?",
+    "options": [
+      "Parcial",
+      "Sesgado",
+      "Imparcial",
+      "Interesado"
+    ],
+    "answer": "Imparcial"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 13,
+    "question": "¿Qué es la macroestructura textual según Van Dijk?",
+    "options": [
+      "La puntuación del texto",
+      "La representación semántica global del texto",
+      "El vocabulario empleado",
+      "La estructura superficial"
+    ],
+    "answer": "La representación semántica global del texto"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 14,
+    "question": "¿Cuál es el sinónimo de 'soterrar'?",
+    "options": [
+      "Desenterrar",
+      "Exponer",
+      "Enterrar",
+      "Mostrar"
+    ],
+    "answer": "Enterrar"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 14,
+    "question": "¿Qué es la hipotaxis?",
+    "options": [
+      "Coordinación de oraciones independientes",
+      "Subordinación sintáctica de unas oraciones a otras",
+      "Omisión de conjunciones",
+      "Repetición de estructuras paralelas"
+    ],
+    "answer": "Subordinación sintáctica de unas oraciones a otras"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 14,
+    "question": "¿Cuál es la diferencia entre 'metáfora conceptual' y 'metáfora lingüística'?",
+    "options": [
+      "Son lo mismo",
+      "La metáfora conceptual estructura el pensamiento; la lingüística es su expresión verbal",
+      "La lingüística es más abstracta",
+      "Solo difieren en el contexto literario"
+    ],
+    "answer": "La metáfora conceptual estructura el pensamiento; la lingüística es su expresión verbal"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 14,
+    "question": "¿Qué es la polifonía enunciativa?",
+    "options": [
+      "Uso de varios idiomas",
+      "Presencia de múltiples voces o puntos de vista en un enunciado",
+      "Repetición de palabras",
+      "Uso de distintos registros"
+    ],
+    "answer": "Presencia de múltiples voces o puntos de vista en un enunciado"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 15,
+    "question": "¿Cuál es el sinónimo de 'escabrosidad'?",
+    "options": [
+      "Suavidad",
+      "Lisura",
+      "Aspereza",
+      "Tersura"
+    ],
+    "answer": "Aspereza"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 15,
+    "question": "¿Qué es la interfaz sintaxis-semántica?",
+    "options": [
+      "La relación entre gramática y diccionario",
+      "La correspondencia entre estructura sintáctica y contenido semántico",
+      "El estudio del léxico",
+      "La fonología de la oración"
+    ],
+    "answer": "La correspondencia entre estructura sintáctica y contenido semántico"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 15,
+    "question": "¿Cuál es el antónimo de 'heurístico'?",
+    "options": [
+      "Exploratorio",
+      "Abierto",
+      "Algorítmico",
+      "Experimental"
+    ],
+    "answer": "Algorítmico"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 15,
+    "question": "¿Qué es la pragmática intercultural?",
+    "options": [
+      "Traducción literal entre idiomas",
+      "Estudio de cómo la cultura influye en el uso e interpretación del lenguaje",
+      "Gramática comparada",
+      "Fonología de distintos idiomas"
+    ],
+    "answer": "Estudio de cómo la cultura influye en el uso e interpretación del lenguaje"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 16,
+    "question": "¿Cuál es el sinónimo de 'palimpsesto'?",
+    "options": [
+      "Texto original intacto",
+      "Manuscrito que conserva huellas de escrituras anteriores borradas",
+      "Texto sin autor conocido",
+      "Documento falsificado"
+    ],
+    "answer": "Manuscrito que conserva huellas de escrituras anteriores borradas"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 16,
+    "question": "¿Qué es la concordancia ad sensum?",
+    "options": [
+      "Concordancia según las reglas gramaticales estrictas",
+      "Concordancia según el sentido lógico más que la forma gramatical",
+      "Error de concordancia",
+      "Concordancia de género y número"
+    ],
+    "answer": "Concordancia según el sentido lógico más que la forma gramatical"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 16,
+    "question": "¿Cuál es el antónimo de 'ignoto'?",
+    "options": [
+      "Desconocido",
+      "Oculto",
+      "Conocido",
+      "Misterioso"
+    ],
+    "answer": "Conocido"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 16,
+    "question": "¿Qué es la lexicalización?",
+    "options": [
+      "Crear nuevas palabras",
+      "Proceso por el que una expresión compleja se fija como unidad léxica",
+      "Clasificar palabras en categorías",
+      "Derivar palabras por sufijación"
+    ],
+    "answer": "Proceso por el que una expresión compleja se fija como unidad léxica"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 17,
+    "question": "¿Cuál es el sinónimo de 'vetusta'?",
+    "options": [
+      "Nueva",
+      "Moderna",
+      "Anciana",
+      "Reciente"
+    ],
+    "answer": "Anciana"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 17,
+    "question": "¿Qué es la teoría de la enunciación de Benveniste?",
+    "options": [
+      "Estudio de la fonética",
+      "Análisis de cómo el sujeto hablante se inscribe en su propio discurso",
+      "Clasificación de textos narrativos",
+      "Análisis de la sintaxis oracional"
+    ],
+    "answer": "Análisis de cómo el sujeto hablante se inscribe en su propio discurso"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 17,
+    "question": "¿Cuál es la diferencia entre 'argumento' y 'trama' narrativa?",
+    "options": [
+      "Son lo mismo",
+      "El argumento es el orden lógico-causal; la trama es el orden en que se presentan los eventos",
+      "La trama es más importante que el argumento",
+      "Solo difieren en extensión"
+    ],
+    "answer": "El argumento es el orden lógico-causal; la trama es el orden en que se presentan los eventos"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 17,
+    "question": "¿Qué es la aposición explicativa?",
+    "options": [
+      "Un adjetivo que modifica al sustantivo",
+      "Un sustantivo o frase que reelabora o explica otro sustantivo",
+      "Una conjunción coordinante",
+      "Un complemento circunstancial"
+    ],
+    "answer": "Un sustantivo o frase que reelabora o explica otro sustantivo"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 18,
+    "question": "¿Cuál es el sinónimo de 'fútil'?",
+    "options": [
+      "Importante",
+      "Transcendente",
+      "Baladí",
+      "Esencial"
+    ],
+    "answer": "Baladí"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 18,
+    "question": "¿Qué es el principio de composicionalidad de Frege?",
+    "options": [
+      "Las palabras tienen significado independiente",
+      "El significado de una expresión compleja depende del significado de sus partes y su combinación",
+      "El contexto determina todo el significado",
+      "Las metáforas no son composicionales"
+    ],
+    "answer": "El significado de una expresión compleja depende del significado de sus partes y su combinación"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 18,
+    "question": "¿Cuál es el antónimo de 'enconado'?",
+    "options": [
+      "Violento",
+      "Encarnizado",
+      "Apacible",
+      "Furioso"
+    ],
+    "answer": "Apacible"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 18,
+    "question": "¿Qué es la focalización narrativa según Genette?",
+    "options": [
+      "El punto de vista desde el que se narra",
+      "La voz del narrador",
+      "El estilo del autor",
+      "El tiempo de la narración"
+    ],
+    "answer": "El punto de vista desde el que se narra"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 19,
+    "question": "¿Cuál es el sinónimo de 'hermenéutica'?",
+    "options": [
+      "Creación de textos",
+      "Arte de la interpretación de textos",
+      "Estudio fonético",
+      "Análisis sintáctico"
+    ],
+    "answer": "Arte de la interpretación de textos"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 19,
+    "question": "¿Qué es la deconstrucción según Derrida?",
+    "options": [
+      "Análisis gramatical",
+      "Estrategia de lectura que revela contradicciones y jerarquías ocultas en el texto",
+      "Síntesis de ideas",
+      "Comparación de textos"
+    ],
+    "answer": "Estrategia de lectura que revela contradicciones y jerarquías ocultas en el texto"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 19,
+    "question": "¿Cuál es el antónimo de 'diégesis'?",
+    "options": [
+      "Narración",
+      "Relato",
+      "Mímesis",
+      "Historia"
+    ],
+    "answer": "Mímesis"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 19,
+    "question": "¿Qué es el cronotopo de la novela de aventuras según Bajtín?",
+    "options": [
+      "Tiempo psicológico del personaje",
+      "Tiempo abstracto y espacio vacío donde la acción no deja huella en el personaje",
+      "Tiempo histórico concreto",
+      "Espacio social determinado"
+    ],
+    "answer": "Tiempo abstracto y espacio vacío donde la acción no deja huella en el personaje"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 20,
+    "question": "¿Cuál es el sinónimo de 'exégesis'?",
+    "options": [
+      "Redacción de textos",
+      "Interpretación crítica y explicación de un texto",
+      "Creación literaria",
+      "Resumen textual"
+    ],
+    "answer": "Interpretación crítica y explicación de un texto"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 20,
+    "question": "¿Qué postula la hipótesis de Sapir-Whorf?",
+    "options": [
+      "La gramática es universal",
+      "La lengua influye o determina la forma en que sus hablantes perciben la realidad",
+      "Todos los idiomas son equivalentes",
+      "La escritura precede al habla"
+    ],
+    "answer": "La lengua influye o determina la forma en que sus hablantes perciben la realidad"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 20,
+    "question": "¿Cuál es el antónimo de 'epigonal'?",
+    "options": [
+      "Imitador",
+      "Seguidor",
+      "Precursor",
+      "Derivado"
+    ],
+    "answer": "Precursor"
+  },
+  {
+    "world": "spanish",
+    "difficulty": "avanzado",
+    "level": 20,
+    "question": "¿Qué es la lingüística cognitiva?",
+    "options": [
+      "Estudio de la gramática formal",
+      "Enfoque que estudia el lenguaje como reflejo de estructuras cognitivas y experiencia corporal",
+      "Análisis histórico de la lengua",
+      "Estudio de la adquisición del lenguaje"
+    ],
+    "answer": "Enfoque que estudia el lenguaje como reflejo de estructuras cognitivas y experiencia corporal"
+  }
+]

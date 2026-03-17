@@ -1,11 +1,27 @@
 import { useState } from "react";
 import { useAuth } from "../context/AuthContext";
+import { useProgress } from "../context/ProgressContext";
 import "./Dashboard.css";
 
 const AVATARS = ["🤖", "🦊", "🐉", "🦁", "🐼", "🦅", "🐺", "🦋", "🐸", "🌟", "🎯", "🔥"];
 
+// Cuenta niveles completados de un mundo
+function countCompleted(worldArr) {
+  return worldArr?.reduce((acc, d) => acc + d.levels.filter(l => l.completed).length, 0) ?? 0;
+}
+
+// Calcula precisión global (correctas / total respondidas)
+function calcPrecision(worldArr) {
+  // Por ahora basado en estrellas: 3★=100%, 2★=75%, 1★=50%
+  const levels = worldArr?.flatMap(d => d.levels) ?? [];
+  if (levels.length === 0) return 0;
+  const avg = levels.reduce((acc, l) => acc + (l.stars / 3) * 100, 0) / levels.length;
+  return Math.round(avg);
+}
+
 export default function Dashboard({ onBack }) {
   const { user, logout } = useAuth();
+  const { totalPoints, progress } = useProgress();
 
   const [activeTab, setActiveTab]           = useState("perfil");
   const [selectedAvatar, setSelectedAvatar] = useState("🤖");
@@ -13,20 +29,34 @@ export default function Dashboard({ onBack }) {
   const [saveMsg, setSaveMsg]               = useState("");
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
 
+  // Stats calculados
+  const totalCompleted = countCompleted(progress.math) + countCompleted(progress.spanish) + countCompleted(progress.english);
+  const allLevels = [
+    ...( progress.math?.flatMap(d => d.levels) ?? []),
+    ...( progress.spanish?.flatMap(d => d.levels) ?? []),
+    ...( progress.english?.flatMap(d => d.levels) ?? []),
+  ];
+  const precision = allLevels.length > 0
+    ? Math.round(allLevels.reduce((acc, l) => acc + (l.stars / 3) * 100, 0) / allLevels.length)
+    : 0;
+
+  const worlds = [
+    { name: "Matemáticas", icon: "🧮", color: "#ff2d92", key: "math"    },
+    { name: "Español",     icon: "📖", color: "#3a7bfe", key: "spanish" },
+    { name: "Inglés",      icon: "🌐", color: "#00d652", key: "english" },
+  ];
+
   const handleSave = () => {
-    // TODO: llamar a PUT /api/auth/me con el nuevo username
     setSaveMsg("¡Cambios guardados!");
     setTimeout(() => setSaveMsg(""), 2500);
   };
 
   const handleDelete = () => {
-    // TODO: llamar a DELETE /api/auth/me y luego logout
     logout();
   };
 
   return (
     <div className="dp-wrapper">
-      {/* Fondo decorativo igual al proyecto */}
       <div className="dp-bg">
         <div className="dp-orb dp-orb-1" />
         <div className="dp-orb dp-orb-2" />
@@ -34,14 +64,11 @@ export default function Dashboard({ onBack }) {
       </div>
 
       <div className="dp-content">
-
-        {/* ── Top bar ── */}
         <div className="dp-topbar">
           <button className="dp-back" onClick={onBack}>← Volver</button>
           <button className="dp-logout" onClick={logout}>Cerrar sesión</button>
         </div>
 
-        {/* ── Hero ── */}
         <div className="dp-hero">
           <div className="dp-avatar-ring">
             <span className="dp-avatar">{selectedAvatar}</span>
@@ -57,13 +84,13 @@ export default function Dashboard({ onBack }) {
           </div>
         </div>
 
-        {/* ── Stats ── */}
+        {/* Stats reales */}
         <div className="dp-stats">
           {[
-            { num: "0",   label: "Puntos"              },
-            { num: "0",   label: "Niveles completados" },
-            { num: "0%",  label: "Precisión global"    },
-            { num: "0",   label: "Racha de días"       },
+            { num: totalPoints,              label: "Puntos"              },
+            { num: totalCompleted,           label: "Niveles completados" },
+            { num: `${precision}%`,          label: "Precisión global"    },
+            { num: "0",                      label: "Racha de días"       },
           ].map((s, i) => (
             <div key={i} className="dp-stat">
               <span className="dp-stat-num">{s.num}</span>
@@ -72,30 +99,25 @@ export default function Dashboard({ onBack }) {
           ))}
         </div>
 
-        {/* ── Tabs ── */}
         <div className="dp-tabs">
-          <button
-            className={`dp-tab ${activeTab === "perfil" ? "dp-tab--on" : ""}`}
-            onClick={() => setActiveTab("perfil")}
-          >👤 Mi perfil</button>
-          <button
-            className={`dp-tab ${activeTab === "config" ? "dp-tab--on" : ""}`}
-            onClick={() => setActiveTab("config")}
-          >⚙️ Configuración</button>
+          <button className={`dp-tab ${activeTab === "perfil" ? "dp-tab--on" : ""}`} onClick={() => setActiveTab("perfil")}>
+            👤 Mi perfil
+          </button>
+          <button className={`dp-tab ${activeTab === "config" ? "dp-tab--on" : ""}`} onClick={() => setActiveTab("config")}>
+            ⚙️ Configuración
+          </button>
         </div>
 
-        {/* ── Panel: Perfil ── */}
         {activeTab === "perfil" && (
           <div className="dp-panel">
-
             <div className="dp-section">
               <h2 className="dp-section-title">Información de la cuenta</h2>
               <div className="dp-info-grid">
                 {[
-                  { label: "👤 Usuario",        value: user?.username },
-                  { label: "🎭 Rol",            value: user?.role     },
-                  { label: "⭐ Puntos totales", value: "0 pts", accent: true },
-                  { label: "🔐 Autenticación",  value: "JWT activo"   },
+                  { label: "👤 Usuario",        value: user?.username         },
+                  { label: "🎭 Rol",            value: user?.role             },
+                  { label: "⭐ Puntos totales", value: `${totalPoints} pts`, accent: true },
+                  { label: "🔐 Autenticación",  value: "JWT activo"           },
                 ].map((item) => (
                   <div key={item.label} className="dp-info-item">
                     <span className="dp-info-label">{item.label}</span>
@@ -107,38 +129,35 @@ export default function Dashboard({ onBack }) {
               </div>
             </div>
 
+            {/* Progreso por mundo real */}
             <div className="dp-section">
               <h2 className="dp-section-title">Progreso por mundo</h2>
               <div className="dp-progress-list">
-                {[
-                  { name: "Matemáticas", icon: "🧮", color: "#ff2d92" },
-                  { name: "Español",     icon: "📖", color: "#3a7bfe" },
-                  { name: "Inglés",      icon: "🌐", color: "#00d652" },
-                ].map((w) => (
-                  <div key={w.name} className="dp-progress-row">
-                    <span className="dp-progress-icon">{w.icon}</span>
-                    <div className="dp-progress-info">
-                      <div className="dp-progress-header">
-                        <span className="dp-progress-name">{w.name}</span>
-                        <span className="dp-progress-frac">0/20</span>
-                      </div>
-                      <div className="dp-progress-track">
-                        <div className="dp-progress-fill" style={{ width: "0%", background: w.color }} />
+                {worlds.map((w) => {
+                  const completed = countCompleted(progress[w.key]);
+                  const pct = Math.round((completed / 20) * 100);
+                  return (
+                    <div key={w.name} className="dp-progress-row">
+                      <span className="dp-progress-icon">{w.icon}</span>
+                      <div className="dp-progress-info">
+                        <div className="dp-progress-header">
+                          <span className="dp-progress-name">{w.name}</span>
+                          <span className="dp-progress-frac">{completed}/20</span>
+                        </div>
+                        <div className="dp-progress-track">
+                          <div className="dp-progress-fill" style={{ width: `${pct}%`, background: w.color }} />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
-
           </div>
         )}
 
-        {/* ── Panel: Configuración ── */}
         {activeTab === "config" && (
           <div className="dp-panel">
-
-            {/* Elegir avatar */}
             <div className="dp-section">
               <h2 className="dp-section-title">Elige tu avatar</h2>
               <div className="dp-avatar-grid">
@@ -152,7 +171,6 @@ export default function Dashboard({ onBack }) {
               </div>
             </div>
 
-            {/* Cambiar nombre */}
             <div className="dp-section">
               <h2 className="dp-section-title">Cambiar nombre de usuario</h2>
               <div className="dp-field-row">
@@ -163,18 +181,14 @@ export default function Dashboard({ onBack }) {
                   onChange={(e) => setNewUsername(e.target.value)}
                   placeholder="Nuevo nombre de usuario"
                 />
-                <button className="dp-btn dp-btn--primary" onClick={handleSave}>
-                  Guardar
-                </button>
+                <button className="dp-btn dp-btn--primary" onClick={handleSave}>Guardar</button>
               </div>
               {saveMsg && <p className="dp-save-msg">✅ {saveMsg}</p>}
             </div>
 
-            {/* Zona de peligro */}
             <div className="dp-section dp-section--danger">
               <h2 className="dp-section-title dp-section-title--danger">⚠️ Zona de peligro</h2>
               <p className="dp-danger-desc">Estas acciones son permanentes e irreversibles.</p>
-
               {!showDeleteConfirm ? (
                 <button className="dp-btn dp-btn--danger" onClick={() => setShowDeleteConfirm(true)}>
                   🗑️ Eliminar mi cuenta
@@ -189,10 +203,8 @@ export default function Dashboard({ onBack }) {
                 </div>
               )}
             </div>
-
           </div>
         )}
-
       </div>
     </div>
   );

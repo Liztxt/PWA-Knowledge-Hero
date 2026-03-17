@@ -1,3 +1,4 @@
+import { useProgress } from "../context/ProgressContext";
 import "./LevelSelect.css";
 
 const difficultyNames = {
@@ -12,27 +13,29 @@ const worldNames = {
   english: "Inglés",
 };
 
-const levels = Array.from({ length: 20 }, (_, i) => ({
-  id: i + 1,
-  name: `Nivel ${i + 1}`,
-  questions: Math.floor(Math.random() * 3) + 3, 
-  completed: false, 
-  stars: 0, 
-}));
-
 function StarRating({ stars }) {
   return (
     <div className="ns-stars">
       {[1, 2, 3].map((s) => (
-        <span key={s} className={s <= stars ? "ns-star filled" : "ns-star"}>
-          ★
-        </span>
+        <span key={s} className={s <= stars ? "ns-star filled" : "ns-star"}>★</span>
       ))}
     </div>
   );
 }
 
 export default function NivelSelectPage({ world, difficulty, onBack, onSelectLevel }) {
+  const { getLevelStars, isLevelUnlocked } = useProgress();
+
+  const levels = Array.from({ length: 20 }, (_, i) => {
+    const levelNum = i + 1;
+    return {
+      id: levelNum,
+      stars: getLevelStars(world, difficulty, levelNum),
+      unlocked: isLevelUnlocked(world, difficulty, levelNum),
+      completed: getLevelStars(world, difficulty, levelNum) > 0,
+    };
+  });
+
   return (
     <div className="ns-wrapper">
       <div className="ns-bg">
@@ -42,9 +45,7 @@ export default function NivelSelectPage({ world, difficulty, onBack, onSelectLev
       </div>
 
       <div className="ns-content">
-        <button className="ns-back-btn" onClick={onBack}>
-          ← Regresar
-        </button>
+        <button className="ns-back-btn" onClick={onBack}>← Regresar</button>
 
         <div className="ns-header">
           <h1 className="ns-title">{worldNames[world] || world}</h1>
@@ -56,13 +57,25 @@ export default function NivelSelectPage({ world, difficulty, onBack, onSelectLev
           {levels.map((level) => (
             <button
               key={level.id}
-              className={`ns-card ${level.completed ? "ns-card--done" : ""}`}
-              onClick={() => onSelectLevel(level.id)}
+              className={`ns-card 
+                ${level.completed ? "ns-card--done" : ""} 
+                ${!level.unlocked ? "ns-card--locked" : ""}
+              `}
+              onClick={() => level.unlocked && onSelectLevel(level.id)}
+              disabled={!level.unlocked}
             >
-              <span className="ns-card-num">{level.id}</span>
-              <span className="ns-card-label">{level.name}</span>
-              <span className="ns-card-questions">{level.questions} preguntas</span>
-              <StarRating stars={level.stars} />
+              {level.unlocked ? (
+                <>
+                  <span className="ns-card-num">{level.id}</span>
+                  <span className="ns-card-label">Nivel {level.id}</span>
+                  <StarRating stars={level.stars} />
+                </>
+              ) : (
+                <>
+                  <span className="ns-card-num">🔒</span>
+                  <span className="ns-card-label">Nivel {level.id}</span>
+                </>
+              )}
             </button>
           ))}
         </div>

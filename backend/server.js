@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import { connectDB } from "./src/config/db.js";
 import authRoutes from "./src/routes/authRoutes.js";
 import questionRoutes from "./src/routes/questionRoutes.js";
+import progressRoutes from "./src/routes/progressRoutes.js";
 
 dotenv.config();
 
@@ -16,14 +17,14 @@ app.use(express.json());
 
 // Rutas
 app.use("/api/auth", authRoutes);
-app.use("/api/questions", questionRoutes); // ← aquí, después de crear app
+app.use("/api/questions", questionRoutes);
+app.use("/api/progress", progressRoutes);
 
 // Ruta de prueba
 app.get("/", (req, res) => {
   res.json({ message: "Backend KnowledgeHero funcionando ✓" });
 });
 
-// Conectar BD y arrancar servidor
 connectDB().then(() => {
   app.listen(PORT, () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);

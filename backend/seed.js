@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename);
 
 // Cargar el JSON de preguntas
 const questions = JSON.parse(
-  readFileSync(path.join(__dirname, "math_questions.json"), "utf-8")
+  readFileSync(path.join(__dirname, "english_questions.json"), "utf-8")
 );
 
 // Schema de pregunta
@@ -32,9 +32,9 @@ const seed = async () => {
     await mongoose.connect(process.env.MONGO_URI);
     console.log("MongoDB conectado ✓");
 
-    // Borra solo las preguntas de math para evitar duplicados
-    await Question.deleteMany({ world: "math" });
-    console.log("Preguntas anteriores de math eliminadas ✓");
+    // Borra solo las preguntas de english para evitar duplicados
+    await Question.deleteMany({ world: "english" });
+    console.log("Preguntas anteriores de english eliminadas ✓");
 
     await Question.insertMany(questions);
     console.log(`✅ ${questions.length} preguntas importadas correctamente`);

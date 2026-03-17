@@ -33,6 +33,7 @@ export default function ResultsPage({
   onRepeat,
   onNextLevel,
   onHome,
+  stars = 0, 
 }) {
   const precision = total > 0 ? Math.round((correct / total) * 100) : 0;
   const { msg, sub, avatar } = getPerformance(correct, total);
@@ -79,7 +80,12 @@ export default function ResultsPage({
           <span className="results-score-context">
             {worldNames[world]} - {difficultyNames[difficulty]} · Nivel {level}
           </span>
-          <span className="results-score-total">Puntuación total: {points} pts</span>
+          {/* Estrellas ganadas */}
+          <div className="results-stars">
+            {[1, 2, 3].map((s) => (
+              <span key={s} style={{ fontSize: "2rem", color: s <= stars ? "#f5c518" : "#ccc" }}>★</span>
+              ))}
+              </div>
         </div>
 
         {/* Botones */}

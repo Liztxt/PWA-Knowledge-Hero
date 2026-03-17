@@ -1,0 +1,3122 @@
+[
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 1,
+    "question": "What is the translation of 'cat'?",
+    "options": [
+      "Perro",
+      "Gato",
+      "Pájaro",
+      "Pez"
+    ],
+    "answer": "Gato"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 1,
+    "question": "Which is the correct article: ___ apple?",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "some"
+    ],
+    "answer": "an"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 1,
+    "question": "What is the translation of 'happy'?",
+    "options": [
+      "Triste",
+      "Enojado",
+      "Feliz",
+      "Cansado"
+    ],
+    "answer": "Feliz"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 1,
+    "question": "How do you say 'rojo' in English?",
+    "options": [
+      "Blue",
+      "Green",
+      "Yellow",
+      "Red"
+    ],
+    "answer": "Red"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 2,
+    "question": "What is the plural of 'dog'?",
+    "options": [
+      "Dogies",
+      "Doges",
+      "Dogs",
+      "Dogses"
+    ],
+    "answer": "Dogs"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 2,
+    "question": "Which sentence is correct?",
+    "options": [
+      "She are happy",
+      "She is happy",
+      "She be happy",
+      "She am happy"
+    ],
+    "answer": "She is happy"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 2,
+    "question": "What is the translation of 'book'?",
+    "options": [
+      "Mesa",
+      "Silla",
+      "Libro",
+      "Lápiz"
+    ],
+    "answer": "Libro"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 2,
+    "question": "How do you say 'uno' in English?",
+    "options": [
+      "Two",
+      "Three",
+      "One",
+      "Four"
+    ],
+    "answer": "One"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 3,
+    "question": "What is the opposite of 'big'?",
+    "options": [
+      "Tall",
+      "Small",
+      "Fast",
+      "Old"
+    ],
+    "answer": "Small"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 3,
+    "question": "Which is correct: 'I ___ a student'?",
+    "options": [
+      "is",
+      "are",
+      "am",
+      "be"
+    ],
+    "answer": "am"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 3,
+    "question": "What is the translation of 'water'?",
+    "options": [
+      "Fuego",
+      "Tierra",
+      "Agua",
+      "Aire"
+    ],
+    "answer": "Agua"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 3,
+    "question": "How do you say 'madre' in English?",
+    "options": [
+      "Father",
+      "Brother",
+      "Sister",
+      "Mother"
+    ],
+    "answer": "Mother"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 4,
+    "question": "What is the plural of 'child'?",
+    "options": [
+      "Childs",
+      "Children",
+      "Childes",
+      "Childrens"
+    ],
+    "answer": "Children"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 4,
+    "question": "Which sentence is correct?",
+    "options": [
+      "They is playing",
+      "They am playing",
+      "They are playing",
+      "They be playing"
+    ],
+    "answer": "They are playing"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 4,
+    "question": "What is the translation of 'school'?",
+    "options": [
+      "Casa",
+      "Tienda",
+      "Escuela",
+      "Parque"
+    ],
+    "answer": "Escuela"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 4,
+    "question": "What color is the sky?",
+    "options": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+    ],
+    "answer": "Blue"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 5,
+    "question": "What is the past tense of 'go'?",
+    "options": [
+      "Goed",
+      "Goes",
+      "Went",
+      "Gone"
+    ],
+    "answer": "Went"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 5,
+    "question": "Which is correct: 'She ___ a book'?",
+    "options": [
+      "have",
+      "has",
+      "had",
+      "having"
+    ],
+    "answer": "has"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 5,
+    "question": "What is the translation of 'friend'?",
+    "options": [
+      "Enemigo",
+      "Amigo",
+      "Vecino",
+      "Maestro"
+    ],
+    "answer": "Amigo"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 5,
+    "question": "How do you say 'lunes' in English?",
+    "options": [
+      "Sunday",
+      "Tuesday",
+      "Friday",
+      "Monday"
+    ],
+    "answer": "Monday"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 6,
+    "question": "What is the past tense of 'eat'?",
+    "options": [
+      "Eated",
+      "Eaten",
+      "Ate",
+      "Eating"
+    ],
+    "answer": "Ate"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 6,
+    "question": "Which sentence is correct?",
+    "options": [
+      "He don't like cats",
+      "He doesn't likes cats",
+      "He doesn't like cats",
+      "He not like cats"
+    ],
+    "answer": "He doesn't like cats"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 6,
+    "question": "What is the translation of 'run'?",
+    "options": [
+      "Caminar",
+      "Saltar",
+      "Correr",
+      "Nadar"
+    ],
+    "answer": "Correr"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 6,
+    "question": "How many days are in a week?",
+    "options": [
+      "Five",
+      "Six",
+      "Seven",
+      "Eight"
+    ],
+    "answer": "Seven"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 7,
+    "question": "What is the comparative of 'tall'?",
+    "options": [
+      "More tall",
+      "Tallest",
+      "Taller",
+      "Most tall"
+    ],
+    "answer": "Taller"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 7,
+    "question": "Which is correct: 'There ___ two cats'?",
+    "options": [
+      "is",
+      "am",
+      "are",
+      "be"
+    ],
+    "answer": "are"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 7,
+    "question": "What is the translation of 'beautiful'?",
+    "options": [
+      "Feo",
+      "Hermoso",
+      "Viejo",
+      "Rápido"
+    ],
+    "answer": "Hermoso"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 7,
+    "question": "How do you say 'enero' in English?",
+    "options": [
+      "June",
+      "March",
+      "January",
+      "August"
+    ],
+    "answer": "January"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 8,
+    "question": "What is the superlative of 'good'?",
+    "options": [
+      "Gooder",
+      "Better",
+      "Goodest",
+      "Best"
+    ],
+    "answer": "Best"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 8,
+    "question": "Which sentence uses 'can' correctly?",
+    "options": [
+      "She can sings",
+      "She can sing",
+      "She cans sing",
+      "She can singing"
+    ],
+    "answer": "She can sing"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 8,
+    "question": "What is the translation of 'dangerous'?",
+    "options": [
+      "Seguro",
+      "Divertido",
+      "Peligroso",
+      "Tranquilo"
+    ],
+    "answer": "Peligroso"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 8,
+    "question": "What is the opposite of 'hot'?",
+    "options": [
+      "Warm",
+      "Cool",
+      "Cold",
+      "Dry"
+    ],
+    "answer": "Cold"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 9,
+    "question": "What is the past tense of 'see'?",
+    "options": [
+      "Seed",
+      "Seen",
+      "Saw",
+      "Seeing"
+    ],
+    "answer": "Saw"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 9,
+    "question": "Which is correct: 'I ___ TV every day'?",
+    "options": [
+      "am watching",
+      "watches",
+      "watch",
+      "watching"
+    ],
+    "answer": "watch"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 9,
+    "question": "What is the translation of 'tomorrow'?",
+    "options": [
+      "Ayer",
+      "Hoy",
+      "Mañana",
+      "Ahora"
+    ],
+    "answer": "Mañana"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 9,
+    "question": "How do you say 'verano' in English?",
+    "options": [
+      "Winter",
+      "Spring",
+      "Autumn",
+      "Summer"
+    ],
+    "answer": "Summer"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 10,
+    "question": "What is the past tense of 'write'?",
+    "options": [
+      "Writed",
+      "Written",
+      "Wrote",
+      "Writes"
+    ],
+    "answer": "Wrote"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 10,
+    "question": "Which sentence is in the future tense?",
+    "options": [
+      "She went home",
+      "She goes home",
+      "She will go home",
+      "She is going home"
+    ],
+    "answer": "She will go home"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 10,
+    "question": "What is the translation of 'understand'?",
+    "options": [
+      "Hablar",
+      "Escuchar",
+      "Entender",
+      "Pensar"
+    ],
+    "answer": "Entender"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 10,
+    "question": "What is the synonym of 'big'?",
+    "options": [
+      "Small",
+      "Tiny",
+      "Large",
+      "Short"
+    ],
+    "answer": "Large"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 11,
+    "question": "Which sentence is correct?",
+    "options": [
+      "I have never been to Paris",
+      "I never have been to Paris",
+      "I have been never to Paris",
+      "Never I have been to Paris"
+    ],
+    "answer": "I have never been to Paris"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 11,
+    "question": "What is the translation of 'weather'?",
+    "options": [
+      "Clima",
+      "Viento",
+      "Lluvia",
+      "Nube"
+    ],
+    "answer": "Clima"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 11,
+    "question": "What is the past participle of 'break'?",
+    "options": [
+      "Broke",
+      "Breaked",
+      "Broken",
+      "Breaking"
+    ],
+    "answer": "Broken"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 11,
+    "question": "How do you say 'derecha' in English?",
+    "options": [
+      "Left",
+      "Straight",
+      "Right",
+      "Behind"
+    ],
+    "answer": "Right"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 12,
+    "question": "Which is the correct question form?",
+    "options": [
+      "Where she lives?",
+      "Where does she live?",
+      "Where she does live?",
+      "Where is she live?"
+    ],
+    "answer": "Where does she live?"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 12,
+    "question": "What is the translation of 'choose'?",
+    "options": [
+      "Perder",
+      "Encontrar",
+      "Elegir",
+      "Buscar"
+    ],
+    "answer": "Elegir"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 12,
+    "question": "What is the comparative of 'bad'?",
+    "options": [
+      "Badder",
+      "More bad",
+      "Worse",
+      "Worst"
+    ],
+    "answer": "Worse"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 12,
+    "question": "Which sentence uses 'must' correctly?",
+    "options": [
+      "You must to go",
+      "You must go",
+      "You musts go",
+      "You must going"
+    ],
+    "answer": "You must go"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 13,
+    "question": "What does 'It's raining cats and dogs' mean?",
+    "options": [
+      "It's snowing",
+      "Animals are falling",
+      "It's raining heavily",
+      "It's windy"
+    ],
+    "answer": "It's raining heavily"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 13,
+    "question": "Which is correct: 'She ___ here since 2020'?",
+    "options": [
+      "lives",
+      "is living",
+      "has lived",
+      "lived"
+    ],
+    "answer": "has lived"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 13,
+    "question": "What is the translation of 'journey'?",
+    "options": [
+      "Destino",
+      "Viaje",
+      "Llegada",
+      "Salida"
+    ],
+    "answer": "Viaje"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 13,
+    "question": "What is the past tense of 'think'?",
+    "options": [
+      "Thinked",
+      "Thought",
+      "Thinks",
+      "Thinking"
+    ],
+    "answer": "Thought"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 14,
+    "question": "Which sentence is passive voice?",
+    "options": [
+      "She wrote the letter",
+      "The letter was written by her",
+      "She writes letters",
+      "She will write the letter"
+    ],
+    "answer": "The letter was written by her"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 14,
+    "question": "What is the translation of 'although'?",
+    "options": [
+      "Porque",
+      "Entonces",
+      "Aunque",
+      "Además"
+    ],
+    "answer": "Aunque"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 14,
+    "question": "What does 'break a leg' mean?",
+    "options": [
+      "Get hurt",
+      "Good luck",
+      "Run fast",
+      "Stop walking"
+    ],
+    "answer": "Good luck"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 14,
+    "question": "Which is correct?",
+    "options": [
+      "If I would have money, I buy a car",
+      "If I had money, I would buy a car",
+      "If I have money, I would buy a car",
+      "If I had money, I will buy a car"
+    ],
+    "answer": "If I had money, I would buy a car"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 15,
+    "question": "What is the translation of 'achievement'?",
+    "options": [
+      "Fracaso",
+      "Esfuerzo",
+      "Logro",
+      "Intento"
+    ],
+    "answer": "Logro"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 15,
+    "question": "Which sentence uses the present perfect correctly?",
+    "options": [
+      "I have saw that movie",
+      "I have seen that movie",
+      "I have see that movie",
+      "I seen that movie"
+    ],
+    "answer": "I have seen that movie"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 15,
+    "question": "What does 'under the weather' mean?",
+    "options": [
+      "Outside in the rain",
+      "Feeling sick",
+      "Very happy",
+      "Confused"
+    ],
+    "answer": "Feeling sick"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 15,
+    "question": "What is the opposite of 'ancient'?",
+    "options": [
+      "Old",
+      "Historic",
+      "Modern",
+      "Classic"
+    ],
+    "answer": "Modern"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 16,
+    "question": "Which is the correct reported speech of 'I am tired'?",
+    "options": [
+      "She said she is tired",
+      "She said she was tired",
+      "She said she were tired",
+      "She said she be tired"
+    ],
+    "answer": "She said she was tired"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 16,
+    "question": "What is the translation of 'throughout'?",
+    "options": [
+      "Dentro",
+      "Afuera",
+      "A lo largo de",
+      "Encima de"
+    ],
+    "answer": "A lo largo de"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 16,
+    "question": "What does 'hit the nail on the head' mean?",
+    "options": [
+      "Use a hammer",
+      "Be exactly right",
+      "Make a mistake",
+      "Work hard"
+    ],
+    "answer": "Be exactly right"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 16,
+    "question": "Which word is a conjunction?",
+    "options": [
+      "Quickly",
+      "Beautiful",
+      "However",
+      "Running"
+    ],
+    "answer": "However"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 17,
+    "question": "What is the translation of 'straightforward'?",
+    "options": [
+      "Complicado",
+      "Sencillo/Directo",
+      "Indirecto",
+      "Confuso"
+    ],
+    "answer": "Sencillo/Directo"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 17,
+    "question": "Which sentence uses 'used to' correctly?",
+    "options": [
+      "I used to played tennis",
+      "I use to play tennis",
+      "I used to play tennis",
+      "I used playing tennis"
+    ],
+    "answer": "I used to play tennis"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 17,
+    "question": "What does 'spill the beans' mean?",
+    "options": [
+      "Make a mess",
+      "Reveal a secret",
+      "Cook dinner",
+      "Be nervous"
+    ],
+    "answer": "Reveal a secret"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 17,
+    "question": "What is the synonym of 'intelligent'?",
+    "options": [
+      "Dumb",
+      "Clever",
+      "Lazy",
+      "Weak"
+    ],
+    "answer": "Clever"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 18,
+    "question": "Which is the correct third conditional?",
+    "options": [
+      "If she studied, she would pass",
+      "If she had studied, she would have passed",
+      "If she studies, she will pass",
+      "If she would study, she would pass"
+    ],
+    "answer": "If she had studied, she would have passed"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 18,
+    "question": "What is the translation of 'regardless'?",
+    "options": [
+      "Por supuesto",
+      "Sin importar",
+      "Por lo tanto",
+      "Sin embargo"
+    ],
+    "answer": "Sin importar"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 18,
+    "question": "What does 'once in a blue moon' mean?",
+    "options": [
+      "At night",
+      "Very rarely",
+      "Every month",
+      "During full moon"
+    ],
+    "answer": "Very rarely"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 18,
+    "question": "Which word is an adverb?",
+    "options": [
+      "Quick",
+      "Quickly",
+      "Quickness",
+      "Quicken"
+    ],
+    "answer": "Quickly"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 19,
+    "question": "What is the translation of 'throughout'?",
+    "options": [
+      "Al principio",
+      "A lo largo de",
+      "Al final",
+      "En medio de"
+    ],
+    "answer": "A lo largo de"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 19,
+    "question": "Which sentence uses 'wish' correctly?",
+    "options": [
+      "I wish I can fly",
+      "I wish I could fly",
+      "I wish I will fly",
+      "I wish I am flying"
+    ],
+    "answer": "I wish I could fly"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 19,
+    "question": "What does 'bite the bullet' mean?",
+    "options": [
+      "Eat something hard",
+      "Endure a painful situation",
+      "Shoot a gun",
+      "Be brave in battle"
+    ],
+    "answer": "Endure a painful situation"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 19,
+    "question": "What is the synonym of 'difficult'?",
+    "options": [
+      "Easy",
+      "Simple",
+      "Challenging",
+      "Clear"
+    ],
+    "answer": "Challenging"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 20,
+    "question": "Which sentence uses the subjunctive correctly?",
+    "options": [
+      "I suggest that she goes",
+      "I suggest that she go",
+      "I suggest that she will go",
+      "I suggest that she would go"
+    ],
+    "answer": "I suggest that she go"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 20,
+    "question": "What is the translation of 'acknowledge'?",
+    "options": [
+      "Ignorar",
+      "Reconocer",
+      "Olvidar",
+      "Dudar"
+    ],
+    "answer": "Reconocer"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 20,
+    "question": "What does 'costs an arm and a leg' mean?",
+    "options": [
+      "Is free",
+      "Is very expensive",
+      "Is painful",
+      "Is broken"
+    ],
+    "answer": "Is very expensive"
+  },
+  {
+    "world": "english",
+    "difficulty": "primaria",
+    "level": 20,
+    "question": "What is the opposite of 'vague'?",
+    "options": [
+      "Unclear",
+      "Ambiguous",
+      "Precise",
+      "Blurry"
+    ],
+    "answer": "Precise"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 1,
+    "question": "Which sentence uses the present perfect continuous correctly?",
+    "options": [
+      "She has been studying for 3 hours",
+      "She is studying since 3 hours",
+      "She has studying for 3 hours",
+      "She studies since 3 hours"
+    ],
+    "answer": "She has been studying for 3 hours"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 1,
+    "question": "What is the meaning of 'ambiguous'?",
+    "options": [
+      "Clear and direct",
+      "Having more than one possible meaning",
+      "Very important",
+      "Completely wrong"
+    ],
+    "answer": "Having more than one possible meaning"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 1,
+    "question": "What does 'the ball is in your court' mean?",
+    "options": [
+      "Play tennis",
+      "It's your turn to decide",
+      "You are winning",
+      "Join the game"
+    ],
+    "answer": "It's your turn to decide"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 1,
+    "question": "Which is the correct passive voice of 'They built the bridge in 1990'?",
+    "options": [
+      "The bridge was built in 1990",
+      "The bridge is built in 1990",
+      "The bridge built in 1990",
+      "The bridge has been built in 1990"
+    ],
+    "answer": "The bridge was built in 1990"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 2,
+    "question": "What is the meaning of 'meticulous'?",
+    "options": [
+      "Careless",
+      "Paying great attention to detail",
+      "Very fast",
+      "Completely wrong"
+    ],
+    "answer": "Paying great attention to detail"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 2,
+    "question": "Which sentence uses a relative clause correctly?",
+    "options": [
+      "The man who he lives next door is a doctor",
+      "The man who lives next door is a doctor",
+      "The man which lives next door is a doctor",
+      "The man lives next door is a doctor"
+    ],
+    "answer": "The man who lives next door is a doctor"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 2,
+    "question": "What does 'burn bridges' mean?",
+    "options": [
+      "Start a fire",
+      "Damage relationships permanently",
+      "Cross a river",
+      "Build something new"
+    ],
+    "answer": "Damage relationships permanently"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 2,
+    "question": "What is the synonym of 'abundant'?",
+    "options": [
+      "Scarce",
+      "Rare",
+      "Plentiful",
+      "Limited"
+    ],
+    "answer": "Plentiful"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 3,
+    "question": "Which sentence uses inversion correctly?",
+    "options": [
+      "Never I have seen such beauty",
+      "Never have I seen such beauty",
+      "Never seen I have such beauty",
+      "I never have seen such beauty"
+    ],
+    "answer": "Never have I seen such beauty"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 3,
+    "question": "What is the meaning of 'eloquent'?",
+    "options": [
+      "Quiet and shy",
+      "Fluent and persuasive in speaking",
+      "Angry and loud",
+      "Slow to respond"
+    ],
+    "answer": "Fluent and persuasive in speaking"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 3,
+    "question": "What does 'burning the midnight oil' mean?",
+    "options": [
+      "Wasting energy",
+      "Working late into the night",
+      "Cooking dinner",
+      "Having a fire"
+    ],
+    "answer": "Working late into the night"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 3,
+    "question": "What is the antonym of 'transparent'?",
+    "options": [
+      "Clear",
+      "Visible",
+      "Opaque",
+      "Bright"
+    ],
+    "answer": "Opaque"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 4,
+    "question": "Which sentence uses a participle clause correctly?",
+    "options": [
+      "Having finished his homework, he went to bed",
+      "Finished his homework, he went to bed",
+      "He having finished went to bed",
+      "He went to bed having finished"
+    ],
+    "answer": "Having finished his homework, he went to bed"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 4,
+    "question": "What is the meaning of 'resilient'?",
+    "options": [
+      "Easily broken",
+      "Able to recover quickly from difficulties",
+      "Very fragile",
+      "Slow to adapt"
+    ],
+    "answer": "Able to recover quickly from difficulties"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 4,
+    "question": "What does 'a blessing in disguise' mean?",
+    "options": [
+      "A hidden danger",
+      "Something good that seemed bad at first",
+      "A religious event",
+      "A surprise party"
+    ],
+    "answer": "Something good that seemed bad at first"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 4,
+    "question": "Which word best completes: 'She was ___ by the complexity of the problem'?",
+    "options": [
+      "baffled",
+      "pleased",
+      "bored",
+      "excited"
+    ],
+    "answer": "baffled"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 5,
+    "question": "Which sentence uses the future perfect correctly?",
+    "options": [
+      "By 2030, they will finish the project",
+      "By 2030, they will have finished the project",
+      "By 2030, they finish the project",
+      "By 2030, they are finishing the project"
+    ],
+    "answer": "By 2030, they will have finished the project"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 5,
+    "question": "What is the meaning of 'tenacious'?",
+    "options": [
+      "Giving up easily",
+      "Holding firmly to something",
+      "Very shy",
+      "Extremely tired"
+    ],
+    "answer": "Holding firmly to something"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 5,
+    "question": "What does 'the tip of the iceberg' mean?",
+    "options": [
+      "A cold place",
+      "A small visible part of a larger problem",
+      "The best part",
+      "The beginning of something"
+    ],
+    "answer": "A small visible part of a larger problem"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 5,
+    "question": "What is the synonym of 'obsolete'?",
+    "options": [
+      "Modern",
+      "Outdated",
+      "Useful",
+      "Advanced"
+    ],
+    "answer": "Outdated"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 6,
+    "question": "Which sentence uses a cleft sentence correctly?",
+    "options": [
+      "John broke the window",
+      "It was John who broke the window",
+      "John it was broke the window",
+      "Who broke the window was John"
+    ],
+    "answer": "It was John who broke the window"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 6,
+    "question": "What is the meaning of 'ambivalent'?",
+    "options": [
+      "Very certain",
+      "Having mixed feelings about something",
+      "Completely happy",
+      "Totally confused"
+    ],
+    "answer": "Having mixed feelings about something"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 6,
+    "question": "What does 'add fuel to the fire' mean?",
+    "options": [
+      "Start a campfire",
+      "Make a bad situation worse",
+      "Help someone",
+      "Cool down a situation"
+    ],
+    "answer": "Make a bad situation worse"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 6,
+    "question": "What is the antonym of 'diligent'?",
+    "options": [
+      "Hardworking",
+      "Careful",
+      "Lazy",
+      "Thorough"
+    ],
+    "answer": "Lazy"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 7,
+    "question": "Which sentence uses the past perfect correctly?",
+    "options": [
+      "She already left when I arrived",
+      "She had already left when I arrived",
+      "She has already left when I arrived",
+      "She was already left when I arrived"
+    ],
+    "answer": "She had already left when I arrived"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 7,
+    "question": "What is the meaning of 'pragmatic'?",
+    "options": [
+      "Idealistic and unrealistic",
+      "Dealing with things sensibly and practically",
+      "Very emotional",
+      "Strictly theoretical"
+    ],
+    "answer": "Dealing with things sensibly and practically"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 7,
+    "question": "What does 'every cloud has a silver lining' mean?",
+    "options": [
+      "Clouds are metallic",
+      "Every bad situation has something positive",
+      "The weather will improve",
+      "Rain brings good luck"
+    ],
+    "answer": "Every bad situation has something positive"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 7,
+    "question": "Which word best completes: 'The politician gave an ___ speech that moved the crowd'?",
+    "options": [
+      "dull",
+      "incoherent",
+      "impassioned",
+      "boring"
+    ],
+    "answer": "impassioned"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 8,
+    "question": "Which sentence uses 'despite' correctly?",
+    "options": [
+      "Despite of the rain, we went out",
+      "Despite the rain, we went out",
+      "Despite it rained, we went out",
+      "Despite that the rain, we went out"
+    ],
+    "answer": "Despite the rain, we went out"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 8,
+    "question": "What is the meaning of 'concise'?",
+    "options": [
+      "Long and detailed",
+      "Expressing much in few words",
+      "Vague and unclear",
+      "Very formal"
+    ],
+    "answer": "Expressing much in few words"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 8,
+    "question": "What does 'throw in the towel' mean?",
+    "options": [
+      "Do laundry",
+      "Give up",
+      "Win a fight",
+      "Start over"
+    ],
+    "answer": "Give up"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 8,
+    "question": "What is the synonym of 'frugal'?",
+    "options": [
+      "Wasteful",
+      "Generous",
+      "Thrifty",
+      "Extravagant"
+    ],
+    "answer": "Thrifty"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 9,
+    "question": "Which sentence uses a noun clause correctly?",
+    "options": [
+      "I know where does she live",
+      "I know where she lives",
+      "I know where she does live",
+      "I know she where lives"
+    ],
+    "answer": "I know where she lives"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 9,
+    "question": "What is the meaning of 'exacerbate'?",
+    "options": [
+      "Improve a situation",
+      "Make a problem worse",
+      "Solve a conflict",
+      "Calm things down"
+    ],
+    "answer": "Make a problem worse"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 9,
+    "question": "What does 'barking up the wrong tree' mean?",
+    "options": [
+      "Training a dog",
+      "Pursuing a mistaken course of action",
+      "Making noise",
+      "Climbing a tree"
+    ],
+    "answer": "Pursuing a mistaken course of action"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 9,
+    "question": "What is the antonym of 'verbose'?",
+    "options": [
+      "Wordy",
+      "Long-winded",
+      "Succinct",
+      "Repetitive"
+    ],
+    "answer": "Succinct"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 10,
+    "question": "Which sentence uses mixed conditionals correctly?",
+    "options": [
+      "If I had studied, I will be successful now",
+      "If I had studied, I would be successful now",
+      "If I would have studied, I would be successful now",
+      "If I studied, I would have been successful"
+    ],
+    "answer": "If I had studied, I would be successful now"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 10,
+    "question": "What is the meaning of 'benevolent'?",
+    "options": [
+      "Cruel and harsh",
+      "Well-meaning and kindly",
+      "Indifferent",
+      "Selfish"
+    ],
+    "answer": "Well-meaning and kindly"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 10,
+    "question": "What does 'beat around the bush' mean?",
+    "options": [
+      "Go for a walk",
+      "Avoid the main topic",
+      "Work in a garden",
+      "Search carefully"
+    ],
+    "answer": "Avoid the main topic"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 10,
+    "question": "Which word best fills: 'The evidence was ___, pointing to only one possible conclusion'?",
+    "options": [
+      "vague",
+      "unclear",
+      "inconclusive",
+      "irrefutable"
+    ],
+    "answer": "irrefutable"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 11,
+    "question": "Which sentence correctly uses 'as...as'?",
+    "options": [
+      "She is as taller as her sister",
+      "She is as tall as her sister",
+      "She is as tall than her sister",
+      "She is tall as her sister"
+    ],
+    "answer": "She is as tall as her sister"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 11,
+    "question": "What is the meaning of 'coerce'?",
+    "options": [
+      "Encourage freely",
+      "Force by threats or pressure",
+      "Persuade gently",
+      "Reward generously"
+    ],
+    "answer": "Force by threats or pressure"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 11,
+    "question": "What does 'let the cat out of the bag' mean?",
+    "options": [
+      "Free an animal",
+      "Accidentally reveal a secret",
+      "Start an argument",
+      "Make a mess"
+    ],
+    "answer": "Accidentally reveal a secret"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 11,
+    "question": "What is the synonym of 'ephemeral'?",
+    "options": [
+      "Permanent",
+      "Eternal",
+      "Transient",
+      "Lasting"
+    ],
+    "answer": "Transient"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 12,
+    "question": "Which sentence uses 'so...that' correctly?",
+    "options": [
+      "It was so hot that we stayed inside",
+      "It was so hot we stayed inside that",
+      "It was that hot so we stayed inside",
+      "It was hot so that we stayed inside"
+    ],
+    "answer": "It was so hot that we stayed inside"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 12,
+    "question": "What is the meaning of 'antagonist'?",
+    "options": [
+      "A hero",
+      "A main character's ally",
+      "A person who opposes the protagonist",
+      "A neutral character"
+    ],
+    "answer": "A person who opposes the protagonist"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 12,
+    "question": "What does 'bite off more than you can chew' mean?",
+    "options": [
+      "Eat too quickly",
+      "Take on more than you can handle",
+      "Be very hungry",
+      "Make a bad decision"
+    ],
+    "answer": "Take on more than you can handle"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 12,
+    "question": "What is the antonym of 'gregarious'?",
+    "options": [
+      "Social",
+      "Outgoing",
+      "Introverted",
+      "Friendly"
+    ],
+    "answer": "Introverted"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 13,
+    "question": "Which sentence uses emphasis with 'do' correctly?",
+    "options": [
+      "I do really like jazz",
+      "I really do like jazz",
+      "I do like really jazz",
+      "Do I really like jazz"
+    ],
+    "answer": "I really do like jazz"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 13,
+    "question": "What is the meaning of 'contentious'?",
+    "options": [
+      "Peaceful and agreeable",
+      "Causing disagreement or argument",
+      "Completely certain",
+      "Very boring"
+    ],
+    "answer": "Causing disagreement or argument"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 13,
+    "question": "What does 'kill two birds with one stone' mean?",
+    "options": [
+      "Hunt animals",
+      "Solve two problems with one action",
+      "Waste time",
+      "Make things complicated"
+    ],
+    "answer": "Solve two problems with one action"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 13,
+    "question": "Which word best completes: 'The scientist made a ___ discovery that changed the field'?",
+    "options": [
+      "trivial",
+      "minor",
+      "groundbreaking",
+      "ordinary"
+    ],
+    "answer": "groundbreaking"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 14,
+    "question": "Which sentence uses a gerund correctly as subject?",
+    "options": [
+      "To swim is good for health",
+      "Swimming are good for health",
+      "Swimming is good for health",
+      "Swim is good for health"
+    ],
+    "answer": "Swimming is good for health"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 14,
+    "question": "What is the meaning of 'unprecedented'?",
+    "options": [
+      "Common and expected",
+      "Never done or known before",
+      "Already recorded",
+      "Frequently repeated"
+    ],
+    "answer": "Never done or known before"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 14,
+    "question": "What does 'the last straw' mean?",
+    "options": [
+      "A piece of straw",
+      "The final problem that makes a situation unbearable",
+      "A fresh start",
+      "The first sign of trouble"
+    ],
+    "answer": "The final problem that makes a situation unbearable"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 14,
+    "question": "What is the synonym of 'mitigate'?",
+    "options": [
+      "Worsen",
+      "Ignore",
+      "Lessen",
+      "Increase"
+    ],
+    "answer": "Lessen"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 15,
+    "question": "Which sentence uses 'having' as a perfect participle correctly?",
+    "options": [
+      "Having been warned, she ignored the advice",
+      "Being warned, she ignored the advice",
+      "Warned having, she ignored the advice",
+      "She having warned ignored the advice"
+    ],
+    "answer": "Having been warned, she ignored the advice"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 15,
+    "question": "What is the meaning of 'pervasive'?",
+    "options": [
+      "Rare and unusual",
+      "Spreading widely throughout",
+      "Limited in scope",
+      "Quickly disappearing"
+    ],
+    "answer": "Spreading widely throughout"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 15,
+    "question": "What does 'turn a blind eye' mean?",
+    "options": [
+      "Have poor vision",
+      "Deliberately ignore something",
+      "Look the other way physically",
+      "Close your eyes"
+    ],
+    "answer": "Deliberately ignore something"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 15,
+    "question": "What is the antonym of 'lucid'?",
+    "options": [
+      "Clear",
+      "Coherent",
+      "Confused",
+      "Transparent"
+    ],
+    "answer": "Confused"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 16,
+    "question": "Which sentence uses fronting correctly?",
+    "options": [
+      "Rarely I have seen such talent",
+      "Rarely have I seen such talent",
+      "I rarely have seen such talent",
+      "I have rarely seen such talent"
+    ],
+    "answer": "Rarely have I seen such talent"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 16,
+    "question": "What is the meaning of 'complacent'?",
+    "options": [
+      "Anxious and worried",
+      "Satisfied to the point of not trying harder",
+      "Very ambitious",
+      "Constantly improving"
+    ],
+    "answer": "Satisfied to the point of not trying harder"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 16,
+    "question": "What does 'a penny for your thoughts' mean?",
+    "options": [
+      "You are thinking about money",
+      "What are you thinking about?",
+      "Your ideas are worthless",
+      "Think more carefully"
+    ],
+    "answer": "What are you thinking about?"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 16,
+    "question": "Which word best completes: 'The author's writing style is ___; each sentence is carefully crafted'?",
+    "options": [
+      "haphazard",
+      "careless",
+      "deliberate",
+      "spontaneous"
+    ],
+    "answer": "deliberate"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 17,
+    "question": "Which sentence uses an absolute phrase correctly?",
+    "options": [
+      "The storm passed, we continued our journey",
+      "The storm having passed, we continued our journey",
+      "After the storm passed, we continued our journey",
+      "The storm passed and we continued our journey"
+    ],
+    "answer": "The storm having passed, we continued our journey"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 17,
+    "question": "What is the meaning of 'sycophant'?",
+    "options": [
+      "An honest critic",
+      "A person who uses flattery to gain favor",
+      "A loyal friend",
+      "An independent thinker"
+    ],
+    "answer": "A person who uses flattery to gain favor"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 17,
+    "question": "What does 'bite the hand that feeds you' mean?",
+    "options": [
+      "Be ungrateful to a benefactor",
+      "Feed an animal",
+      "Work for food",
+      "Be very hungry"
+    ],
+    "answer": "Be ungrateful to a benefactor"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 17,
+    "question": "What is the synonym of 'circumspect'?",
+    "options": [
+      "Reckless",
+      "Cautious",
+      "Careless",
+      "Impulsive"
+    ],
+    "answer": "Cautious"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 18,
+    "question": "Which sentence uses a double negative correctly in formal English?",
+    "options": [
+      "I don't know nothing about it",
+      "I know nothing about it",
+      "I don't know anything about it",
+      "Both B and C are correct"
+    ],
+    "answer": "Both B and C are correct"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 18,
+    "question": "What is the meaning of 'ubiquitous'?",
+    "options": [
+      "Rare and hard to find",
+      "Present everywhere at the same time",
+      "Very old-fashioned",
+      "Completely unknown"
+    ],
+    "answer": "Present everywhere at the same time"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 18,
+    "question": "What does 'the devil is in the details' mean?",
+    "options": [
+      "Details are evil",
+      "Small details can cause big problems",
+      "Ignore the details",
+      "The details are simple"
+    ],
+    "answer": "Small details can cause big problems"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 18,
+    "question": "What is the antonym of 'verbose'?",
+    "options": [
+      "Wordy",
+      "Lengthy",
+      "Terse",
+      "Elaborate"
+    ],
+    "answer": "Terse"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 19,
+    "question": "Which sentence uses the subjunctive correctly?",
+    "options": [
+      "It is essential that he attends the meeting",
+      "It is essential that he attend the meeting",
+      "It is essential that he will attend the meeting",
+      "It is essential that he should attends the meeting"
+    ],
+    "answer": "It is essential that he attend the meeting"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 19,
+    "question": "What is the meaning of 'juxtapose'?",
+    "options": [
+      "To separate completely",
+      "To place side by side for comparison",
+      "To combine into one",
+      "To analyze individually"
+    ],
+    "answer": "To place side by side for comparison"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 19,
+    "question": "What does 'read between the lines' mean?",
+    "options": [
+      "Read very carefully",
+      "Understand the hidden meaning",
+      "Skip parts of the text",
+      "Read aloud"
+    ],
+    "answer": "Understand the hidden meaning"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 19,
+    "question": "Which word best completes: 'The new policy was ___ by many as an infringement on civil liberties'?",
+    "options": [
+      "praised",
+      "welcomed",
+      "denounced",
+      "supported"
+    ],
+    "answer": "denounced"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 20,
+    "question": "Which sentence uses a dangling modifier correctly?",
+    "options": [
+      "Walking down the street, the trees were beautiful",
+      "Walking down the street, she admired the trees",
+      "She walking down the street, the trees were beautiful",
+      "The trees, walking down the street, were beautiful"
+    ],
+    "answer": "Walking down the street, she admired the trees"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 20,
+    "question": "What is the meaning of 'equivocate'?",
+    "options": [
+      "Speak clearly and directly",
+      "Use ambiguous language to avoid commitment",
+      "Make a definitive statement",
+      "Agree completely"
+    ],
+    "answer": "Use ambiguous language to avoid commitment"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 20,
+    "question": "What does 'throw caution to the wind' mean?",
+    "options": [
+      "Be very careful",
+      "Take risks without worrying about consequences",
+      "Study meteorology",
+      "Plan everything carefully"
+    ],
+    "answer": "Take risks without worrying about consequences"
+  },
+  {
+    "world": "english",
+    "difficulty": "secundaria",
+    "level": 20,
+    "question": "What is the synonym of 'taciturn'?",
+    "options": [
+      "Talkative",
+      "Reserved and uncommunicative",
+      "Friendly",
+      "Enthusiastic"
+    ],
+    "answer": "Reserved and uncommunicative"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 1,
+    "question": "Which sentence demonstrates correct use of the subjunctive in a formal register?",
+    "options": [
+      "Were she to arrive early, inform me immediately",
+      "If she would arrive early, inform me immediately",
+      "Should she to arrive early, inform me immediately",
+      "Was she to arrive early, inform me immediately"
+    ],
+    "answer": "Were she to arrive early, inform me immediately"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 1,
+    "question": "What is the meaning of 'solipsism'?",
+    "options": [
+      "Extreme altruism",
+      "The view that only one's own mind exists",
+      "Collective thinking",
+      "Social philosophy"
+    ],
+    "answer": "The view that only one's own mind exists"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 1,
+    "question": "What does 'Pyrrhic victory' mean?",
+    "options": [
+      "A great triumph",
+      "A victory won at such great cost it is equivalent to defeat",
+      "A surprise win",
+      "A partial success"
+    ],
+    "answer": "A victory won at such great cost it is equivalent to defeat"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 1,
+    "question": "What is the antonym of 'perspicacious'?",
+    "options": [
+      "Shrewd",
+      "Astute",
+      "Obtuse",
+      "Perceptive"
+    ],
+    "answer": "Obtuse"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 2,
+    "question": "Which sentence uses a nominative absolute correctly?",
+    "options": [
+      "The mission accomplished, they returned home",
+      "They accomplished the mission and returned home",
+      "Having accomplished the mission, they returned home",
+      "The mission was accomplished and they returned home"
+    ],
+    "answer": "The mission accomplished, they returned home"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 2,
+    "question": "What is the meaning of 'lachrymose'?",
+    "options": [
+      "Very funny",
+      "Given to weeping or inducing tears",
+      "Extremely happy",
+      "Completely indifferent"
+    ],
+    "answer": "Given to weeping or inducing tears"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 2,
+    "question": "What does 'Achilles' heel' mean?",
+    "options": [
+      "A strong point",
+      "A fatal weakness despite overall strength",
+      "A foot injury",
+      "An ancient myth"
+    ],
+    "answer": "A fatal weakness despite overall strength"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 2,
+    "question": "What is the synonym of 'truculent'?",
+    "options": [
+      "Peaceful",
+      "Agreeable",
+      "Pugnacious",
+      "Timid"
+    ],
+    "answer": "Pugnacious"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 3,
+    "question": "Which sentence uses litotes correctly?",
+    "options": [
+      "She is incredibly talented",
+      "She is not without talent",
+      "She has no talent at all",
+      "She is the most talented"
+    ],
+    "answer": "She is not without talent"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 3,
+    "question": "What is the meaning of 'pusillanimous'?",
+    "options": [
+      "Extremely brave",
+      "Showing lack of courage",
+      "Very determined",
+      "Aggressively confident"
+    ],
+    "answer": "Showing lack of courage"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 3,
+    "question": "What does 'cut the Gordian knot' mean?",
+    "options": [
+      "Make a knot",
+      "Solve a complex problem with a bold, direct action",
+      "Untie something carefully",
+      "Create a difficult situation"
+    ],
+    "answer": "Solve a complex problem with a bold, direct action"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 3,
+    "question": "What is the antonym of 'sanguine'?",
+    "options": [
+      "Optimistic",
+      "Cheerful",
+      "Pessimistic",
+      "Confident"
+    ],
+    "answer": "Pessimistic"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 4,
+    "question": "Which is an example of chiasmus?",
+    "options": [
+      "She went to the store and came back",
+      "Ask not what your country can do for you, ask what you can do for your country",
+      "It was the best of times, it was the worst of times",
+      "To be or not to be, that is the question"
+    ],
+    "answer": "Ask not what your country can do for you, ask what you can do for your country"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 4,
+    "question": "What is the meaning of 'recondite'?",
+    "options": [
+      "Common knowledge",
+      "Little known or abstruse",
+      "Very popular",
+      "Easily understood"
+    ],
+    "answer": "Little known or abstruse"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 4,
+    "question": "What does 'Sisyphean task' mean?",
+    "options": [
+      "An easy assignment",
+      "A task that is endless and futile",
+      "A heroic endeavor",
+      "A creative project"
+    ],
+    "answer": "A task that is endless and futile"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 4,
+    "question": "What is the synonym of 'pellucid'?",
+    "options": [
+      "Opaque",
+      "Murky",
+      "Translucently clear",
+      "Complicated"
+    ],
+    "answer": "Translucently clear"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 5,
+    "question": "Which sentence demonstrates correct use of 'whom' in a complex construction?",
+    "options": [
+      "Whom do you think will win?",
+      "Who do you think will win?",
+      "Who do you think him to be?",
+      "Whom do you believe to be the winner?"
+    ],
+    "answer": "Whom do you believe to be the winner?"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 5,
+    "question": "What is the meaning of 'tendentious'?",
+    "options": [
+      "Objective and balanced",
+      "Promoting a particular cause or viewpoint",
+      "Completely neutral",
+      "Factually accurate"
+    ],
+    "answer": "Promoting a particular cause or viewpoint"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 5,
+    "question": "What does 'Hobson's choice' mean?",
+    "options": [
+      "A difficult decision between two options",
+      "A free choice with no real alternative",
+      "An impossible dilemma",
+      "A random selection"
+    ],
+    "answer": "A free choice with no real alternative"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 5,
+    "question": "What is the antonym of 'sycophantic'?",
+    "options": [
+      "Flattering",
+      "Obsequious",
+      "Forthright",
+      "Servile"
+    ],
+    "answer": "Forthright"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 6,
+    "question": "Which sentence uses anaphora as a rhetorical device?",
+    "options": [
+      "We shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields",
+      "He who fights and runs away lives to fight another day",
+      "It was the best of times, it was the worst of times",
+      "To err is human, to forgive divine"
+    ],
+    "answer": "We shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 6,
+    "question": "What is the meaning of 'sophistry'?",
+    "options": [
+      "Genuine wisdom",
+      "Clever but false reasoning",
+      "Deep philosophical thinking",
+      "Academic excellence"
+    ],
+    "answer": "Clever but false reasoning"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 6,
+    "question": "What does 'red herring' mean in argumentation?",
+    "options": [
+      "A type of fish",
+      "A misleading clue or distraction from the real issue",
+      "A strong argument",
+      "A logical fallacy about color"
+    ],
+    "answer": "A misleading clue or distraction from the real issue"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 6,
+    "question": "What is the synonym of 'nacreous'?",
+    "options": [
+      "Dull",
+      "Pearlescent",
+      "Transparent",
+      "Opaque"
+    ],
+    "answer": "Pearlescent"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 7,
+    "question": "Which sentence uses the pluperfect subjunctive correctly?",
+    "options": [
+      "If he would have known, he would have helped",
+      "If he had known, he would have helped",
+      "If he knew, he would have helped",
+      "If he has known, he would have helped"
+    ],
+    "answer": "If he had known, he would have helped"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 7,
+    "question": "What is the meaning of 'parlous'?",
+    "options": [
+      "Safe and secure",
+      "Full of danger or uncertainty",
+      "Completely calm",
+      "Easily managed"
+    ],
+    "answer": "Full of danger or uncertainty"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 7,
+    "question": "What does 'Faustian bargain' mean?",
+    "options": [
+      "A fair trade",
+      "An exchange of moral values for material gain",
+      "A business deal",
+      "A scholarly agreement"
+    ],
+    "answer": "An exchange of moral values for material gain"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 7,
+    "question": "What is the antonym of 'loquacious'?",
+    "options": [
+      "Talkative",
+      "Garrulous",
+      "Reticent",
+      "Verbose"
+    ],
+    "answer": "Reticent"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 8,
+    "question": "Which sentence demonstrates correct use of the 'were it not for' construction?",
+    "options": [
+      "Were it not for her help, I would have failed",
+      "If it were not for her help, I would have failed",
+      "Both A and B are correct",
+      "Was it not for her help, I would have failed"
+    ],
+    "answer": "Both A and B are correct"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 8,
+    "question": "What is the meaning of 'Byzantine'?",
+    "options": [
+      "Simple and direct",
+      "Excessively complicated and devious",
+      "Ancient and outdated",
+      "Openly aggressive"
+    ],
+    "answer": "Excessively complicated and devious"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 8,
+    "question": "What does 'Procrustean bed' mean?",
+    "options": [
+      "A comfortable resting place",
+      "A standard that is enforced regardless of individual circumstances",
+      "A flexible solution",
+      "An ancient Greek invention"
+    ],
+    "answer": "A standard that is enforced regardless of individual circumstances"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 8,
+    "question": "What is the synonym of 'opprobrium'?",
+    "options": [
+      "Praise",
+      "Admiration",
+      "Infamy",
+      "Approval"
+    ],
+    "answer": "Infamy"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 9,
+    "question": "Which is an example of a garden-path sentence?",
+    "options": [
+      "The horse raced past the barn fell",
+      "The horse fell after racing past the barn",
+      "After racing past the barn, the horse fell",
+      "The horse that raced past the barn fell"
+    ],
+    "answer": "The horse raced past the barn fell"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 9,
+    "question": "What is the meaning of 'ineluctable'?",
+    "options": [
+      "Easily avoided",
+      "Unable to be resisted or avoided",
+      "Highly desirable",
+      "Completely random"
+    ],
+    "answer": "Unable to be resisted or avoided"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 9,
+    "question": "What does 'Catch-22' mean?",
+    "options": [
+      "A lucky break",
+      "A dilemma where the solution is impossible due to contradictory constraints",
+      "A difficult math problem",
+      "A military strategy"
+    ],
+    "answer": "A dilemma where the solution is impossible due to contradictory constraints"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 9,
+    "question": "What is the antonym of 'phlegmatic'?",
+    "options": [
+      "Calm",
+      "Unemotional",
+      "Excitable",
+      "Stoic"
+    ],
+    "answer": "Excitable"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 10,
+    "question": "Which sentence correctly uses 'as' vs 'like' in formal English?",
+    "options": [
+      "Do like I say",
+      "Do as I say",
+      "Do as I told you to",
+      "Like I said do it"
+    ],
+    "answer": "Do as I say"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 10,
+    "question": "What is the meaning of 'peripatetic'?",
+    "options": [
+      "Staying in one place",
+      "Traveling from place to place",
+      "Working from home",
+      "Deeply focused"
+    ],
+    "answer": "Traveling from place to place"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 10,
+    "question": "What does 'tilting at windmills' mean?",
+    "options": [
+      "Working in agriculture",
+      "Fighting imaginary enemies or impossible battles",
+      "Generating energy",
+      "Building something new"
+    ],
+    "answer": "Fighting imaginary enemies or impossible battles"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 10,
+    "question": "What is the synonym of 'garrulous'?",
+    "options": [
+      "Taciturn",
+      "Reticent",
+      "Loquacious",
+      "Silent"
+    ],
+    "answer": "Loquacious"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 11,
+    "question": "Which sentence demonstrates correct use of epistrophe?",
+    "options": [
+      "We shall fight, we shall win, we shall prevail",
+      "Government of the people, by the people, for the people",
+      "I came, I saw, I conquered",
+      "Ask not what your country can do for you"
+    ],
+    "answer": "Government of the people, by the people, for the people"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 11,
+    "question": "What is the meaning of 'tendentious'?",
+    "options": [
+      "Factually neutral",
+      "Biased toward a particular perspective",
+      "Scientifically accurate",
+      "Philosophically balanced"
+    ],
+    "answer": "Biased toward a particular perspective"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 11,
+    "question": "What does 'Damocles' sword' mean?",
+    "options": [
+      "A sharp weapon",
+      "A constant threat hanging over someone",
+      "A reward for bravery",
+      "An ancient myth"
+    ],
+    "answer": "A constant threat hanging over someone"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 11,
+    "question": "What is the antonym of 'munificent'?",
+    "options": [
+      "Generous",
+      "Lavish",
+      "Parsimonious",
+      "Bountiful"
+    ],
+    "answer": "Parsimonious"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 12,
+    "question": "Which sentence contains a correct example of zeugma?",
+    "options": [
+      "She broke his car and his heart",
+      "She broke his car and damaged his heart",
+      "She damaged both his car and his heart",
+      "His car and his heart were both broken"
+    ],
+    "answer": "She broke his car and his heart"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 12,
+    "question": "What is the meaning of 'inchoate'?",
+    "options": [
+      "Fully developed",
+      "Just begun and not fully formed",
+      "Completely finished",
+      "Very organized"
+    ],
+    "answer": "Just begun and not fully formed"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 12,
+    "question": "What does 'Cassandra complex' mean?",
+    "options": [
+      "Predicting only good news",
+      "Accurately predicting disaster but not being believed",
+      "Being overly optimistic",
+      "Having prophetic dreams"
+    ],
+    "answer": "Accurately predicting disaster but not being believed"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 12,
+    "question": "What is the synonym of 'tergiversate'?",
+    "options": [
+      "Be direct",
+      "Equivocate",
+      "State clearly",
+      "Decide firmly"
+    ],
+    "answer": "Equivocate"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 13,
+    "question": "What is the linguistic term for 'the dog bit the man' vs 'the man was bitten by the dog'?",
+    "options": [
+      "Tense alternation",
+      "Voice alternation",
+      "Mood alternation",
+      "Aspect alternation"
+    ],
+    "answer": "Voice alternation"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 13,
+    "question": "What is the meaning of 'nescient'?",
+    "options": [
+      "All-knowing",
+      "Lacking knowledge",
+      "Very experienced",
+      "Academically trained"
+    ],
+    "answer": "Lacking knowledge"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 13,
+    "question": "What does 'Pandora's box' mean?",
+    "options": [
+      "A gift box",
+      "An action that causes many unforeseen problems",
+      "A treasure chest",
+      "A locked container"
+    ],
+    "answer": "An action that causes many unforeseen problems"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 13,
+    "question": "What is the antonym of 'pellucid'?",
+    "options": [
+      "Clear",
+      "Transparent",
+      "Lucid",
+      "Turbid"
+    ],
+    "answer": "Turbid"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 14,
+    "question": "Which sentence uses a correct appositive phrase?",
+    "options": [
+      "Einstein, the physicist who developed relativity, won the Nobel Prize",
+      "Einstein who was a physicist won the Nobel Prize",
+      "Einstein the physicist won the Nobel Prize",
+      "The physicist Einstein, he won the Nobel Prize"
+    ],
+    "answer": "Einstein, the physicist who developed relativity, won the Nobel Prize"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 14,
+    "question": "What is the meaning of 'heterodox'?",
+    "options": [
+      "Conventional and orthodox",
+      "Contrary to accepted beliefs",
+      "Strictly traditional",
+      "Widely accepted"
+    ],
+    "answer": "Contrary to accepted beliefs"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 14,
+    "question": "What does 'Herculean task' mean?",
+    "options": [
+      "An impossible challenge",
+      "A task requiring enormous strength or effort",
+      "A simple job",
+      "A team effort"
+    ],
+    "answer": "A task requiring enormous strength or effort"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 14,
+    "question": "What is the synonym of 'perspicuous'?",
+    "options": [
+      "Obscure",
+      "Vague",
+      "Clearly expressed",
+      "Ambiguous"
+    ],
+    "answer": "Clearly expressed"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 15,
+    "question": "What is the difference between 'imply' and 'infer'?",
+    "options": [
+      "They are synonyms",
+      "The speaker implies; the listener infers",
+      "The listener implies; the speaker infers",
+      "Both refer to direct statements"
+    ],
+    "answer": "The speaker implies; the listener infers"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 15,
+    "question": "What is the meaning of 'verisimilitude'?",
+    "options": [
+      "Complete falsehood",
+      "The appearance of being true or real",
+      "Absolute certainty",
+      "Scientific proof"
+    ],
+    "answer": "The appearance of being true or real"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 15,
+    "question": "What does 'Occam's razor' mean?",
+    "options": [
+      "A sharp argument",
+      "The simplest explanation is usually correct",
+      "A complex logical system",
+      "A philosophical debate"
+    ],
+    "answer": "The simplest explanation is usually correct"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 15,
+    "question": "What is the antonym of 'diffident'?",
+    "options": [
+      "Shy",
+      "Timid",
+      "Self-effacing",
+      "Assertive"
+    ],
+    "answer": "Assertive"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 16,
+    "question": "Which sentence demonstrates correct use of 'whoever' vs 'whomever'?",
+    "options": [
+      "Give it to whoever asks first",
+      "Give it to whomever asks first",
+      "Give it to whoever you trust",
+      "Give it to whomever you trust most"
+    ],
+    "answer": "Give it to whoever asks first"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 16,
+    "question": "What is the meaning of 'sophrosyne'?",
+    "options": [
+      "Excessive pride",
+      "Temperance and self-control as a virtue",
+      "Intellectual arrogance",
+      "Physical courage"
+    ],
+    "answer": "Temperance and self-control as a virtue"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 16,
+    "question": "What does 'Potemkin village' mean?",
+    "options": [
+      "A Russian town",
+      "An impressive facade concealing a poor reality",
+      "A model community",
+      "An ancient settlement"
+    ],
+    "answer": "An impressive facade concealing a poor reality"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 16,
+    "question": "What is the synonym of 'apocryphal'?",
+    "options": [
+      "Verified",
+      "Authentic",
+      "Dubious",
+      "Documented"
+    ],
+    "answer": "Dubious"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 17,
+    "question": "What is the rhetorical term for understatement used for emphasis?",
+    "options": [
+      "Hyperbole",
+      "Meiosis",
+      "Synecdoche",
+      "Metonymy"
+    ],
+    "answer": "Meiosis"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 17,
+    "question": "What is the meaning of 'enervate'?",
+    "options": [
+      "Give energy to",
+      "Weaken or drain of vitality",
+      "Strengthen considerably",
+      "Stimulate greatly"
+    ],
+    "answer": "Weaken or drain of vitality"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 17,
+    "question": "What does 'Scylla and Charybdis' mean?",
+    "options": [
+      "Two sea monsters",
+      "Being caught between two equally dangerous alternatives",
+      "A difficult navigation route",
+      "An ancient Greek myth only"
+    ],
+    "answer": "Being caught between two equally dangerous alternatives"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 17,
+    "question": "What is the antonym of 'salubrious'?",
+    "options": [
+      "Healthy",
+      "Beneficial",
+      "Wholesome",
+      "Noxious"
+    ],
+    "answer": "Noxious"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 18,
+    "question": "Which sentence demonstrates correct use of the historical present?",
+    "options": [
+      "Caesar crossed the Rubicon in 49 BC",
+      "Caesar crosses the Rubicon and changes history forever",
+      "Caesar had crossed the Rubicon",
+      "Caesar would cross the Rubicon"
+    ],
+    "answer": "Caesar crosses the Rubicon and changes history forever"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 18,
+    "question": "What is the meaning of 'polysemy'?",
+    "options": [
+      "A word with one fixed meaning",
+      "A word having multiple related meanings",
+      "Multiple words with the same meaning",
+      "Words from different languages"
+    ],
+    "answer": "A word having multiple related meanings"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 18,
+    "question": "What does 'Pascal's wager' mean?",
+    "options": [
+      "A mathematical bet",
+      "It is rational to believe in God because potential gains outweigh losses",
+      "A philosophical argument against religion",
+      "A game of chance"
+    ],
+    "answer": "It is rational to believe in God because potential gains outweigh losses"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 18,
+    "question": "What is the synonym of 'ineffable'?",
+    "options": [
+      "Easily described",
+      "Commonplace",
+      "Inexpressible",
+      "Ordinary"
+    ],
+    "answer": "Inexpressible"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 19,
+    "question": "What is the difference between 'presupposition' and 'entailment' in semantics?",
+    "options": [
+      "They are the same",
+      "Presupposition survives negation; entailment does not",
+      "Entailment survives negation; presupposition does not",
+      "Both disappear under negation"
+    ],
+    "answer": "Presupposition survives negation; entailment does not"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 19,
+    "question": "What is the meaning of 'liminal'?",
+    "options": [
+      "Clearly defined",
+      "Occupying a threshold or transitional space",
+      "Completely finished",
+      "Firmly established"
+    ],
+    "answer": "Occupying a threshold or transitional space"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 19,
+    "question": "What does 'Kafkaesque' mean?",
+    "options": [
+      "Optimistic and straightforward",
+      "Marked by surreal bureaucratic obstacles and oppression",
+      "Very organized and logical",
+      "Simple and transparent"
+    ],
+    "answer": "Marked by surreal bureaucratic obstacles and oppression"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 19,
+    "question": "What is the antonym of 'pellucid'?",
+    "options": [
+      "Transparent",
+      "Crystal clear",
+      "Limpid",
+      "Turbid"
+    ],
+    "answer": "Turbid"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 20,
+    "question": "Which of the following is an example of a performative utterance?",
+    "options": [
+      "The sky is blue",
+      "I hereby declare this meeting open",
+      "She said she was tired",
+      "He thinks it will rain"
+    ],
+    "answer": "I hereby declare this meeting open"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 20,
+    "question": "What is the meaning of 'apophenia'?",
+    "options": [
+      "Clear logical thinking",
+      "The tendency to perceive meaningful connections between unrelated things",
+      "Complete indifference",
+      "Scientific analysis"
+    ],
+    "answer": "The tendency to perceive meaningful connections between unrelated things"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 20,
+    "question": "What does 'Overton window' mean?",
+    "options": [
+      "A type of architecture",
+      "The range of ideas considered acceptable in public discourse at a given time",
+      "A political strategy",
+      "A media phenomenon"
+    ],
+    "answer": "The range of ideas considered acceptable in public discourse at a given time"
+  },
+  {
+    "world": "english",
+    "difficulty": "avanzado",
+    "level": 20,
+    "question": "What is the synonym of 'numinous'?",
+    "options": [
+      "Ordinary",
+      "Mundane",
+      "Awe-inspiring and spiritual",
+      "Completely rational"
+    ],
+    "answer": "Awe-inspiring and spiritual"
+  }
+]

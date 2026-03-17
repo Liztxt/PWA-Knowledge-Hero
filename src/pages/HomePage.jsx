@@ -1,4 +1,5 @@
 import { useAuth } from "../context/AuthContext";
+import { useProgress } from "../context/ProgressContext";
 import "./Home.css";
 
 const worlds = [
@@ -33,6 +34,7 @@ const worlds = [
 
 export default function HomePage({ onGoToPanel, onSelectWorld }) {
   const { user } = useAuth();
+  const { totalPoints } = useProgress();
 
   return (
     <div className="home-wrapper">
@@ -60,7 +62,7 @@ export default function HomePage({ onGoToPanel, onSelectWorld }) {
             </div>
             <div className="user-points-pill">
               <span className="user-points-icon">⭐</span>
-              <span>0 pts</span>
+              <span>{totalPoints} pts</span>
             </div>
           </button>
         </header>
