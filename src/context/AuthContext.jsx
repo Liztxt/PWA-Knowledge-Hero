@@ -5,7 +5,7 @@ const AuthContext = createContext(null);
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
-  const updateProfile = async (username, avatar) => {
+  const updateProfile = async (username, avatar, email) => {
   const token = localStorage.getItem("token");
   const res = await fetch("http://localhost:5000/api/auth/me", {
     method: "PUT",
@@ -13,7 +13,7 @@ export function AuthProvider({ children }) {
       "Content-Type": "application/json",
       Authorization: `Bearer ${token}`,
     },
-    body: JSON.stringify({ username, avatar }),
+    body: JSON.stringify({ username, avatar, email }),
   });
   const data = await res.json();
   if (!res.ok) throw new Error(data.message || "Error al actualizar");
@@ -68,11 +68,11 @@ const cancelDelete = async () => {
     return data.user;
   };
 
-  const register = async (username, password, role = "user") => {
+  const register = async (username, password, role = "user", email = null) => {
     const res = await fetch("http://localhost:5000/api/auth/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ username, password, role }),
+       body: JSON.stringify({ username, password, role, email }),
     });
 
     const data = await res.json();

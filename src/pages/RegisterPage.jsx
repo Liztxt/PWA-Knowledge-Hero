@@ -7,6 +7,7 @@ export default function RegisterPage({ onSwitch }) {
   const [form, setForm] = useState({
     username: "",
     password: "",
+    email: "", 
     confirmPassword: "",
     role: "user",
     terms: false,
@@ -35,15 +36,18 @@ export default function RegisterPage({ onSwitch }) {
       setError("Debes aceptar los términos y condiciones");
       return;
     }
-
+if (!form.email || !form.email.includes("@")) {
+  setError("Ingresa un email válido");
+  return;
+}
     setLoading(true);
     try {
-      await register(form.username, form.password, form.role);
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      setLoading(false);
-    }
+  await register(form.username, form.password, "user", form.email);
+} catch (err) {
+  setError(err.message);
+} finally {
+  setLoading(false);
+}
   };
 
   return (
@@ -68,6 +72,20 @@ export default function RegisterPage({ onSwitch }) {
               />
             </div>
           </div>
+          <div className="field-group">
+  <label className="field-label">Email de respaldo</label>
+  <div className="field-input-wrap">
+    <input
+      className="field-input"
+      type="email"
+      name="email"
+      placeholder="tucorreo@ejemplo.com"
+      value={form.email}
+      onChange={handleChange}
+      required
+    />
+  </div>
+</div>
 
           <div className="field-group">
             <label className="field-label">Crea una contraseña</label>
@@ -96,29 +114,6 @@ export default function RegisterPage({ onSwitch }) {
                 onChange={handleChange}
                 required
               />
-            </div>
-          </div>
-
-          {/* Selector de rol — ocultarlo proximamente */}
-          <div className="field-group">
-            <label className="field-label">Rol</label>
-            <div className="role-selector">
-              {["user", "admin"].map((r) => (
-                <label
-                  key={r}
-                  className={`role-option ${form.role === r ? "active" : ""}`}
-                >
-                  <input
-                    type="radio"
-                    name="role"
-                    value={r}
-                    checked={form.role === r}
-                    onChange={handleChange}
-                  />
-                  <span className="role-icon">{r === "admin" ? "⬟" : "◯"}</span>
-                  <span>{r === "admin" ? "Admin" : "Usuario"}</span>
-                </label>
-              ))}
             </div>
           </div>
 

@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import confetti from "canvas-confetti";
 import "./Results.css";
 
 const worldNames = {
@@ -30,6 +32,31 @@ export default function ResultsPage({
   const precision = total > 0 ? Math.round((correct / total) * 100) : 0;
   const isLastLevel = level >= 20;
 
+  useEffect(() => {
+    if (stars === 3) {
+      confetti({
+        particleCount: 150,
+        spread: 80,
+        origin: { y: 0.6 },
+        colors: ["#a855f7", "#ec4899", "#fbbf24", "#60a5fa", "#34d399"],
+      });
+      setTimeout(() => {
+        confetti({
+          particleCount: 80,
+          spread: 120,
+          origin: { y: 0.5, x: 0.2 },
+          colors: ["#a855f7", "#fbbf24"],
+        });
+        confetti({
+          particleCount: 80,
+          spread: 120,
+          origin: { y: 0.5, x: 0.8 },
+          colors: ["#ec4899", "#60a5fa"],
+        });
+      }, 500);
+    }
+  }, [stars]);
+
   function getPerformance() {
     if (!passed) return { msg: "¡Inténtalo de nuevo!", sub: "Máximo 1 error para pasar el nivel", avatar: "😅" };
     const pct = correct / total;
@@ -49,7 +76,6 @@ export default function ResultsPage({
       </div>
 
       <div className="results-card">
-
         <div className="results-top">
           <div className="results-avatar">{avatar}</div>
           <div className="results-title-block">
@@ -99,7 +125,6 @@ export default function ResultsPage({
             🏠 Ir al inicio
           </button>
         </div>
-
       </div>
     </div>
   );

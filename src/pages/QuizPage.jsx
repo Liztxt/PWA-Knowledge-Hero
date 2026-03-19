@@ -24,10 +24,10 @@ export default function QuizPage({ world, difficulty, level, onFinish, onBack })
   const [incorrect, setIncorrect] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [showExitConfirm, setShowExitConfirm] = useState(false); // ← nuevo
 
-  // useRef guarda el valor MÁS RECIENTE sin depender del closure del setTimeout
-  const pointsRef   = useRef(0);
-  const correctRef  = useRef(0);
+  const pointsRef    = useRef(0);
+  const correctRef   = useRef(0);
   const incorrectRef = useRef(0);
 
   useEffect(() => {
@@ -76,7 +76,6 @@ export default function QuizPage({ world, difficulty, level, onFinish, onBack })
       const data = await res.json();
       setCorrectAnswer(data.correctAnswer);
 
-      // Actualizar estado Y ref al mismo tiempo
       if (data.correct) {
         setFeedback("correct");
         setPoints((p) => { pointsRef.current = p + 10; return p + 10; });
@@ -86,7 +85,6 @@ export default function QuizPage({ world, difficulty, level, onFinish, onBack })
         setIncorrect((i) => { incorrectRef.current = i + 1; return i + 1; });
       }
 
-      // Usamos los refs para tener valores frescos dentro del setTimeout
       setTimeout(() => {
         if (current + 1 < questions.length) {
           setCurrent((c) => c + 1);
@@ -94,7 +92,6 @@ export default function QuizPage({ world, difficulty, level, onFinish, onBack })
           setFeedback(null);
           setCorrectAnswer(null);
         } else {
-          // Llamar onFinish con los valores actualizados desde los refs
           onFinish({
             points:    pointsRef.current,
             correct:   correctRef.current,
@@ -149,9 +146,30 @@ export default function QuizPage({ world, difficulty, level, onFinish, onBack })
         <div className="quiz-dots" />
       </div>
 
+      {/* Modal de confirmación de salida */}
+      {showExitConfirm && (
+        <div className="quiz-exit-overlay">
+          <div className="quiz-exit-modal">
+            <p className="quiz-exit-icon">⚠️</p>
+            <h3 className="quiz-exit-title">¿Salir del nivel?</h3>
+            <p className="quiz-exit-desc">
+              Si sales ahora perderás tu progreso en este intento y tendrás que empezar de nuevo.
+            </p>
+            <div className="quiz-exit-actions">
+              <button className="quiz-exit-btn quiz-exit-btn--cancel" onClick={() => setShowExitConfirm(false)}>
+                Seguir jugando
+              </button>
+              <button className="quiz-exit-btn quiz-exit-btn--confirm" onClick={onBack}>
+                Sí, salir
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="quiz-content">
         <div className="quiz-breadcrumb">
-          <button className="quiz-back" onClick={onBack}>←</button>
+          <button className="quiz-back" onClick={() => setShowExitConfirm(true)}>←</button>
           <span>{worldNames[world]} &gt; {difficultyNames[difficulty]} &gt; Nivel {level}</span>
         </div>
 

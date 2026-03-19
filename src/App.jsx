@@ -71,17 +71,27 @@ function AppRouter() {
       );
     }
 
-    if (appPage === "theory") {
-      return (
-        <TheoryPage
-          world={selectedWorld}
-          difficulty={selectedDifficulty}
-          level={selectedLevel}
-          onBack={() => setAppPage("levels")}
-          onContinue={() => setAppPage("levels")}
-        />
-      );
-    }
+   if (appPage === "theory") {
+  return (
+    <TheoryPage
+      world={selectedWorld}
+      difficulty={selectedDifficulty}
+      level={selectedLevel}
+      onBack={() => setAppPage("levels")}
+      onContinue={async () => {
+        await saveProgress({
+          world: selectedWorld,
+          difficulty: selectedDifficulty,
+          level: selectedLevel,
+          stars: 3,
+          pointsEarned: 0,
+        });
+        setSelectedLevel(selectedLevel + 1);
+        setAppPage("quiz");
+      }}
+    />
+  );
+}
 
     if (appPage === "quiz") {
       return (

@@ -16,6 +16,7 @@ export default function Dashboard({ onBack }) {
   const [activeTab, setActiveTab] = useState("perfil");
   const [selectedAvatar, setSelectedAvatar] = useState(user?.avatar || "🤖");
   const [newUsername, setNewUsername] = useState(user?.username || "");
+  const [newEmail, setNewEmail] = useState(user?.email || "");  // ← agregado
   const [saveMsg, setSaveMsg] = useState("");
   const [saveError, setSaveError] = useState("");
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
@@ -40,7 +41,7 @@ export default function Dashboard({ onBack }) {
   const handleSave = async () => {
     try {
       setSaveError("");
-      await updateProfile(newUsername, selectedAvatar);
+      await updateProfile(newUsername, selectedAvatar, newEmail); // ← email agregado
       setSaveMsg("¡Cambios guardados!");
       setTimeout(() => setSaveMsg(""), 2500);
     } catch (err) {
@@ -127,6 +128,7 @@ export default function Dashboard({ onBack }) {
                 {[
                   { label: "👤 Usuario",        value: user?.username },
                   { label: "🎭 Rol",            value: user?.role },
+                  { label: "📧 Email",          value: user?.email || "No registrado" },
                   { label: "⭐ Puntos totales", value: `${totalPoints} pts`, accent: true },
                   { label: "🔐 Autenticación",  value: "JWT activo" },
                 ].map((item) => (
@@ -198,6 +200,25 @@ export default function Dashboard({ onBack }) {
               </div>
               {saveMsg && <p className="dp-save-msg">✅ {saveMsg}</p>}
               {saveError && <p style={{ color: "red", fontSize: "0.85rem" }}>❌ {saveError}</p>}
+            </div>
+
+            <div className="dp-section">
+              <h2 className="dp-section-title">Email de respaldo</h2>
+              <div className="dp-field-row">
+                <input
+                  className="dp-input"
+                  type="email"
+                  value={newEmail}
+                  onChange={(e) => setNewEmail(e.target.value)}
+                  placeholder="tucorreo@ejemplo.com"
+                />
+                <button className="dp-btn dp-btn--primary" onClick={handleSave}>
+                  Guardar
+                </button>
+              </div>
+              <p style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.8rem", marginTop: "6px" }}>
+                Se usa para recuperación de cuenta y verificaciones de seguridad.
+              </p>
             </div>
 
             <div className="dp-section dp-section--danger">

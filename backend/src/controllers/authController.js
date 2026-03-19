@@ -1,10 +1,6 @@
-import crypto from "crypto";
+import argon2 from "argon2";
 import jwt from "jsonwebtoken";
 import User from "../models/User.js";
-
-const hashPassword = (password) => {
-  return crypto.createHash("sha256").update(password).digest("hex");
-};
 
 const generateToken = (user) => {
   return jwt.sign(
@@ -17,10 +13,14 @@ const generateToken = (user) => {
 // POST /api/auth/register
 export const register = async (req, res) => {
   try {
-    const { username, password, role } = req.body;
+    const { username, password, role, email } = req.body;
 
     if (!username || !password) {
       return res.status(400).json({ message: "Todos los campos son obligatorios" });
+    }
+
+    if (password.length < 8) {
+      return res.status(400).json({ message: "La contraseña debe tener al menos 8 caracteres" });
     }
 
     const existingUser = await User.findOne({ username });
@@ -28,12 +28,13 @@ export const register = async (req, res) => {
       return res.status(400).json({ message: "Este nombre de usuario ya está registrado" });
     }
 
-    const hashedPassword = hashPassword(password);
+    const hashedPassword = await argon2.hash(password);
 
     const user = await User.create({
       username,
       password: hashedPassword,
-      role: role === "admin" ? "admin" : "user",
+      email: email || null,
+      role: "user", 
     });
 
     const token = generateToken(user);
@@ -66,11 +67,8 @@ export const login = async (req, res) => {
       return res.status(401).json({ message: "Credenciales incorrectas" });
     }
 
-    const hashedPassword = hashPassword(password);
-    console.log("Hash recibido:", hashedPassword);
-console.log("Hash en BD:", user.password);
-console.log("Son iguales:", hashedPassword === user.password);
-    if (hashedPassword !== user.password) {
+    const passwordValid = await argon2.verify(user.password, password);
+    if (!passwordValid) {
       return res.status(401).json({ message: "Credenciales incorrectas" });
     }
 
@@ -78,7 +76,7 @@ console.log("Son iguales:", hashedPassword === user.password);
       await User.findByIdAndDelete(user._id);
       return res.status(401).json({ message: "Tu cuenta fue eliminada por inactividad" });
     }
-    
+
     const token = generateToken(user);
 
     return res.status(200).json({
@@ -87,6 +85,8 @@ console.log("Son iguales:", hashedPassword === user.password);
         id: user._id,
         username: user.username,
         role: user.role,
+        avatar: user.avatar, 
+    email: user.email,
       },
     });
   } catch (error) {
@@ -99,10 +99,11 @@ console.log("Son iguales:", hashedPassword === user.password);
 export const getMe = async (req, res) => {
   return res.status(200).json({ user: req.user });
 };
+
 // PUT /api/auth/me — actualizar username y avatar
 export const updateMe = async (req, res) => {
   try {
-    const { username, avatar } = req.body;
+    const { username, avatar, email } = req.body;
     const user = await User.findById(req.user._id);
     if (!user) return res.status(404).json({ message: "Usuario no encontrado" });
 
@@ -113,6 +114,7 @@ export const updateMe = async (req, res) => {
     }
 
     if (avatar) user.avatar = avatar;
+    if (email !== undefined) user.email = email || null;
 
     await user.save();
 
@@ -122,7 +124,8 @@ export const updateMe = async (req, res) => {
         username: user.username,
         role: user.role,
         avatar: user.avatar,
-      }
+        email: user.email, 
+      },
     });
   } catch (error) {
     return res.status(500).json({ message: "Error al actualizar perfil", error: error.message });
