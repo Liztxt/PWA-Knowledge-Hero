@@ -159,3 +159,18 @@
   color: #ccc;
   font-weight: 300;
 }
+@media (max-width: 768px) {
+  .level-title { font-size: 38px; }
+  .level-content { padding: 32px 20px; }
+}
+
+@media (max-width: 480px) {
+  .level-title { font-size: 28px; }
+  .level-subtitle { font-size: 14px; }
+  .level-card { padding: 14px 16px; gap: 12px; }
+  .level-card-icon { width: 52px; height: 52px; font-size: 26px; border-radius: 12px; }
+  .level-card-name { font-size: 17px; }
+  .level-card-desc { font-size: 13px; }
+  .level-card-arrow { font-size: 22px; }
+  .level-content { padding: 24px 16px; }
+}

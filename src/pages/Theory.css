@@ -95,3 +95,18 @@
   background: #87b1fa;
   outline: none; 
 }
+@media (max-width: 768px) {
+  .theory-content { padding: 20px 16px 48px; }
+  .theory-title { font-size: 1.5rem; }
+  .theory-subtitle { font-size: 0.9rem; }
+  .theory-card { padding: 20px 16px; }
+}
+
+@media (max-width: 480px) {
+  .theory-title { font-size: 1.3rem; }
+  .theory-card-title { font-size: 1rem; }
+  .theory-card-content { font-size: 0.88rem; }
+  .theory-example span:last-child { font-size: 0.82rem; }
+  .theory-continue { font-size: 1rem; padding: 14px; }
+  .theory-back { font-size: 0.85rem; padding: 6px 12px; }
+}

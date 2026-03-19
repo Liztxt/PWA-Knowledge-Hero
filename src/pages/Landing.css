@@ -341,3 +341,42 @@
   line-height: 1.65;
   margin: 0;
 }
+@media (max-width: 1024px) {
+  .land-nav { padding: 16px 32px; }
+  .land-section { padding: 60px 20px; }
+  .land-cta { padding: 60px 20px; }
+}
+
+@media (max-width: 768px) {
+  .land-nav { padding: 16px 20px; }
+  .land-nav-logo { font-size: 0.85rem; }
+  .land-hero { padding: 60px 20px 50px; }
+  .land-hero-title { font-size: clamp(1.6rem, 5vw, 2.4rem); }
+  .land-hero-sub { font-size: 0.95rem; }
+  .land-section-title { font-size: 1.5rem; }
+  .land-cta-title { font-size: 1.5rem; }
+  .land-steps { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .land-features { grid-template-columns: 1fr; }
+  .land-about { grid-template-columns: 1fr; }
+  .land-ods { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .land-hero-stats { flex-wrap: wrap; gap: 16px; padding: 16px 24px; }
+  .land-stat-div { display: none; }
+  .land-hero-actions { flex-direction: column; align-items: center; }
+  .land-btn--lg { width: 100%; max-width: 320px; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .land-nav-logo { font-size: 0.7rem; }
+  .land-hero { padding: 40px 16px 40px; }
+  .land-steps { grid-template-columns: 1fr; }
+  .land-section { padding: 48px 16px; }
+  .land-cta { padding: 48px 16px; }
+  .land-cta-actions { flex-direction: column; align-items: center; }
+  .land-footer { padding: 20px 16px; }
+  .land-faq-card { padding: 16px 18px; }
+  .land-about-block { padding: 18px 16px; }
+  .land-objective { padding: 18px 16px; }
+}

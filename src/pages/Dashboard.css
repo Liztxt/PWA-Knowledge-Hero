@@ -363,3 +363,21 @@
   .dp-field-row { flex-direction: column; }
   .dp-content { padding: 24px 16px 48px; }
 }
+@media (max-width: 820px) {
+  .dp-stats { grid-template-columns: repeat(2, 1fr); }
+  .dp-stat:nth-child(2) { border-right: none; }
+  .dp-stat { border-bottom: 1px solid rgba(255,255,255,0.1); }
+}
+
+@media (max-width: 480px) {
+  .dp-hero { padding: 20px 16px; gap: 16px; }
+  .dp-avatar-ring { width: 70px; height: 70px; }
+  .dp-avatar { font-size: 36px; }
+  .dp-hero-name { font-size: 22px; }
+  .dp-panel { padding: 20px 16px; }
+  .dp-avatar-grid { grid-template-columns: repeat(4, 1fr); }
+  .dp-info-grid { grid-template-columns: 1fr; }
+  .dp-field-row { flex-direction: column; }
+  .dp-btn { width: 100%; }
+  .dp-confirm-row { flex-direction: column; }
+}

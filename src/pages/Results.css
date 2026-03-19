@@ -211,3 +211,21 @@
   .results-actions { flex-direction: column; }
   .results-btn { width: 100%; text-align: center; }
 }
+@media (max-width: 768px) {
+  .results-card {
+    margin: 16px;
+    padding: 28px 20px;
+  }
+  .results-title { font-size: 24px; }
+}
+
+@media (max-width: 480px) {
+  .results-top { flex-direction: column; text-align: center; }
+  .results-avatar { width: 70px; height: 70px; font-size: 34px; }
+  .results-card { padding: 22px 16px; margin: 12px; }
+  .results-title { font-size: 20px; }
+  .results-stat-num { font-size: 22px; }
+  .results-stats { gap: 8px; }
+  .results-actions { flex-direction: column; }
+  .results-btn { width: 100%; text-align: center; }
+}

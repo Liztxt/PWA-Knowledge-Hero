@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { playCorrect, playIncorrect } from "../utils/sounds.js";
 import "./Quiz.css";
 
 const worldNames = {
@@ -29,7 +30,52 @@ export default function QuizPage({ world, difficulty, level, onFinish, onBack })
   const pointsRef    = useRef(0);
   const correctRef   = useRef(0);
   const incorrectRef = useRef(0);
+  const [timeLeft, setTimeLeft] = useState(20);
+const timerRef = useRef(null);
 
+const resetTimer = () => {
+  clearInterval(timerRef.current);
+  setTimeLeft(45);
+  timerRef.current = setInterval(() => {
+    setTimeLeft((t) => {
+      if (t <= 1) {
+        clearInterval(timerRef.current);
+        handleTimeOut();
+        return 0;
+      }
+      return t - 1;
+    });
+  }, 1000);
+};
+const handleTimeOut = () => {
+  if (feedback) return;
+  playIncorrect();
+  setFeedback("incorrect");
+  setIncorrect((i) => { incorrectRef.current = i + 1; return i + 1; });
+
+  setTimeout(() => {
+    if (current + 1 < questions.length) {
+      setCurrent((c) => c + 1);
+      setSelected(null);
+      setFeedback(null);
+      setCorrectAnswer(null);
+      resetTimer();
+    } else {
+      onFinish({
+        points:    pointsRef.current,
+        correct:   correctRef.current,
+        incorrect: incorrectRef.current,
+        total:     questions.length,
+      });
+    }
+  }, 1500);
+};
+useEffect(() => {
+  if (questions.length > 0 && !loading) {
+    resetTimer();
+  }
+  return () => clearInterval(timerRef.current);
+}, [questions, current]);
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
@@ -58,6 +104,7 @@ export default function QuizPage({ world, difficulty, level, onFinish, onBack })
 
   const handleConfirm = async () => {
     if (!selected || feedback) return;
+    clearInterval(timerRef.current);
 
     try {
       const token = localStorage.getItem("token");
@@ -78,10 +125,12 @@ export default function QuizPage({ world, difficulty, level, onFinish, onBack })
 
       if (data.correct) {
         setFeedback("correct");
+        playCorrect();
         setPoints((p) => { pointsRef.current = p + 10; return p + 10; });
         setCorrect((c) => { correctRef.current = c + 1; return c + 1; });
       } else {
         setFeedback("incorrect");
+        playIncorrect(); 
         setIncorrect((i) => { incorrectRef.current = i + 1; return i + 1; });
       }
 
@@ -174,11 +223,14 @@ export default function QuizPage({ world, difficulty, level, onFinish, onBack })
         </div>
 
         <div className="quiz-header">
-          <div className="quiz-header-inner">
-            <div className="quiz-points-badge">{points} pts</div>
-            <div className="quiz-trophy">🏆</div>
-          </div>
-        </div>
+  <div className="quiz-header-inner">
+    <div className="quiz-points-badge">{points} pts</div>
+    <div className={`quiz-timer ${timeLeft <= 5 ? "quiz-timer--urgent" : ""}`}>
+      ⏱ {timeLeft}s
+    </div>
+    <div className="quiz-trophy">🏆</div>
+  </div>
+</div>
 
         <div className="quiz-progress-bar">
           <div className="quiz-progress-fill" style={{ width: `${progress}%` }} />

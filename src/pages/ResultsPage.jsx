@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import confetti from "canvas-confetti";
+import { playLevelComplete } from "../utils/sounds.js";
 import "./Results.css";
 
 const worldNames = {
@@ -34,6 +35,7 @@ export default function ResultsPage({
 
   useEffect(() => {
     if (stars === 3) {
+      playLevelComplete();
       confetti({
         particleCount: 150,
         spread: 80,

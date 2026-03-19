@@ -327,3 +327,38 @@
   background: linear-gradient(135deg, #6d28d9, #c026a0);
   color: white;
 }
+.quiz-timer {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  transition: all 0.3s;
+}
+
+.quiz-timer--urgent {
+  background: rgba(255, 50, 50, 0.4);
+  border-color: rgba(255, 50, 50, 0.6);
+  animation: timer-pulse 0.5s ease infinite alternate;
+}
+
+@keyframes timer-pulse {
+  from { transform: scale(1); }
+  to   { transform: scale(1.08); }
+}
+@media (max-width: 768px) {
+  .quiz-content { padding: 20px 16px 40px; }
+  .quiz-question { font-size: 18px; }
+}
+
+@media (max-width: 480px) {
+  .quiz-question { font-size: 16px; }
+  .quiz-option { font-size: 14px; padding: 11px 14px; }
+  .quiz-confirm { max-width: 100%; font-size: 15px; }
+  .quiz-breadcrumb { font-size: 12px; }
+  .quiz-exit-modal { padding: 24px 20px; }
+  .quiz-exit-actions { flex-direction: column; }
+  .quiz-exit-btn { width: 100%; }
+}

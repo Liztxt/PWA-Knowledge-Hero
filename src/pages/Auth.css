@@ -224,3 +224,11 @@ body { font-family: var(--font); color: var(--text); }
 .back-btn:hover {
   background: rgba(255, 255, 255, 0.25);
 }
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 1.6rem 1.2rem 1.4rem;
+    border-radius: 14px;
+  }
+  .auth-title { font-size: 1.1rem; }
+  .field-input { font-size: 0.9rem; }
+}
