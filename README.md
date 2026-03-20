@@ -1,10 +1,10 @@
-# 🏆 KnowledgeHero
+# KnowledgeHero
 
 Plataforma educativa interactiva tipo juego para reforzar conocimientos en **Matemáticas**, **Español** e **Inglés**. Diseñada para estudiantes de primaria a preparatoria, funciona como PWA y está alineada con los ODS 4 y ODS 10 de la ONU.
 
 ---
 
-## ✨ Características principales
+## Características principales
 
 - 3 mundos · 3 dificultades · 20 niveles cada uno
 - Páginas de teoría antes de cada bloque de niveles
@@ -19,7 +19,7 @@ Plataforma educativa interactiva tipo juego para reforzar conocimientos en **Mat
 
 ---
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 | Frontend | Backend | Base de datos |
 |----------|---------|---------------|
@@ -29,7 +29,7 @@ Plataforma educativa interactiva tipo juego para reforzar conocimientos en **Mat
 
 ---
 
-## 🎮 Cómo funciona
+## Cómo funciona
 
 1. Regístrate con usuario y contraseña
 2. Elige un mundo: Matemáticas, Español o Inglés
@@ -40,7 +40,7 @@ Plataforma educativa interactiva tipo juego para reforzar conocimientos en **Mat
 
 ---
 
-## 🚀 Cómo usarlo
+## Cómo usarlo
 
 ```bash
 # 1. Instalar dependencias del backend
