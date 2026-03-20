@@ -1,4 +1,6 @@
 import "./Landing.css";
+import { useState, useEffect } from "react";
+
 
 const features = [
   { title: "Sistema de estrellas",    desc: "Obtén hasta 3 estrellas por nivel según tu precisión. Solo avanzas si demuestras dominio real." },
@@ -23,6 +25,25 @@ const faqs = [
 ];
 
 export default function LandingPage({ onLogin, onRegister }) {
+
+  const [installPrompt, setInstallPrompt] = useState(null);
+const [showInstall, setShowInstall] = useState(false);
+
+useEffect(() => {
+  window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    setInstallPrompt(e);
+    setShowInstall(true);
+  });
+}, []);
+
+const handleInstall = async () => {
+  if (!installPrompt) return;
+  installPrompt.prompt();
+  const result = await installPrompt.userChoice;
+  if (result.outcome === "accepted") setShowInstall(false);
+};
+
   return (
     <div className="land-wrapper">
 
@@ -46,6 +67,11 @@ export default function LandingPage({ onLogin, onRegister }) {
             Registrarse
           </button>
         </div>
+        {showInstall && (
+  <button className="land-btn land-btn--ghost land-btn--lg" onClick={handleInstall}>
+    📲 Instalar app
+  </button>
+)}
       </nav>
 
       {/* Hero */}
