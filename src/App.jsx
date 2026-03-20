@@ -83,8 +83,9 @@ function AppRouter() {
           world: selectedWorld,
           difficulty: selectedDifficulty,
           level: selectedLevel,
-          stars: 3,
+          stars: 0,
           pointsEarned: 0,
+          isTheory: true, 
         });
         setSelectedLevel(selectedLevel + 1);
         setAppPage("quiz");

@@ -29,6 +29,7 @@ export function ProgressProvider({ children }) {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
+      console.log("Status:", res.status, "Data:", JSON.stringify(data));
       if (res.ok) {
         setProgress(data.progress);
         setTotalPoints(data.totalPoints);
@@ -40,17 +41,19 @@ export function ProgressProvider({ children }) {
       setLoading(false);
     }
   };
+  
 
-  const saveProgress = async ({ world, difficulty, level, stars, pointsEarned }) => {
-    try {
-      const token = localStorage.getItem("token");
-      const res = await fetch(`${API}/api/progress/save`, {
+  const saveProgress = async ({ world, difficulty, level, stars, pointsEarned, isTheory }) => {
+  console.log("Guardando progreso:", { world, difficulty, level, stars, pointsEarned, isTheory }); // ← agregar
+  try {
+    const token = localStorage.getItem("token");
+    const res = await fetch(`${API}/api/progress/save`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
         },
-        body: JSON.stringify({ world, difficulty, level, stars, pointsEarned }),
+        body: JSON.stringify({ world, difficulty, level, stars, pointsEarned, isTheory }),
       });
       const data = await res.json();
       if (res.ok) {
@@ -72,13 +75,18 @@ export function ProgressProvider({ children }) {
   };
 
   const isLevelUnlocked = (world, difficulty, level) => {
-    if (level === 1) return true;
-    const worldProgress = progress[world]?.find(w => w.difficulty === difficulty);
-    if (!worldProgress) return false;
-    const prevLevel = worldProgress.levels.find(l => l.level === level - 1);
-    return prevLevel?.completed === true;
-  };
-
+  if (level === 1) return true;
+  const worldProgress = progress[world]?.find(w => w.difficulty === difficulty);
+  if (!worldProgress) return false;
+  const prevLevel = worldProgress.levels.find(l => l.level === level - 1);
+  return prevLevel?.completed === true; 
+};
+const isLevelCompleted = (world, difficulty, level) => {
+  const worldProgress = progress[world]?.find(w => w.difficulty === difficulty);
+  if (!worldProgress) return false;
+  const levelData = worldProgress.levels.find(l => l.level === level);
+  return levelData?.completed === true;
+};
   return (
     <ProgressContext.Provider value={{
       progress,
@@ -88,6 +96,7 @@ export function ProgressProvider({ children }) {
       getLevelStars,
       isLevelUnlocked,
       fetchProgress,
+      isLevelCompleted,
       streak,
     }}>
       {children}

@@ -1,5 +1,6 @@
 import argon2 from "argon2";
 import jwt from "jsonwebtoken";
+import { Filter } from "bad-words";
 import User from "../models/User.js";
 
 const generateToken = (user) => {
@@ -9,6 +10,7 @@ const generateToken = (user) => {
     { expiresIn: process.env.JWT_EXPIRES_IN || "7d" }
   );
 };
+const filter = new Filter();
 
 // POST /api/auth/register
 export const register = async (req, res) => {
@@ -18,16 +20,30 @@ export const register = async (req, res) => {
     if (!username || !password) {
       return res.status(400).json({ message: "Todos los campos son obligatorios" });
     }
+    const usernameRegex = /^[a-zA-Z0-9_]{3,20}$/;
+if (!usernameRegex.test(username)) {
+  return res.status(400).json({
+    message: "El usuario solo puede tener letras, números y _ (3-20 caracteres)"
+  });
+}
 
-    if (password.length < 8) {
-      return res.status(400).json({ message: "La contraseña debe tener al menos 8 caracteres" });
-    }
-
+// Validar contraseña fuerte
+const passwordRegex = /^(?=.*[A-Z])(?=.*\d).{8,}$/;
+if (!passwordRegex.test(password)) {
+  return res.status(400).json({
+    message: "La contraseña debe tener mínimo 8 caracteres, una mayúscula y un número"
+  });
+}
     const existingUser = await User.findOne({ username });
     if (existingUser) {
       return res.status(400).json({ message: "Este nombre de usuario ya está registrado" });
     }
 
+if (filter.isProfane(username)) {
+  return res.status(400).json({
+    message: "El nombre de usuario no está permitido"
+  });
+}
     const hashedPassword = await argon2.hash(password);
 
     const user = await User.create({

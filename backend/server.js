@@ -16,17 +16,15 @@ const PORT = process.env.PORT || 5000;
 // Seguridad básica
 app.use(helmet());
 
-// Rate limiting general — 100 requests por 15 minutos por IP
 const generalLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
   max: 100,
   message: { message: "Demasiadas peticiones, intenta más tarde" },
 });
 
-// Rate limiting estricto para login/register — 10 intentos por 15 minutos
 const authLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
-  max: 10,
+  max: 500,
   message: { message: "Demasiados intentos, espera 15 minutos" },
 });
 
@@ -49,7 +47,7 @@ app.use(cors({
   credentials: true,
 }));
 
-app.use(express.json({ limit: "10kb" })); // limita el tamaño del body
+app.use(express.json({ limit: "10kb" }));
 
 // Rutas
 app.use("/api/auth", authLimiter, authRoutes);
@@ -61,7 +59,6 @@ app.get("/", (req, res) => {
   res.json({ message: "Backend KnowledgeHero funcionando ✓" });
 });
 
-// Manejador de errores global
 app.use((err, req, res, next) => {
   console.error(err.message);
   res.status(err.status || 500).json({

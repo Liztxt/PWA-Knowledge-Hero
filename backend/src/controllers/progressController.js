@@ -14,9 +14,9 @@ function updateStreak(user) {
   const lastDay = new Date(last.getFullYear(), last.getMonth(), last.getDate());
   const diffDays = Math.round((today - lastDay) / (1000 * 60 * 60 * 24));
 
-  if (diffDays === 0) return;          
-  if (diffDays === 1) user.streak += 1; 
-  else if (diffDays > 4) user.streak = 0; 
+  if (diffDays === 0) return;
+  if (diffDays === 1) user.streak += 1;
+  else if (diffDays > 4) user.streak = 0;
 
   user.lastActivityDate = today;
 }
@@ -54,7 +54,8 @@ export const getProgress = async (req, res) => {
 // POST /api/progress/save
 export const saveProgress = async (req, res) => {
   try {
-    const { world, difficulty, level, stars, pointsEarned } = req.body;
+    console.log("Body recibido:", req.body);
+    const { world, difficulty, level, stars, pointsEarned, isTheory } = req.body;
 
     if (!world || !difficulty || !level || stars === undefined) {
       return res.status(400).json({ message: "Faltan campos: world, difficulty, level, stars" });
@@ -79,16 +80,27 @@ export const saveProgress = async (req, res) => {
     }
 
     const existingLevel = worldProgress.levels.find(l => l.level === level);
+
     if (existingLevel) {
-      if (stars > existingLevel.stars) {
+      // Nivel ya existe — actualizar
+      if (isTheory && !existingLevel.completed) {
+        existingLevel.completed = true;
+      } else if (stars > existingLevel.stars) {
         const extraPoints = (stars - existingLevel.stars) * 10;
         existingLevel.stars = stars;
         existingLevel.completed = true;
         user.totalPoints += extraPoints;
       }
     } else {
-      worldProgress.levels.push({ level, stars, completed: stars > 0 });
-      user.totalPoints += (pointsEarned || stars * 10);
+      // ← Este bloque faltaba — nivel nuevo
+      worldProgress.levels.push({
+        level,
+        stars,
+        completed: stars > 0 || isTheory,
+      });
+      if (!isTheory) {
+        user.totalPoints += (pointsEarned || stars * 10);
+      }
     }
 
     updateStreak(user);
@@ -103,5 +115,22 @@ export const saveProgress = async (req, res) => {
     });
   } catch (error) {
     res.status(500).json({ message: "Error al guardar progreso", error: error.message });
+  }
+};
+
+export const resetProgress = async (req, res) => {
+  try {
+    await User.findByIdAndUpdate(req.user._id, {
+      $set: {
+        totalPoints: 0,
+        streak: 0,
+        "progress.math": [],
+        "progress.spanish": [],
+        "progress.english": [],
+      }
+    });
+    res.json({ message: "Progreso reseteado" });
+  } catch (error) {
+    res.status(500).json({ message: "Error al resetear", error: error.message });
   }
 };

@@ -13,6 +13,8 @@ const worldNames = {
   english: "Inglés",
 };
 
+const THEORY_LEVELS = [1, 6, 11, 16];
+
 function StarRating({ stars }) {
   return (
     <div className="ns-stars">
@@ -24,7 +26,7 @@ function StarRating({ stars }) {
 }
 
 export default function NivelSelectPage({ world, difficulty, onBack, onSelectLevel }) {
-  const { getLevelStars, isLevelUnlocked } = useProgress();
+  const { getLevelStars, isLevelUnlocked, isLevelCompleted } = useProgress();
 
   const levels = Array.from({ length: 20 }, (_, i) => {
     const levelNum = i + 1;
@@ -32,7 +34,7 @@ export default function NivelSelectPage({ world, difficulty, onBack, onSelectLev
       id: levelNum,
       stars: getLevelStars(world, difficulty, levelNum),
       unlocked: isLevelUnlocked(world, difficulty, levelNum),
-      completed: getLevelStars(world, difficulty, levelNum) > 0,
+      completed: isLevelCompleted(world, difficulty, levelNum),
     };
   });
 
@@ -68,7 +70,17 @@ export default function NivelSelectPage({ world, difficulty, onBack, onSelectLev
                 <>
                   <span className="ns-card-num">{level.id}</span>
                   <span className="ns-card-label">Nivel {level.id}</span>
-                  <StarRating stars={level.stars} />
+                  {THEORY_LEVELS.includes(level.id) ? (
+                    <span style={{
+                      fontSize: "0.75rem",
+                      color: level.completed ? "#16a34a" : "#aaa",
+                      fontWeight: 700
+                    }}>
+                      {level.completed ? "✓ Teoría" : "📖 Teoría"}
+                    </span>
+                  ) : (
+                    <StarRating stars={level.stars} />
+                  )}
                 </>
               ) : (
                 <>
