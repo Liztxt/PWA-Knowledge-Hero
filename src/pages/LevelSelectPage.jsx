@@ -38,6 +38,8 @@ export default function NivelSelectPage({ world, difficulty, onBack, onSelectLev
     };
   });
 
+  const currentLevel = levels.find(l => l.unlocked && !l.completed)?.id || null;
+  
   return (
     <div className="ns-wrapper">
       <div className="ns-bg">
@@ -57,12 +59,13 @@ export default function NivelSelectPage({ world, difficulty, onBack, onSelectLev
 
         <div className="ns-grid">
           {levels.map((level) => (
-            <button
-              key={level.id}
-              className={`ns-card 
-                ${level.completed ? "ns-card--done" : ""} 
-                ${!level.unlocked ? "ns-card--locked" : ""}
-              `}
+           <button
+  key={level.id}
+  className={`ns-card 
+    ${level.completed ? "ns-card--done" : ""} 
+    ${!level.unlocked ? "ns-card--locked" : ""}
+    ${level.id === currentLevel ? "ns-card--current" : ""}
+  `}
               onClick={() => level.unlocked && onSelectLevel(level.id)}
               disabled={!level.unlocked}
             >

@@ -452,3 +452,10 @@
     max-width: 360px;
   }
 }
+.home-greeting {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.85);
+  margin: 0 0 8px;
+  text-align: center;
+}

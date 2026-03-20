@@ -2,12 +2,11 @@ import { useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import "./Auth.css";
 
-export default function RegisterPage({ onSwitch }) {
+export default function RegisterPage({ onSwitch, onRegistered }) {
   const { register } = useAuth();
   const [form, setForm] = useState({
     username: "",
     password: "",
-    email: "",
     confirmPassword: "",
     role: "user",
     terms: false,
@@ -51,19 +50,16 @@ export default function RegisterPage({ onSwitch }) {
       setError("Debes aceptar los términos y condiciones");
       return;
     }
-    if (!form.email || !form.email.includes("@")) {
-      setError("Ingresa un email válido");
-      return;
-    }
 
     setLoading(true);
     try {
-      await register(form.username, form.password, "user", form.email);
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      setLoading(false);
-    }
+      await register(form.username, form.password, "user", null);
+  onRegistered(); // ← agregar aquí
+} catch (err) {
+  setError(err.message);
+} finally {
+  setLoading(false);
+}
   };
 
   return (
@@ -84,21 +80,6 @@ export default function RegisterPage({ onSwitch }) {
                 name="username"
                 placeholder="Usuario"
                 value={form.username}
-                onChange={handleChange}
-                required
-              />
-            </div>
-          </div>
-
-          <div className="field-group">
-            <label className="field-label">Email de respaldo</label>
-            <div className="field-input-wrap">
-              <input
-                className="field-input"
-                type="email"
-                name="email"
-                placeholder="tucorreo@ejemplo.com"
-                value={form.email}
                 onChange={handleChange}
                 required
               />

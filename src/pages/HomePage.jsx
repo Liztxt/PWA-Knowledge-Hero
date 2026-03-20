@@ -40,6 +40,13 @@ export default function HomePage({ onGoToPanel, onSelectWorld }) {
   const { user } = useAuth();
   const { totalPoints, progress } = useProgress();
 
+const getGreeting = () => {
+  const hour = new Date().getHours();
+  if (hour >= 6 && hour < 12)  return "¡Buenos días";
+  if (hour >= 12 && hour < 19) return "¡Buenas tardes";
+  return "¡Buenas noches";
+};
+
   return (
     <div className="home-wrapper">
       <div className="home-bg">
@@ -69,13 +76,16 @@ export default function HomePage({ onGoToPanel, onSelectWorld }) {
         </header>
 
         <div className="home-hero">
-          <h1 className="home-hero-title">
-            Elige tu <span className="home-hero-highlight">mundo</span>
-          </h1>
-          <p className="home-hero-sub">
-            3 mundos · 3 dificultades · 20 niveles cada uno
-          </p>
-        </div>
+  <p className="home-greeting">
+    {getGreeting()}, {user?.username}! 👋
+  </p>
+  <h1 className="home-hero-title">
+    Elige tu <span className="home-hero-highlight">mundo</span>
+  </h1>
+  <p className="home-hero-sub">
+    3 mundos · 3 dificultades · 20 niveles cada uno
+  </p>
+</div>
 
         <div className="worlds-grid">
           {worlds.map((world, i) => {

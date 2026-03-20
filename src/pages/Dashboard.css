@@ -381,3 +381,43 @@
   .dp-btn { width: 100%; }
   .dp-confirm-row { flex-direction: column; }
 }
+[data-theme="dark"] .dp-wrapper {
+  background: linear-gradient(160deg, #0f0c1a 0%, #1a1040 55%, #2d1040 100%);
+}
+[data-theme="dark"] .dp-panel {
+  background: #1e1a2e;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+[data-theme="dark"] .dp-info-item {
+  background: #2a2440;
+  border-color: rgba(255,255,255,0.08);
+}
+
+[data-theme="dark"] .dp-avatar-grid .dp-av-opt {
+  background: #2a2440;
+  border-color: rgba(255,255,255,0.1);
+}
+
+[data-theme="dark"] .dp-input {
+  background: #2a2440;
+  border-color: rgba(255,255,255,0.15);
+  color: white;
+}
+
+[data-theme="dark"] .dp-progress-track {
+  background: #2a2440;
+}
+[data-theme="dark"] .dp-section-title { color: white; }
+[data-theme="dark"] .dp-info-item { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.1); }
+[data-theme="dark"] .dp-info-label { color: rgba(255,255,255,0.5); }
+[data-theme="dark"] .dp-info-value { color: white; }
+[data-theme="dark"] .dp-progress-name { color: white; }
+[data-theme="dark"] .dp-progress-frac { color: rgba(255,255,255,0.5); }
+[data-theme="dark"] .dp-progress-track { background: rgba(255,255,255,0.1); }
+[data-theme="dark"] .dp-av-opt { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); }
+[data-theme="dark"] .dp-input { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.2); color: white; }
+[data-theme="dark"] .dp-btn--ghost { background: rgba(255,255,255,0.08); color: white; border-color: rgba(255,255,255,0.2); }
+[data-theme="dark"] .dp-danger-desc { color: rgba(255,255,255,0.5); }
+[data-theme="dark"] .dp-confirm-box { background: rgba(239,68,68,0.1); border-color: rgba(239,68,68,0.3); }
+[data-theme="dark"] .dp-save-msg { color: #86efac; }

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import { useProgress } from "../context/ProgressContext";
+import { useTheme } from "../context/ThemeContext";
 import "./Dashboard.css";
 
 const AVATARS = ["🤖", "🦊", "🐉", "🦁", "🐼", "🦅", "🐺", "🦋", "🐸", "🌟", "🎯", "🔥"];
@@ -21,6 +22,7 @@ export default function Dashboard({ onBack }) {
   const [saveError, setSaveError] = useState("");
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
   const [deleteScheduled, setDeleteScheduled] = useState(false);
+  const { darkMode, toggleTheme } = useTheme();
 
   const totalCompleted = countCompleted(progress.math) + countCompleted(progress.spanish) + countCompleted(progress.english);
   const allLevels = [
@@ -170,6 +172,36 @@ export default function Dashboard({ onBack }) {
 
         {activeTab === "config" && (
           <div className="dp-panel">
+            <div className="dp-section">
+  <h2 className="dp-section-title">Apariencia</h2>
+  <div className="dp-field-row" style={{ alignItems: "center" }}>
+    <span style={{ fontSize: "0.95rem", fontWeight: "700", color: "#1a1a2e", flex: 1 }}>
+      {darkMode ? "🌙 Modo oscuro" : "☀️ Modo claro"}
+    </span>
+    <button
+      onClick={toggleTheme}
+      style={{
+        width: "52px", height: "28px",
+        borderRadius: "999px",
+        border: "none",
+        background: darkMode ? "#6d28d9" : "#e8e8f0",
+        cursor: "pointer",
+        position: "relative",
+        transition: "background 0.3s",
+      }}
+    ><span style={{
+        position: "absolute",
+        top: "3px",
+        left: darkMode ? "26px" : "3px",
+        width: "22px", height: "22px",
+        borderRadius: "50%",
+        background: "white",
+        transition: "left 0.3s",
+        boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
+      }} />
+    </button>
+  </div>
+</div>
 
             <div className="dp-section">
               <h2 className="dp-section-title">Elige tu avatar</h2>
