@@ -229,3 +229,59 @@
   .results-actions { flex-direction: column; }
   .results-btn { width: 100%; text-align: center; }
 }
+/* ─── Dark Mode ─────────────────────────────────────────────────────────── */
+[data-theme="dark"] .results-wrapper {
+  background: linear-gradient(160deg, #0f0c1a 0%, #1a1040 55%, #2d1040 100%);
+}
+
+[data-theme="dark"] .results-card {
+  background: #1e1a2e;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+[data-theme="dark"] .results-title {
+  color: white;
+}
+
+[data-theme="dark"] .results-sub {
+  color: rgba(255,255,255,0.55);
+}
+
+[data-theme="dark"] .results-stat--blue {
+  background: rgba(59,130,246,0.15);
+}
+
+[data-theme="dark"] .results-stat--green {
+  background: rgba(22,163,74,0.15);
+}
+
+[data-theme="dark"] .results-stat--yellow {
+  background: rgba(234,179,8,0.15);
+}
+
+[data-theme="dark"] .results-stat-num {
+  color: white;
+}
+
+[data-theme="dark"] .results-stat-label {
+  color: rgba(255,255,255,0.55);
+}
+
+[data-theme="dark"] .results-score-banner {
+  background: rgba(168,85,247,0.12);
+  border-color: rgba(168,85,247,0.25);
+}
+
+[data-theme="dark"] .results-score-context {
+  color: rgba(255,255,255,0.5);
+}
+
+[data-theme="dark"] .results-score-total {
+  color: white;
+}
+
+[data-theme="dark"] .results-btn--secondary {
+  background: rgba(168,85,247,0.15);
+  color: #d8b4fe;
+}

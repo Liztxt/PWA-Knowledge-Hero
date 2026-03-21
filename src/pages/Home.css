@@ -459,3 +459,35 @@
   margin: 0 0 8px;
   text-align: center;
 }
+/* ─── Dark Mode ─────────────────────────────────────────────────────────── */
+[data-theme="dark"] .home-wrapper {
+  background: linear-gradient(160deg, #0f0c1a 0%, #1a1040 55%, #2d1040 100%);
+}
+
+[data-theme="dark"] .world-card {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.4);
+}
+
+[data-theme="dark"] .world-name {
+  color: white;
+}
+
+[data-theme="dark"] .world-desc {
+  color: rgba(255,255,255,0.55);
+}
+
+[data-theme="dark"] .world-footer {
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+[data-theme="dark"] .world-stats {
+  background: rgba(255,255,255,0.08);
+}
+
+[data-theme="dark"] .world-progress-track {
+  background: rgba(255,255,255,0.1);
+}
+
+[data-theme="dark"] .world-progress-label {
+  color: rgba(255,255,255,0.5);
+}

@@ -227,3 +227,38 @@
   from { box-shadow: 0 0 0 0 rgba(147, 197, 253, 0.3); }
   to   { box-shadow: 0 0 0 6px rgba(147, 197, 253, 0); }
 }
+/* ─── Dark Mode ─────────────────────────────────────────────────────────── */
+[data-theme="dark"] .ns-wrapper {
+  background: linear-gradient(160deg, #0f0c1a 0%, #1a1040 55%, #2d1040 100%);
+}
+
+[data-theme="dark"] .ns-card {
+  background: #1e1a2e;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+[data-theme="dark"] .ns-card:hover {
+  box-shadow: 0 10px 28px rgba(0,0,0,0.5);
+}
+
+[data-theme="dark"] .ns-card--done {
+  background: linear-gradient(135deg, #0f2a1a, #1a3a2a);
+}
+
+[data-theme="dark"] .ns-card--current {
+  background: rgba(147,197,253,0.08);
+  border-color: #93c5fd;
+}
+
+[data-theme="dark"] .ns-card-label {
+  color: white;
+}
+
+[data-theme="dark"] .ns-card-questions {
+  color: rgba(255,255,255,0.45);
+}
+
+[data-theme="dark"] .ns-star {
+  color: rgba(255,255,255,0.15);
+}

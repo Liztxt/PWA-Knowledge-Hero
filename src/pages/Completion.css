@@ -116,3 +116,75 @@
   background: #f3e8ff;
   color: #6d28d9;
 }
+/* ─── Responsive ─────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .comp-card {
+    padding: 36px 24px;
+    width: 92%;
+  }
+  .comp-title { font-size: 1.8rem; }
+  .comp-trophy { font-size: 4rem; }
+}
+
+@media (max-width: 480px) {
+  .comp-card {
+    padding: 28px 18px;
+    width: 94%;
+    border-radius: 20px;
+  }
+  .comp-title { font-size: 1.5rem; }
+  .comp-sub { font-size: 0.9rem; }
+  .comp-trophy { font-size: 3.2rem; }
+  .comp-stars { font-size: 1.6rem; gap: 6px; }
+  .comp-stat-num { font-size: 1.4rem; }
+  .comp-stat-label { font-size: 0.75rem; }
+  .comp-stats { gap: 16px; padding: 16px; }
+  .comp-badge { font-size: 0.9rem; padding: 6px 16px; }
+  .comp-btn { font-size: 0.95rem; padding: 12px; }
+}
+
+/* ─── Dark Mode ─────────────────────────────────────────────────────────── */
+[data-theme="dark"] .comp-wrapper {
+  background: linear-gradient(160deg, #0f0c1a 0%, #1a1040 55%, #2d1040 100%);
+}
+
+[data-theme="dark"] .comp-card {
+  background: #1e1a2e;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+[data-theme="dark"] .comp-title {
+  color: white;
+}
+
+[data-theme="dark"] .comp-sub {
+  color: rgba(255,255,255,0.55);
+}
+
+[data-theme="dark"] .comp-badge {
+  background: rgba(168,85,247,0.15);
+  border-color: rgba(168,85,247,0.25);
+  color: #d8b4fe;
+}
+
+[data-theme="dark"] .comp-stats {
+  background: rgba(255,255,255,0.06);
+}
+
+[data-theme="dark"] .comp-stat-num {
+  color: #d8b4fe;
+}
+
+[data-theme="dark"] .comp-stat-label {
+  color: rgba(255,255,255,0.45);
+}
+
+[data-theme="dark"] .comp-stat-div {
+  background: rgba(255,255,255,0.1);
+}
+
+[data-theme="dark"] .comp-btn--secondary {
+  background: rgba(168,85,247,0.15);
+  color: #d8b4fe;
+}

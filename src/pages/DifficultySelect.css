@@ -174,3 +174,29 @@
   .level-card-arrow { font-size: 22px; }
   .level-content { padding: 24px 16px; }
 }
+/* ─── Dark Mode ─────────────────────────────────────────────────────────── */
+[data-theme="dark"] .level-wrapper {
+  background: linear-gradient(160deg, #0f0c1a 0%, #1a1040 55%, #2d1040 100%);
+}
+
+[data-theme="dark"] .level-card {
+  background: #1e1a2e;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+[data-theme="dark"] .level-card:hover {
+  box-shadow: 0 10px 28px rgba(0,0,0,0.5);
+}
+
+[data-theme="dark"] .level-card-name {
+  color: white;
+}
+
+[data-theme="dark"] .level-card-desc {
+  color: rgba(255,255,255,0.55);
+}
+
+[data-theme="dark"] .level-card-arrow {
+  color: rgba(255,255,255,0.3);
+}
