@@ -379,4 +379,16 @@
   .land-faq-card { padding: 16px 18px; }
   .land-about-block { padding: 18px 16px; }
   .land-objective { padding: 18px 16px; }
+  .land-nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .land-nav-actions {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .land-nav-actions .land-btn {
+    padding: 8px 14px;
+    font-size: 0.78rem;
+  }
 }

@@ -32,16 +32,17 @@ function AppRouter() {
 
   const THEORY_LEVELS = [1, 6, 11, 16];
 
-  useEffect(() => {
-    if (!user) {
-      setPage("landing");
-      setAppPage("home");
-      setSelectedWorld(null);
-      setSelectedDifficulty(null);
-      setSelectedLevel(null);
-      setQuizResult(null);
-    }
-  }, [user]);
+ useEffect(() => {
+  if (!user) {
+    const isPWA = window.matchMedia("(display-mode: standalone)").matches;
+    setPage(isPWA ? "login" : "landing");
+    setAppPage("home");
+    setSelectedWorld(null);
+    setSelectedDifficulty(null);
+    setSelectedLevel(null);
+    setQuizResult(null);
+  }
+}, [user]);
 
   if (user) {
     if (user.role === "admin") return <AdminPanel />;

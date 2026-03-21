@@ -66,13 +66,13 @@ const handleInstall = async () => {
           <button className="land-btn land-btn--primary" onClick={onRegister}>
             Registrarse
           </button>
-        </div>
-        {showInstall && (
-  <button className="land-btn land-btn--ghost land-btn--lg" onClick={handleInstall}>
-    📲 Instalar app
-  </button>
-)}
-      </nav>
+          {showInstall && (
+            <button className="land-btn land-btn--ghost land-btn--lg" onClick={handleInstall}>
+              📲 Instalar app
+              </button>
+            )}
+            </div>
+            </nav>
 
       {/* Hero */}
       <section className="land-hero">
