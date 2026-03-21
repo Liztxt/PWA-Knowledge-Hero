@@ -1,13 +1,14 @@
 import { createContext, useContext, useState, useEffect } from "react";
 
 const AuthContext = createContext(null);
+const BASE_URL = import.meta.env.VITE_API_URL;
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const updateProfile = async (username, avatar, email) => {
   const token = localStorage.getItem("token");
-  const res = await fetch("http://localhost:5000/api/auth/me", {
+  const res = await fetch(`${BASE_URL}/api/auth/me`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
@@ -24,7 +25,7 @@ export function AuthProvider({ children }) {
 };
 const scheduleDelete = async () => {
   const token = localStorage.getItem("token");
-  const res = await fetch("http://localhost:5000/api/auth/me", {
+  const res = await fetch(`${BASE_URL}/api/auth/schedule-delete`, {
     method: "DELETE",
     headers: { Authorization: `Bearer ${token}` },
   });
@@ -34,7 +35,7 @@ const scheduleDelete = async () => {
 };
 const cancelDelete = async () => {
   const token = localStorage.getItem("token");
-  const res = await fetch("http://localhost:5000/api/auth/cancel-delete", {
+  const res = await fetch(`${BASE_URL}/api/auth/cancel-delete`, {
     method: "POST",
     headers: { Authorization: `Bearer ${token}` },
   });
@@ -53,7 +54,7 @@ const cancelDelete = async () => {
   }, []);
 
   const login = async (username, password) => {
-    const res = await fetch("http://localhost:5000/api/auth/login", {
+    const res = await fetch(`${BASE_URL}/api/auth/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username, password }),
@@ -69,7 +70,7 @@ const cancelDelete = async () => {
   };
 
   const register = async (username, password, role = "user", email = null) => {
-    const res = await fetch("http://localhost:5000/api/auth/register", {
+    const res = await fetch(`${BASE_URL}/api/auth/register`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
        body: JSON.stringify({ username, password, role, email }),

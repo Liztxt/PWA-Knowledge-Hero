@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import { playCorrect, playIncorrect } from "../utils/sounds.js";
 import "./Quiz.css";
 
+const API = import.meta.env.VITE_API_URL;
+
 const worldNames = {
   math: "Matemáticas",
   spanish: "Español",
@@ -82,7 +84,7 @@ useEffect(() => {
         setLoading(true);
         const token = localStorage.getItem("token");
         const res = await fetch(
-          `http://localhost:5000/api/questions?world=${world}&difficulty=${difficulty}&level=${level}`,
+          `${API}/api/questions?world=${world}&difficulty=${difficulty}&level=${level}`,
           { headers: { Authorization: `Bearer ${token}` } }
         );
         if (!res.ok) throw new Error("No se pudieron cargar las preguntas");
@@ -108,7 +110,7 @@ useEffect(() => {
 
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch("http://localhost:5000/api/questions/check", {
+      const res = await fetch(`${API}/api/questions/check`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

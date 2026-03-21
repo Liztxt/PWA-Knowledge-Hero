@@ -1,12 +1,10 @@
-// Hook utilitario: hace fetch con el JWT incluido automáticamente
-// Uso: const { authFetch } = useAuthFetch();
-//      const data = await authFetch("/api/protected-route");
-
 import { useAuth } from "../context/AuthContext";
+
+const BASE_URL = import.meta.env.VITE_API_URL;
 
 export function useAuthFetch() {
   const { logout } = useAuth();
-  const BASE_URL = "http://localhost:5000";
+ 
 
   const authFetch = async (endpoint, options = {}) => {
     const token = localStorage.getItem("token");
@@ -20,7 +18,6 @@ export function useAuthFetch() {
       },
     });
 
-    // Si el token expiró, cierra sesión automáticamente
     if (res.status === 401) {
       logout();
       throw new Error("Sesión expirada");

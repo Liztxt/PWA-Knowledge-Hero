@@ -3,8 +3,7 @@ import { useAuth } from "./AuthContext";
 
 const ProgressContext = createContext(null);
 
-
-const API = "http://localhost:5000";
+const API = import.meta.env.VITE_API_URL;
 
 export function ProgressProvider({ children }) {
   const { user } = useAuth();
