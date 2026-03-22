@@ -8,6 +8,11 @@ export function ThemeProvider({ children }) {
   });
 
   useEffect(() => {
+    const saved = localStorage.getItem("theme") || "light";
+    document.documentElement.setAttribute("data-theme", saved);
+  }, []);
+
+  useEffect(() => {
     localStorage.setItem("theme", darkMode ? "dark" : "light");
     document.documentElement.setAttribute("data-theme", darkMode ? "dark" : "light");
   }, [darkMode]);
@@ -19,8 +24,4 @@ export function ThemeProvider({ children }) {
       {children}
     </ThemeContext.Provider>
   );
-}
-
-export function useTheme() {
-  return useContext(ThemeContext);
 }
